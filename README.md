@@ -16,6 +16,7 @@ Possible file structures are currently being researched. At the moment, the foll
 
 ### Some research links:
 - [SQLite as file format.](https://www.sqlite.org/appfileformat.html)
+- [Some notes on SQLite corruption](https://www.sqlite.org/howtocorrupt.html)
 
 ### Test Implementation
 
