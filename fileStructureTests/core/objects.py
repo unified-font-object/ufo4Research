@@ -8,6 +8,11 @@ class Font(object):
 		self.features = None
 		self.layers = {}
 
+	def newLayer(self, layerName):
+		layer = Layer(None, layerName)
+		self.layers[layerName] = layer
+		return layer
+
 	def loadLayers(self, reader):
 		for layerName in reader.getLayerNames():
 			self.layers[layerName] = Layer(reader, layerName)
@@ -21,7 +26,16 @@ class Layer(object):
 	def __init__(self, reader, name):
 		self.reader = reader
 		self.name = name
-		self._glyphs = dict.fromkeys(reader.getGlyphNames(name))
+		if reader is None:
+			self._glyphs = {}
+		else:
+			self._glyphs = dict.fromkeys(reader.getGlyphNames(name))
+
+	def newGlyph(self, glyphName):
+		glyph = Glyph()
+		glyph.name = glyphName
+		self._glyphs[glyphName] = glyph
+		return glyph
 
 	def loadGlyph(self, glyphName):
 		glyph = Glyph()
