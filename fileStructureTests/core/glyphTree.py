@@ -6,67 +6,8 @@ class GlyphTreeError(Exception): pass
 # Glyph Reading
 # -------------
 
-def readGlyphFromTree(tree, glyphObject=None, pointPen=None, formatVersions=(1, 2)):
-	formatVersion = tree.attrib.get("format", "undefined")
-	try:
-		v = int(formatVersion)
-		formatVersion = v
-	except ValueError:
-		pass
-	if formatVersion == 1:
-		readGlyphFromTreeFormat1(tree=tree, glyphObject=glyphObject, pointPen=pointPen)
-	elif formatVersion == 2:
-		readGlyphFromTreeFormat2(tree=tree, glyphObject=glyphObject, pointPen=pointPen)
-	else:
-		raise GlyphTreeError("Unsupported GLIF format version: %s" % formatVersion)
-
-def readGlyphFromTreeFormat1(tree, glyphObject=None, pointPen=None):
-	# get the name
-	_readName(glyphObject, tree)
-	# populate the sub elements
-	unicodes = []
-	haveSeenAdvance = haveSeenOutline = haveSeenLib = haveSeenNote = False
-	for element in tree:
-		tag = element.tag
-		if tag == "outline":
-			if haveSeenOutline:
-				raise GlyphTreeError("The outline element occurs more than once.")
-			if attrs:
-				raise GlyphTreeError("The outline element contains unknown attributes.")
-			haveSeenOutline = True
-			if pointPen is not None:
-				buildOutlineFormat1(glyphObject, pointPen, element)
-		elif glyphObject is None:
-			continue
-		elif tag == "advance":
-			if haveSeenAdvance:
-				raise GlyphTreeError("The advance element occurs more than once.")
-			haveSeenAdvance = True
-			_readAdvance(glyphObject, element)
-		elif tag == "unicode":
-			try:
-				attrib = element.attrib
-				v = attrib.get("hex", "undefined")
-				v = int(v, 16)
-				if v not in unicodes:
-					unicodes.append(v)
-			except ValueError:
-				raise GlyphTreeError("Illegal value for hex attribute of unicode element.")
-		elif tag == "note":
-			if haveSeenNote:
-				raise GlyphTreeError("The note element occurs more than once.")
-			haveSeenNote = True
-			_readNote(glyphObject, element)
-		elif tag == "lib":
-			if haveSeenLib:
-				raise GlyphTreeError("The lib element occurs more than once.")
-			haveSeenLib = True
-			_readLib(glyphObject, element)
-		else:
-			raise GlyphTreeError("Unknown element in GLIF: %s" % tag)
-	# set the collected unicodes
-	if unicodes:
-		_relaxedSetattr(glyphObject, "unicodes", unicodes)
+def readGlyphFromTree(tree, glyphObject=None, pointPen=None, formatVersions=(2)):
+	readGlyphFromTreeFormat2(tree=tree, glyphObject=glyphObject, pointPen=pointPen)
 
 def readGlyphFromTreeFormat2(tree, glyphObject=None, pointPen=None):
 	# get the name
@@ -192,96 +133,10 @@ def _readImage(glyphObject, element):
 # ----------------
 
 contourAttributesFormat2 = set(["identifier"])
-componentAttributesFormat1 = set(["base", "xScale", "xyScale", "yxScale", "yScale", "xOffset", "yOffset"])
-componentAttributesFormat2 = componentAttributesFormat1 | set(["identifier"])
-pointAttributesFormat1 = set(["x", "y", "type", "smooth", "name"])
-pointAttributesFormat2 = pointAttributesFormat1 | set(["identifier"])
+componentAttributesFormat2 = set(["base", "xScale", "xyScale", "yxScale", "yScale", "xOffset", "yOffset", "identifier"])
+pointAttributesFormat2 = set(["x", "y", "type", "smooth", "name", "identifier"])
 pointSmoothOptions = set(("no", "yes"))
 pointTypeOptions = set(["move", "line", "offcurve", "curve", "qcurve"])
-
-# format 1
-
-componentAttributesFormat1 = set(["base", "xScale", "xyScale", "yxScale", "yScale", "xOffset", "yOffset"])
-pointAttributesFormat1 = set(["x", "y", "type", "smooth", "name"])
-pointSmoothOptions = set(("no", "yes"))
-pointTypeOptions = set(["move", "line", "offcurve", "curve", "qcurve"])
-
-def buildOutlineFormat1(glyphObject, pen, tree):
-	anchors = []
-	for element in tree:
-		tag = element.tag
-		if tag == "contour":
-			if len(element) == 1:
-				# XXX need to validate here
-				sub = element[0]
-				if sub.tag == "point":
-					anchor = _buildAnchorFormat1(sub)
-					if anchor is not None:
-						anchors.append(anchor)
-						continue
-			_buildOutlineContourFormat1(pen, element)
-		elif element == "component":
-			_buildOutlineComponentFormat1(pen, element)
-		else:
-			raise GlyphTreeError("Unknown element in outline element: %s" % element)
-	if glyphObject is not None and anchors:
-		_relaxedSetattr(glyphObject, "anchors", anchors)
-
-def _buildAnchorFormat1(tree):
-	attrib = tree.attrib
-	if attrib.get("type") != "move":
-		return None
-	x = attrib.get("x")
-	y = attrib.get("y")
-	if x is None:
-		raise GlyphTreeError("Required x attribute is missing in point element.")
-	if y is None:
-		raise GlyphTreeError("Required y attribute is missing in point element.")
-	x = _number(x)
-	y = _number(y)
-	name = attrib.get("name")
-	anchor = dict(x=x, y=y, name=name)
-	return anchor
-
-def _buildOutlineContourFormat1(pen, tree):
-	if set(tree.attrib.keys()):
-		raise GlyphTreeError("Unknown attributes in contour element.")
-	pen.beginPath()
-	for element in tree:
-		points = _validateAndMassagePointStructures(element, pointAttributesFormat1, openContourOffCurveLeniency=True)
-		_buildOutlinePointsFormat1(pen, children)
-	pen.endPath()
-
-def _buildOutlinePointsFormat1(pen, tree):
-	for element in tree:
-		attrib = element.attrib
-		x = attrib["x"]
-		y = attrib["y"]
-		segmentType = attrib["segmentType"]
-		smooth = attrib["smooth"]
-		name = attrib["name"]
-		pen.addPoint((x, y), segmentType=segmentType, smooth=smooth, name=name)
-
-def _buildOutlineComponentFormat1(pen, element):
-	if len(element):
-		raise GlyphTreeError("Unknown child elements of component element.")
-	attrib = element.attrib
-	if set(attrib.keys()) - componentAttributesFormat1:
-		raise GlyphTreeError("Unknown attributes in component element.")
-	baseGlyphName = attrib.get("base")
-	if baseGlyphName is None:
-		raise GlyphTreeError("The base attribute is not defined in the component.")
-	transformation = []
-	for attr, default in _transformationInfo:
-		value = attrib.get(attr)
-		if value is None:
-			value = default
-		else:
-			value = _number(value)
-		transformation.append(value)
-	pen.addComponent(baseGlyphName, tuple(transformation))
-
-# format 2
 
 def buildOutlineFormat2(glyphObject, pen, tree, identifiers):
 	anchors = []
