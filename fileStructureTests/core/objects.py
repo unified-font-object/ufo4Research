@@ -2,9 +2,9 @@ class Font(object):
 
 	def __init__(self):
 		self.info = FontInfo()
-		self.groups = None
-		self.kerning = None
-		self.lib = None
+		self.groups = {}
+		self.kerning = {}
+		self.lib = {}
 		self.features = None
 		self.layers = {}
 

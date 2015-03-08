@@ -8,12 +8,14 @@ class UFO3FileSystem(AbstractFileSystem):
 		self.path = path
 		self._layerContents = None
 		super(UFO3FileSystem, self).__init__()
+		if not os.path.exists(self.path):
+			os.mkdir(path)
 
 	# ------------
 	# File Support
 	# ------------
 
-	def getBytesForPath(self, relPath):
+	def readBytesFromPath(self, relPath):
 		path = os.path.join(self.path, relPath)
 		if not os.path.exists(path):
 			return None
@@ -22,27 +24,51 @@ class UFO3FileSystem(AbstractFileSystem):
 		f.close()
 		return b
 
+	def writeBytesToPath(self, data, relPath):
+		path = os.path.join(self.path, relPath)
+		f = open(path, "wb")
+		f.write(data)
+		f.close()
+
 	# ---------------
 	# Top Level Files
 	# ---------------
 
 	def readMetaInfo(self):
-		return self.readPlist("metainfo.plist")
+		return self.readPlistFromPath("metainfo.plist")
+
+	def writeMetaInfo(self, data):
+		self.writePlistToPath(data, "metainfo.plist")
 
 	def readFontInfo(self):
-		return self.readPlist("fontinfo.plist")
+		return self.readPlistFromPath("fontinfo.plist")
+
+	def writeFontInfo(self, data):
+		self.writePlistToPath(data, "fontinfo.plist")
 
 	def readGroups(self):
-		return self.readPlist("groups.plist")
+		return self.readPlistFromPath("groups.plist")
+
+	def writeGroups(self, data):
+		self.writePlistToPath(data, "groups.plist")
 
 	def readKerning(self):
-		return self.readPlist("kerning.plist")
+		return self.readPlistFromPath("kerning.plist")
+
+	def writeKerning(self, data):
+		self.writePlistToPath(data, "kerning.plist")
 
 	def readFeatures(self):
-		return self.getBytesForPath("features.fea")
+		return self.readBytesFromPath("features.fea")
+
+	def writeFeatures(self, data):
+		self.writeBytesToPath(data, "features.fea")
 
 	def readLib(self):
-		return self.readPlist("lib.plist")
+		return self.readPlistFromPath("lib.plist")
+
+	def writeLib(self, data):
+		self.writePlistToPath(data, "lib.plist")
 
 	# -----------------
 	# Layers and Glyphs
@@ -52,7 +78,7 @@ class UFO3FileSystem(AbstractFileSystem):
 
 	def _readLayerContents(self):
 		if self._layerContents is None:
-			self._layerContents = self.readPlist("layercontents.plist")
+			self._layerContents = self.readPlistFromPath("layercontents.plist")
 		return self._layerContents
 
 	def getLayerNames(self):
@@ -78,7 +104,7 @@ class UFO3FileSystem(AbstractFileSystem):
 	def getGlyphStorageMapping(self, layerName):
 		directory = self._getGlyphSetDirectory(layerName)
 		path = os.path.join(directory, "contents.plist")
-		return self.readPlist(path)
+		return self.readPlistFromPath(path)
 
 	# glyph tree
 

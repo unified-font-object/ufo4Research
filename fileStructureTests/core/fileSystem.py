@@ -1,5 +1,6 @@
 from xml.etree import cElementTree as ET
-from plistTree import convertTreeToPlist
+from xmlUtilities import treeToString
+from plistTree import convertTreeToPlist, convertPlistToTree, plistHeader
 
 
 class FileSystemError(Exception): pass
@@ -14,24 +15,35 @@ class AbstractFileSystem(object):
 	# File Support
 	# ------------
 
-	def getBytesForPath(self, relPath):
+	def readBytesFromPath(self, relPath):
 		raise NotImplementedError
 
-	def getTreeForPath(self, relPath):
-		data = self.getBytesForPath(relPath)
+	def writeBytesToPath(self, bytes, relPath):
+		raise NotImplementedError
+
+	def readPlistFromPath(self, relPath):
+		data = self.readPlistFromPath(relPath)
+		if data is None:
+			return None
+		tree = self.convertBytesToTree(data)
+		try:
+			return convertTreeToPlist(tree)
+		except:
+			raise FileSystemError("The file %s could not be read." % relPath)
+
+	def writePlistToPath(self, data, relPath):
+		tree = convertPlistToTree(data)
+		data = self.convertTreeToBytes(tree, header=plistHeader)
+		self.writeBytesToPath(data, relPath)
+
+	def convertBytesToTree(self, bytes):
 		if data is None:
 			return None
 		tree = ET.fromstring(data)
 		return tree
 
-	def readPlist(self, relPath):
-		tree = self.getTreeForPath(relPath)
-		if tree is None:
-			return None
-		try:
-			return convertTreeToPlist(tree)
-		except:
-			raise FileSystemError("The file %s could not be read." % relPath)
+	def convertTreeToBytes(self, tree, header=None):
+		return treeToString(tree, header)
 
 	# ---------------
 	# Top Level Files
@@ -40,7 +52,13 @@ class AbstractFileSystem(object):
 	def readMetaInfo(self):
 		raise NotImplementedError
 
+	def writeMetaInfo(self, data):
+		raise NotImplementedError
+
 	def readFontInfo(self):
+		raise NotImplementedError
+
+	def writeFontInfo(self, data):
 		raise NotImplementedError
 
 	def readGroups(self):

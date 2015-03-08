@@ -8,7 +8,6 @@ class UFOReaderWriter(object):
 
 	def __init__(self, fileSystem):
 		self._fileSystem = fileSystem
-		self.readMetaInfo()
 
 	# metainfo
 
@@ -18,6 +17,16 @@ class UFOReaderWriter(object):
 		"""
 		data = self._fileSystem.readMetaInfo()
 		return data
+
+	def writeMetaInfo(self):
+		"""
+		Write metainfo.
+		"""
+		data = dict(
+			creator="org.unifiedfontobject.ufo4Tests.UFOReaderWriter",
+			formatVersion="4"
+		)
+		self._fileSystem.writeMetaInfo(data)
 
 	# groups
 
@@ -30,20 +39,38 @@ class UFOReaderWriter(object):
 			return
 		return groups
 
+	def writeGroups(self, data):
+		"""
+		Write groups.
+		"""
+		if data:
+			self._fileSystem.writeGroups(data)
+
 	# fontinfo
 
 	def readInfo(self, info):
 		"""
-		Read fontinfo. It requires an object that allows
-		setting attributes with names that follow the fontinfo
-		version 3 specification. This will write the attributes
-		defined in the file into the object.
+		Read fontinfo.
 		"""
 		infoDict = self._fileSystem.readFontInfo()
 		if infoDict is None:
 			return
 		for attr, value in infoDict.items():
 			setattr(info, attr, value)
+
+	def writeInfo(self, info):
+		"""
+		Write info.
+		"""
+		infoDict = {}
+		for attr in fontInfoAttributes:
+			if hasattr(info, attr):
+				value = getattr(info, attr)
+				if value is None:
+					continue
+				infoDict[attr] = value
+		if infoDict:
+			self._fileSystem.writeFontInfo(infoDict)
 
 	# kerning
 
@@ -61,6 +88,18 @@ class UFOReaderWriter(object):
 				kerning[side1, side2] = value
 		return kerning
 
+	def writeKerning(self, data):
+		"""
+		Write kerning.
+		"""
+		kerning = {}
+		for (side1, side2), value in data.items():
+			if not side1 in kerning:
+				kerning[side1] = {}
+			kerning[side1][side2] = value
+		if kerning:
+			self._fileSystem.writeKerning(kerning)
+
 	# lib
 
 	def readLib(self):
@@ -72,6 +111,13 @@ class UFOReaderWriter(object):
 			return
 		return data
 
+	def writeLib(self, data):
+		"""
+		Write lib.
+		"""
+		if data:
+			self._fileSystem.writeLib(data)
+
 	# features
 
 	def readFeatures(self):
@@ -79,6 +125,12 @@ class UFOReaderWriter(object):
 		Read features. Returns a string.
 		"""
 		return self._fileSystem.readFeatures()
+
+	def writeFeatures(self, data):
+		"""
+		Write features.
+		"""
+		self._fileSystem.writeFeatures(data)
 
 	# layers and glyphs
 
@@ -106,3 +158,148 @@ class UFOReaderWriter(object):
 		"""
 		tree = self._fileSystem.getGlyphTree(layerName, glyphName)
 		readGlyphFromTree(tree, glyphObject, glyphObject)
+
+	def writeGlyph(self, layerName, glyphName, glyphObject):
+		"""
+		Write a glyph from a layer.
+		"""
+		pass
+
+
+fontInfoAttributes = """
+familyName
+styleName
+styleMapFamilyName
+styleMapStyleName
+versionMajor
+versionMinor
+year
+copyright
+trademark
+unitsPerEm
+descender
+xHeight
+capHeight
+ascender
+italicAngle
+note
+openTypeHeadCreated
+openTypeHeadLowestRecPPEM
+openTypeHeadFlags
+openTypeHheaAscender
+openTypeHheaDescender
+openTypeHheaLineGap
+openTypeHheaCaretSlopeRise
+openTypeHheaCaretSlopeRun
+openTypeHheaCaretOffset
+openTypeNameDesigner
+openTypeNameDesignerURL
+openTypeNameManufacturer
+openTypeNameManufacturerURL
+openTypeNameLicense
+openTypeNameLicenseURL
+openTypeNameVersion
+openTypeNameUniqueID
+openTypeNameDescription
+openTypeNamePreferredFamilyName
+openTypeNamePreferredSubfamilyName
+openTypeNameCompatibleFullName
+openTypeNameSampleText
+openTypeNameWWSFamilyName
+openTypeNameWWSSubfamilyName
+openTypeOS2WidthClass
+openTypeOS2WeightClass
+openTypeOS2Selection
+openTypeOS2VendorID
+openTypeOS2Panose
+openTypeOS2FamilyClass
+openTypeOS2UnicodeRanges
+openTypeOS2CodePageRanges
+openTypeOS2TypoAscender
+openTypeOS2TypoDescender
+openTypeOS2TypoLineGap
+openTypeOS2WinAscent
+openTypeOS2WinDescent
+openTypeOS2Type
+openTypeOS2SubscriptXSize
+openTypeOS2SubscriptYSize
+openTypeOS2SubscriptXOffset
+openTypeOS2SubscriptYOffset
+openTypeOS2SuperscriptXSize
+openTypeOS2SuperscriptYSize
+openTypeOS2SuperscriptXOffset
+openTypeOS2SuperscriptYOffset
+openTypeOS2StrikeoutSize
+openTypeOS2StrikeoutPosition
+openTypeVheaVertTypoAscender
+openTypeVheaVertTypoDescender
+openTypeVheaVertTypoLineGap
+openTypeVheaCaretSlopeRise
+openTypeVheaCaretSlopeRun
+openTypeVheaCaretOffset
+postscriptFontName
+postscriptFullName
+postscriptSlantAngle
+postscriptUniqueID
+postscriptUnderlineThickness
+postscriptUnderlinePosition
+postscriptIsFixedPitch
+postscriptBlueValues
+postscriptOtherBlues
+postscriptFamilyBlues
+postscriptFamilyOtherBlues
+postscriptStemSnapH
+postscriptStemSnapV
+postscriptBlueFuzz
+postscriptBlueShift
+postscriptBlueScale
+postscriptForceBold
+postscriptDefaultWidthX
+postscriptNominalWidthX
+postscriptWeightName
+postscriptDefaultCharacter
+postscriptWindowsCharacterSet
+macintoshFONDFamilyID
+macintoshFONDName
+versionMinor
+unitsPerEm
+openTypeHeadLowestRecPPEM
+openTypeHheaAscender
+openTypeHheaDescender
+openTypeHheaLineGap
+openTypeHheaCaretOffset
+openTypeOS2Panose
+openTypeOS2TypoAscender
+openTypeOS2TypoDescender
+openTypeOS2TypoLineGap
+openTypeOS2WinAscent
+openTypeOS2WinDescent
+openTypeOS2SubscriptXSize
+openTypeOS2SubscriptYSize
+openTypeOS2SubscriptXOffset
+openTypeOS2SubscriptYOffset
+openTypeOS2SuperscriptXSize
+openTypeOS2SuperscriptYSize
+openTypeOS2SuperscriptXOffset
+openTypeOS2SuperscriptYOffset
+openTypeOS2StrikeoutSize
+openTypeOS2StrikeoutPosition
+openTypeGaspRangeRecords
+openTypeNameRecords
+openTypeVheaVertTypoAscender
+openTypeVheaVertTypoDescender
+openTypeVheaVertTypoLineGap
+openTypeVheaCaretOffset
+woffMajorVersion
+woffMinorVersion
+woffMetadataUniqueID
+woffMetadataVendor
+woffMetadataCredits
+woffMetadataDescription
+woffMetadataLicense
+woffMetadataCopyright
+woffMetadataTrademark
+woffMetadataLicensee
+woffMetadataExtensions
+guidelines
+""".strip().split()
