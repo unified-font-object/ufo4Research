@@ -1,6 +1,6 @@
 """
 This will dump an anonymous profile of a given font,
-or each font (OTF-CFF, OTF-TTF formats) in a directory
+for each font (OTF-CFF, OTF-TTF formats) in a directory
 and sub-directories. The profile contains hashes of
 the file contents and the file name as a way of
 filtering out duplicate data in the overall data set.
