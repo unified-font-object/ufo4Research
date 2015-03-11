@@ -6,7 +6,7 @@ UFO 4 *research* is being conducted here. None of this is official or an example
 
 Possible file structures are currently being researched. At the moment, the following are being considered:
 
-1. Zipped version of the current UFO 3 file structure.
+1. Zipped version of the current UFO 3 file structure 
 2. Single XML file.
 3. Package file structure similar to the UFO 3 file structure but with the glyph sub-directories flattened into single XML files.
 4. Zipped version of 3.
@@ -17,6 +17,8 @@ Possible file structures are currently being researched. At the moment, the foll
 ### Some research links:
 - [SQLite as file format.](https://www.sqlite.org/appfileformat.html)
 - [Some notes on SQLite corruption](https://www.sqlite.org/howtocorrupt.html)
+- [SQlite databases under git](http://ongardie.net/blog/sqlite-in-git/)
+- Fontlab have introduced an `.ufoz` format (that basically is 1. in the list above) as mentioned in this [blogpost](http://blog.fontlab.com/font-utility/vfb2ufo/)
 
 ### Test Implementation
 
