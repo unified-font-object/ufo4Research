@@ -12,10 +12,11 @@ Possible file structures are currently being researched. At the moment, the foll
 4. Zipped version of 3.
 5. Package file structure similar to the UFO 3 file structure but with the glyphs in the glyph sub-directories grouped into chunks rather than one file per glyph.
 6. Zipped version of 5.
-7. A very simple SQLite database. The intial idea is to use the existing UFO 3 strcture, but instead of writing to paths, the files would be stored in something like a key value with the relative paths indicating the file location in the UFO 3 package structe as the keys and the current XML formats as the values. Additionally, modification times for each of these could be stored.
+7. A very simple SQLite database. The initial idea is to use the existing UFO 3 structure, but instead of writing to paths, the files would be stored in something like a key value with the relative paths indicating the file location in the UFO 3 package structe as the keys and the current XML formats as the values. Additionally, modification times for each of these could be stored.
 
 ### Some research links:
 - [SQLite as file format.](https://www.sqlite.org/appfileformat.html)
+- [SQLite Case Study - Approaches to structuring SQLite-as-file-format DBs](https://www.sqlite.org/affcase1.html)
 - [Some notes on SQLite corruption](https://www.sqlite.org/howtocorrupt.html)
 - [SQlite databases under git](http://ongardie.net/blog/sqlite-in-git/)
 - Fontlab have introduced an `.ufoz` format (that basically is 1. in the list above) as mentioned in this [blogpost](http://blog.fontlab.com/font-utility/vfb2ufo/)
