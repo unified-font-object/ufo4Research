@@ -7,8 +7,9 @@ from xml.etree import cElementTree as ET
 def treeToString(tree, header):
     indentTree(tree)
     xml = ET.tostring(tree)
-    xml = header.splitlines() + [xml]
-    xml = "\n".join(xml)
+    if header is not None:
+        xml = header.splitlines() + [xml]
+        xml = "\n".join(xml)
     return xml
 
 def indentTree(elem, whitespace="\t", level=0):

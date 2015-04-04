@@ -1,4 +1,4 @@
-from glyphTree import readGlyphFromTree
+from glyphTree import readGlyphFromTree, writeGlyphToTree
 
 
 class UFOReaderWriterError(Exception): pass
@@ -134,6 +134,12 @@ class UFOReaderWriter(object):
 
 	# layers and glyphs
 
+	def writeLayerContents(self):
+		"""
+		Write the layer contents.
+		"""
+		self._fileSystem.writeLayerContents()
+
 	def getLayerNames(self):
 		"""
 		Get the ordered layer names.
@@ -146,6 +152,12 @@ class UFOReaderWriter(object):
 		"""
 		return self._fileSystem.getDefaultLayerName()
 
+	def writeGlyphSetContents(self, layerName):
+		"""
+		Write the glyph set contents for the given layer name.
+		"""
+		self._fileSystem.writeGlyphSetContents(layerName)
+
 	def getGlyphNames(self, layerName):
 		"""
 		Return a list of glyph names.
@@ -156,14 +168,15 @@ class UFOReaderWriter(object):
 		"""
 		Read a glyph from a layer.
 		"""
-		tree = self._fileSystem.getGlyphTree(layerName, glyphName)
+		tree = self._fileSystem.readGlyph(layerName, glyphName)
 		readGlyphFromTree(tree, glyphObject, glyphObject)
 
 	def writeGlyph(self, layerName, glyphName, glyphObject):
 		"""
 		Write a glyph from a layer.
 		"""
-		pass
+		tree = writeGlyphToTree(glyphObject)
+		self._fileSystem.writeGlyph(layerName, glyphName, tree)
 
 
 fontInfoAttributes = """

@@ -61,8 +61,16 @@ class Layer(object):
 class Glyph(object):
 
 	def __init__(self):
+		self.width = 0
+		self.height = 0
+		self.unicodes = []
 		self.contours = []
 		self.components = []
+		self.guidelines = []
+		self.anchors = []
+		self.lib = {}
+		self.image = None
+		self.note = None
 
 	def drawPoints(self, pointPen):
 		raise NotImplementedError
@@ -87,4 +95,6 @@ class Glyph(object):
 		self.components.append(component)
 
 
-class Contour(list): pass
+class Contour(list):
+
+	identifier = None

@@ -1,4 +1,5 @@
-from plistTree import convertTreeToPlist
+from xml.etree import cElementTree as ET
+from plistTree import convertTreeToPlist, convertPlistToTree
 
 class GlyphTreeError(Exception): pass
 
@@ -309,6 +310,125 @@ def _validateAndMassagePointStructures(tree, pointAttributes, openContourOffCurv
 			segment = []
 	return tree
 
+# -------------
+# Glyph Writing
+# -------------
+
+def writeGlyphToTree(glyph):
+	tree = ET.Element("glyph")
+	tree.attrib["name"] = glyph.name
+	tree.attrib["formatVersion"] = "2"
+	_writeAdvance(glyph, tree)
+	_writeUnicodes(glyph, tree)
+	_writeNote(glyph, tree)
+	_writeImage(glyph, tree)
+	_writeGuidelines(glyph, tree)
+	_writeAnchors(glyph, tree)
+	_writeOutline(glyph, tree)
+	_writeLib(glyph, tree)
+	return tree
+
+def _writeAdvance(glyph, tree):
+	width = glyph.width
+	height = glyph.height
+	if width or height:
+		element = ET.Element("advance")
+		if width:
+			element.attrib["width"] = str(width)
+		if height:
+			element.attrib["height"] = str(height)
+		tree.append(element)
+
+def _writeUnicodes(glyph, tree):
+	for code in glyph.unicodes:
+		hexCode = hex(code)[2:].upper()
+		if len(hexCode) < 4:
+			hexCode = "0" * (4 - len(hexCode)) + hexCode
+		element = ET.Element("unicode")
+		element.attrib["hex"] = hexCode
+		tree.append(element)
+
+def _writeNote(glyph, tree):
+	note = glyph.note
+	if note:
+		element = ET.Element("note")
+		element.text = note
+		tree.append(element)
+
+def _writeImage(glyph, tree):
+	if not glyph.image:
+		return
+	element = ET.Element("image")
+	element.attrib.update(glyph.image)
+	tree.append(image)
+
+def _writeGuidelines(glyph, tree):
+	for guideline in glyph.guidelines:
+		data = {}
+		for key, value in guideline.items():
+			data[key] = str(value)
+		element = ET.Element("guideline")
+		tree.append(guideline)
+
+def _writeAnchors(glyph, tree):
+	for anchor in glyph.anchors:
+		element = ET.Element("anchor")
+		element.attrib.update(anchor)
+		tree.append(element)
+
+def _writeLib(glyph, tree):
+	if glyph.lib:
+		element = convertPlistToTree(glyph.lib)
+		tree.append(element)
+
+def _writeOutline(glyph, tree):
+	element = ET.Element("outline")
+	_writeContours(glyph, element)
+	_writeComponents(glyph, element)
+	tree.append(element)
+
+def _writeContours(glyph, tree):
+	for contour in glyph.contours:
+		contourElement = ET.Element("contour")
+		if contour.identifier:
+			contourElement.attrib["identifier"] = contour.identifier
+		for point in contour:
+			(x, y), segmentType, smooth, name, identifier = point
+			pointElement = ET.Element("point")
+			pointElement.attrib["x"] = str(x)
+			pointElement.attrib["y"] = str(y)
+			if segmentType:
+				pointElement.attrib["type"] = segmentType
+			if smooth:
+				pointElement.attrib["smooth"] = "yes"
+			if identifier:
+				pointElement.attrib["identifier"] = identifier
+			contourElement.append(pointElement)
+		tree.append(contourElement)
+
+_transformationInfo = [
+	# field name, default value
+	("xScale",    1),
+	("xyScale",   0),
+	("yxScale",   0),
+	("yScale",    1),
+	("xOffset",   0),
+	("yOffset",   0),
+]
+
+def _writeComponents(glyph, tree):
+	for component in glyph.components:
+		base, transformation, identifier = component
+		element = ET.Element("component")
+		element.attrib["base"] = base
+		if transformation:
+			for i, (attr, default) in enumerate(_transformationInfo):
+				value = transformation[i]
+				if value != default:
+					element.attrib[attr] = value
+		if identifier:
+			element.attrib["identifier"]
+		tree.append(element)
 
 # ---------------------
 # Misc Helper Functions
