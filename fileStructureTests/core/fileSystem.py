@@ -44,6 +44,15 @@ class BaseFileSystem(object):
 		self._glyphStorageMapping = {}
 		self._defaultLayerName = None
 
+	def close(self):
+		"""
+		Close the file system. This must be called
+		when any write operations are complete.
+
+		Subclasses MAY override this method.
+		"""
+		pass
+
 	# ------------
 	# File Support
 	# ------------

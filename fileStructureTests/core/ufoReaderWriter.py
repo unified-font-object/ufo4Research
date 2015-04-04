@@ -9,6 +9,13 @@ class UFOReaderWriter(object):
 	def __init__(self, fileSystem):
 		self._fileSystem = fileSystem
 
+	def close(self):
+		"""
+		Close this object. This must be called when the
+		work this object was needed to perform is complete.
+		"""
+		self._fileSystem.close()
+
 	# metainfo
 
 	def readMetaInfo(self):
