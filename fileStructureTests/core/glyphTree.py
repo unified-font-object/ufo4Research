@@ -1,4 +1,4 @@
-from xml.etree import cElementTree as ET
+from environment import ET
 from plistTree import convertTreeToPlist, convertPlistToTree
 
 class GlyphTreeError(Exception): pass

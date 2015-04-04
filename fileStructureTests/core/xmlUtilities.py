@@ -2,7 +2,7 @@
 Miscellaneous XML tools.
 """
 
-from xml.etree import cElementTree as ET
+from environment import ET
 
 def treeToString(tree, header):
     indentTree(tree)

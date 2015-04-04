@@ -1,4 +1,4 @@
-from xml.etree import cElementTree as ET
+from environment import ET
 from xmlUtilities import treeToString
 
 def convertTreeToPlist(tree):

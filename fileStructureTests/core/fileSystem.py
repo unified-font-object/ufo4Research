@@ -1,5 +1,5 @@
 from collections import OrderedDict
-from xml.etree import cElementTree as ET
+from environment import ET
 from xmlUtilities import treeToString
 from plistTree import convertTreeToPlist, convertPlistToTree, plistHeader
 from fileNames import userNameToFileName
@@ -297,8 +297,9 @@ class BaseFileSystem(object):
 		"""
 		raw = self.readPlistFromLocation("layercontents.plist")
 		data = OrderedDict()
-		for layerName, storageName in raw:
-			data[layerName] = stroageName
+		if raw is not None:
+			for layerName, storageName in raw:
+				data[layerName] = stroageName
 		return data
 
 	def writeLayerContents(self):
