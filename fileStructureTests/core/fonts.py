@@ -1,71 +1,19 @@
 """
 To Do:
-- do something with the specific point type counts?
+- do something with the specific point type counts.
 - define components
+- build objects for any other data that the data defines.
 """
 
+import os
 from copy import deepcopy
 from objects import Font
 
-profiles = """
-> UFO 4-547 Glyphs
-glyphs: 547
-glyphs with 7 contours: 4
-glyphs with 5 contours: 4
-glyphs with 4 contours: 16
-glyphs with 3 contours: 77
-glyphs with 2 contours: 219
-glyphs with 1 contours: 222
-glyphs with 0 contours: 5
-contours with 67 points: 2
-contours with 56 points: 4
-contours with 55 points: 2
-contours with 53 points: 8
-contours with 48 points: 1
-contours with 47 points: 1
-contours with 46 points: 4
-contours with 45 points: 3
-contours with 44 points: 1
-contours with 42 points: 8
-contours with 41 points: 12
-contours with 40 points: 1
-contours with 38 points: 4
-contours with 37 points: 6
-contours with 35 points: 10
-contours with 34 points: 5
-contours with 33 points: 3
-contours with 32 points: 9
-contours with 29 points: 26
-contours with 28 points: 15
-contours with 27 points: 19
-contours with 26 points: 10
-contours with 25 points: 18
-contours with 24 points: 7
-contours with 23 points: 21
-contours with 22 points: 1
-contours with 20 points: 28
-contours with 19 points: 14
-contours with 18 points: 9
-contours with 17 points: 13
-contours with 16 points: 9
-contours with 15 points: 119
-contours with 14 points: 32
-contours with 13 points: 68
-contours with 12 points: 35
-contours with 11 points: 31
-contours with 10 points: 19
-contours with 9 points: 24
-contours with 8 points: 36
-contours with 7 points: 83
-contours with 6 points: 20
-contours with 4 points: 235
-contours with 3 points: 27
-moveTo points: 1003
-lineTo points: 4768
-curveTo points: 2815
-qCurveTo points: 0
-<
-"""
+directory = os.path.dirname(__file__)
+path = os.path.join(directory, "fontData.txt")
+f = open(path, "rb")
+profiles = f.read()
+f.close()
 
 fontInfo = {
 	"ascender" : 750,

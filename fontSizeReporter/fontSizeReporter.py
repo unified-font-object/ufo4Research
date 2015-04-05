@@ -6,6 +6,10 @@ the file contents and the file name as a way of
 filtering out duplicate data in the overall data set.
 
 To Do:
+- rather than hash the file contents and file name,
+  find some way to hash the glyph outlines. this will
+  make it so that UFOs and OTFs of the same data only
+  count as one instance.
 - if defcon is installed, read UFOs with that.
 - if extractor is installed, use it to pull kerning from binaries.
 - should component transformations be extracted?
@@ -112,7 +116,7 @@ def profileFont(path):
 		data["componentOccurance"] += pen.components
 	data["glyphs"] = len(glyphOrder)
 	# dump
-	print ">"
+	print "> %d Glyphs (%s)" % (data["glyphs"], data["fileName"])
 	print "file name:", data["fileName"]
 	print "file contents:", data["fileContents"]
 	print "glyphs:", data["glyphs"]

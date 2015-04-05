@@ -1,0 +1,3768 @@
+> 547 Glyphs (08f8d227c54460b05bdbe03419ed0457)
+file name: 08f8d227c54460b05bdbe03419ed0457
+file contents: e135e3180c5d9c38f8b88d0786e52548
+glyphs: 547
+glyphs with 7 contours: 4
+glyphs with 5 contours: 4
+glyphs with 4 contours: 16
+glyphs with 3 contours: 77
+glyphs with 2 contours: 219
+glyphs with 1 contours: 222
+glyphs with 0 contours: 5
+contours with 67 points: 2
+contours with 56 points: 4
+contours with 55 points: 2
+contours with 53 points: 8
+contours with 48 points: 1
+contours with 47 points: 1
+contours with 46 points: 4
+contours with 45 points: 3
+contours with 44 points: 1
+contours with 42 points: 8
+contours with 41 points: 12
+contours with 40 points: 1
+contours with 38 points: 4
+contours with 37 points: 6
+contours with 35 points: 10
+contours with 34 points: 5
+contours with 33 points: 3
+contours with 32 points: 9
+contours with 29 points: 26
+contours with 28 points: 15
+contours with 27 points: 19
+contours with 26 points: 10
+contours with 25 points: 18
+contours with 24 points: 7
+contours with 23 points: 21
+contours with 22 points: 1
+contours with 20 points: 28
+contours with 19 points: 14
+contours with 18 points: 9
+contours with 17 points: 13
+contours with 16 points: 9
+contours with 15 points: 119
+contours with 14 points: 32
+contours with 13 points: 68
+contours with 12 points: 35
+contours with 11 points: 31
+contours with 10 points: 19
+contours with 9 points: 24
+contours with 8 points: 36
+contours with 7 points: 83
+contours with 6 points: 20
+contours with 4 points: 235
+contours with 3 points: 27
+moveTo points: 1003
+lineTo points: 4768
+curveTo points: 2815
+qCurveTo points: 0
+<
+> 547 Glyphs (55dbba4f87e11907ea5d52ea83a3730c)
+file name: 55dbba4f87e11907ea5d52ea83a3730c
+file contents: a2011576ba8579bb58b2a064dad57c54
+glyphs: 547
+glyphs with 7 contours: 4
+glyphs with 5 contours: 4
+glyphs with 4 contours: 16
+glyphs with 3 contours: 77
+glyphs with 2 contours: 219
+glyphs with 1 contours: 222
+glyphs with 0 contours: 5
+contours with 67 points: 2
+contours with 59 points: 1
+contours with 56 points: 1
+contours with 54 points: 4
+contours with 53 points: 6
+contours with 51 points: 4
+contours with 50 points: 1
+contours with 49 points: 1
+contours with 48 points: 3
+contours with 46 points: 4
+contours with 42 points: 8
+contours with 41 points: 11
+contours with 40 points: 1
+contours with 39 points: 5
+contours with 38 points: 4
+contours with 37 points: 6
+contours with 35 points: 9
+contours with 33 points: 7
+contours with 32 points: 9
+contours with 30 points: 5
+contours with 29 points: 28
+contours with 28 points: 5
+contours with 27 points: 20
+contours with 26 points: 17
+contours with 25 points: 19
+contours with 24 points: 7
+contours with 23 points: 13
+contours with 20 points: 28
+contours with 19 points: 74
+contours with 18 points: 7
+contours with 17 points: 12
+contours with 16 points: 8
+contours with 15 points: 28
+contours with 14 points: 30
+contours with 13 points: 119
+contours with 12 points: 34
+contours with 11 points: 35
+contours with 10 points: 14
+contours with 9 points: 26
+contours with 8 points: 22
+contours with 7 points: 83
+contours with 6 points: 20
+contours with 4 points: 235
+contours with 3 points: 27
+moveTo points: 1003
+lineTo points: 4438
+curveTo points: 3035
+qCurveTo points: 0
+<
+> 547 Glyphs (2bb0bf852bc289ca196f9aee02a6b461)
+file name: 2bb0bf852bc289ca196f9aee02a6b461
+file contents: b072d698ca621d891f7d8a17db9b1650
+glyphs: 547
+glyphs with 7 contours: 4
+glyphs with 5 contours: 4
+glyphs with 4 contours: 16
+glyphs with 3 contours: 77
+glyphs with 2 contours: 219
+glyphs with 1 contours: 222
+glyphs with 0 contours: 5
+contours with 67 points: 2
+contours with 56 points: 4
+contours with 55 points: 2
+contours with 53 points: 9
+contours with 51 points: 1
+contours with 48 points: 2
+contours with 46 points: 6
+contours with 45 points: 1
+contours with 44 points: 1
+contours with 42 points: 8
+contours with 41 points: 10
+contours with 40 points: 1
+contours with 38 points: 4
+contours with 37 points: 6
+contours with 36 points: 2
+contours with 35 points: 8
+contours with 34 points: 5
+contours with 33 points: 3
+contours with 32 points: 9
+contours with 30 points: 1
+contours with 29 points: 26
+contours with 28 points: 14
+contours with 27 points: 29
+contours with 25 points: 21
+contours with 24 points: 7
+contours with 23 points: 18
+contours with 22 points: 1
+contours with 21 points: 6
+contours with 20 points: 22
+contours with 19 points: 14
+contours with 18 points: 9
+contours with 17 points: 13
+contours with 16 points: 9
+contours with 15 points: 119
+contours with 14 points: 32
+contours with 13 points: 68
+contours with 12 points: 47
+contours with 11 points: 19
+contours with 10 points: 19
+contours with 9 points: 24
+contours with 8 points: 36
+contours with 7 points: 83
+contours with 6 points: 20
+contours with 4 points: 235
+contours with 3 points: 27
+moveTo points: 1003
+lineTo points: 4807
+curveTo points: 2823
+qCurveTo points: 0
+<
+> 547 Glyphs (d446cee54cd8c5581022c5d058a0f585)
+file name: d446cee54cd8c5581022c5d058a0f585
+file contents: eb9a321224f6dc666e98aa2dfc176bf1
+glyphs: 547
+glyphs with 7 contours: 4
+glyphs with 5 contours: 4
+glyphs with 4 contours: 16
+glyphs with 3 contours: 77
+glyphs with 2 contours: 219
+glyphs with 1 contours: 222
+glyphs with 0 contours: 5
+contours with 67 points: 2
+contours with 56 points: 2
+contours with 54 points: 4
+contours with 53 points: 6
+contours with 51 points: 4
+contours with 50 points: 1
+contours with 48 points: 4
+contours with 46 points: 4
+contours with 42 points: 8
+contours with 41 points: 11
+contours with 40 points: 1
+contours with 39 points: 1
+contours with 38 points: 4
+contours with 37 points: 6
+contours with 36 points: 4
+contours with 35 points: 9
+contours with 33 points: 3
+contours with 32 points: 9
+contours with 30 points: 9
+contours with 29 points: 28
+contours with 28 points: 5
+contours with 27 points: 20
+contours with 26 points: 17
+contours with 25 points: 23
+contours with 24 points: 7
+contours with 23 points: 9
+contours with 20 points: 28
+contours with 19 points: 74
+contours with 18 points: 8
+contours with 17 points: 12
+contours with 16 points: 8
+contours with 15 points: 28
+contours with 14 points: 29
+contours with 13 points: 119
+contours with 12 points: 47
+contours with 11 points: 22
+contours with 10 points: 14
+contours with 9 points: 26
+contours with 8 points: 22
+contours with 7 points: 83
+contours with 6 points: 20
+contours with 4 points: 235
+contours with 3 points: 27
+moveTo points: 1003
+lineTo points: 4459
+curveTo points: 3027
+qCurveTo points: 0
+<
+> 547 Glyphs (320387015a63217645afaa0157f1e6da)
+file name: 320387015a63217645afaa0157f1e6da
+file contents: b5e7d5d88aab2593a400687d18ec802f
+glyphs: 547
+glyphs with 7 contours: 4
+glyphs with 5 contours: 4
+glyphs with 4 contours: 20
+glyphs with 3 contours: 77
+glyphs with 2 contours: 223
+glyphs with 1 contours: 214
+glyphs with 0 contours: 5
+contours with 69 points: 2
+contours with 57 points: 2
+contours with 56 points: 4
+contours with 53 points: 10
+contours with 48 points: 3
+contours with 46 points: 2
+contours with 44 points: 1
+contours with 42 points: 8
+contours with 41 points: 14
+contours with 40 points: 1
+contours with 38 points: 4
+contours with 37 points: 6
+contours with 36 points: 4
+contours with 35 points: 2
+contours with 34 points: 5
+contours with 33 points: 3
+contours with 32 points: 9
+contours with 30 points: 1
+contours with 29 points: 30
+contours with 28 points: 16
+contours with 27 points: 27
+contours with 25 points: 21
+contours with 24 points: 8
+contours with 23 points: 17
+contours with 22 points: 1
+contours with 21 points: 10
+contours with 20 points: 22
+contours with 19 points: 14
+contours with 18 points: 9
+contours with 17 points: 13
+contours with 16 points: 11
+contours with 15 points: 117
+contours with 14 points: 28
+contours with 13 points: 68
+contours with 12 points: 48
+contours with 11 points: 18
+contours with 10 points: 19
+contours with 9 points: 28
+contours with 8 points: 44
+contours with 7 points: 83
+contours with 6 points: 17
+contours with 4 points: 238
+contours with 3 points: 31
+moveTo points: 1019
+lineTo points: 4836
+curveTo points: 2845
+qCurveTo points: 0
+<
+> 547 Glyphs (79d598d13174b0b5553546f0a000ba52)
+file name: 79d598d13174b0b5553546f0a000ba52
+file contents: 8e85761d559f5e9ccd3cd795e6499c83
+glyphs: 547
+glyphs with 7 contours: 4
+glyphs with 5 contours: 4
+glyphs with 4 contours: 20
+glyphs with 3 contours: 77
+glyphs with 2 contours: 223
+glyphs with 1 contours: 214
+glyphs with 0 contours: 5
+contours with 67 points: 2
+contours with 56 points: 2
+contours with 54 points: 4
+contours with 53 points: 6
+contours with 51 points: 2
+contours with 50 points: 1
+contours with 48 points: 6
+contours with 47 points: 1
+contours with 43 points: 2
+contours with 42 points: 8
+contours with 41 points: 14
+contours with 40 points: 1
+contours with 39 points: 3
+contours with 38 points: 4
+contours with 37 points: 6
+contours with 35 points: 5
+contours with 33 points: 3
+contours with 32 points: 9
+contours with 30 points: 10
+contours with 29 points: 27
+contours with 28 points: 9
+contours with 27 points: 20
+contours with 26 points: 17
+contours with 25 points: 23
+contours with 24 points: 7
+contours with 23 points: 9
+contours with 21 points: 10
+contours with 20 points: 22
+contours with 19 points: 74
+contours with 18 points: 7
+contours with 17 points: 12
+contours with 16 points: 8
+contours with 15 points: 30
+contours with 14 points: 28
+contours with 13 points: 119
+contours with 12 points: 47
+contours with 11 points: 22
+contours with 10 points: 14
+contours with 9 points: 26
+contours with 8 points: 30
+contours with 7 points: 83
+contours with 6 points: 17
+contours with 4 points: 238
+contours with 3 points: 31
+moveTo points: 1019
+lineTo points: 4499
+curveTo points: 3052
+qCurveTo points: 0
+<
+> 547 Glyphs (083f0796a458971b80aed0224bc728b7)
+file name: 083f0796a458971b80aed0224bc728b7
+file contents: 22d94d0901d9684ce697c454650f8653
+glyphs: 547
+glyphs with 7 contours: 4
+glyphs with 5 contours: 4
+glyphs with 4 contours: 20
+glyphs with 3 contours: 77
+glyphs with 2 contours: 223
+glyphs with 1 contours: 214
+glyphs with 0 contours: 5
+contours with 69 points: 2
+contours with 57 points: 2
+contours with 56 points: 4
+contours with 53 points: 10
+contours with 50 points: 2
+contours with 48 points: 3
+contours with 45 points: 1
+contours with 42 points: 8
+contours with 41 points: 14
+contours with 40 points: 1
+contours with 38 points: 4
+contours with 37 points: 7
+contours with 36 points: 4
+contours with 35 points: 1
+contours with 34 points: 5
+contours with 33 points: 4
+contours with 32 points: 8
+contours with 31 points: 16
+contours with 30 points: 2
+contours with 29 points: 29
+contours with 28 points: 14
+contours with 27 points: 13
+contours with 25 points: 31
+contours with 24 points: 7
+contours with 23 points: 8
+contours with 22 points: 1
+contours with 21 points: 10
+contours with 20 points: 22
+contours with 19 points: 14
+contours with 18 points: 9
+contours with 17 points: 13
+contours with 16 points: 11
+contours with 15 points: 117
+contours with 14 points: 28
+contours with 13 points: 68
+contours with 12 points: 48
+contours with 11 points: 18
+contours with 10 points: 19
+contours with 9 points: 28
+contours with 8 points: 44
+contours with 7 points: 83
+contours with 6 points: 17
+contours with 4 points: 238
+contours with 3 points: 31
+moveTo points: 1019
+lineTo points: 4876
+curveTo points: 2863
+qCurveTo points: 0
+<
+> 547 Glyphs (39959a00c8e92ebf9a7681aa2b7d3910)
+file name: 39959a00c8e92ebf9a7681aa2b7d3910
+file contents: 2daa51def730836b690667d2ad1a3445
+glyphs: 547
+glyphs with 7 contours: 4
+glyphs with 5 contours: 4
+glyphs with 4 contours: 20
+glyphs with 3 contours: 77
+glyphs with 2 contours: 223
+glyphs with 1 contours: 214
+glyphs with 0 contours: 5
+contours with 70 points: 1
+contours with 69 points: 1
+contours with 58 points: 2
+contours with 54 points: 8
+contours with 53 points: 6
+contours with 51 points: 2
+contours with 50 points: 1
+contours with 49 points: 1
+contours with 48 points: 1
+contours with 47 points: 1
+contours with 43 points: 4
+contours with 42 points: 9
+contours with 41 points: 13
+contours with 40 points: 1
+contours with 39 points: 1
+contours with 38 points: 4
+contours with 37 points: 6
+contours with 35 points: 6
+contours with 33 points: 2
+contours with 32 points: 9
+contours with 31 points: 1
+contours with 30 points: 10
+contours with 29 points: 26
+contours with 28 points: 9
+contours with 27 points: 20
+contours with 26 points: 19
+contours with 25 points: 21
+contours with 24 points: 7
+contours with 23 points: 9
+contours with 21 points: 10
+contours with 20 points: 22
+contours with 19 points: 74
+contours with 18 points: 7
+contours with 17 points: 12
+contours with 16 points: 8
+contours with 15 points: 30
+contours with 14 points: 28
+contours with 13 points: 119
+contours with 12 points: 49
+contours with 11 points: 28
+contours with 10 points: 14
+contours with 9 points: 26
+contours with 8 points: 22
+contours with 7 points: 83
+contours with 6 points: 17
+contours with 4 points: 238
+contours with 3 points: 31
+moveTo points: 1019
+lineTo points: 4505
+curveTo points: 3075
+qCurveTo points: 0
+<
+> 547 Glyphs (bb94efb014b6e54ebf931be92502e538)
+file name: bb94efb014b6e54ebf931be92502e538
+file contents: 13016c36d1730e48757b9ca71c8cdae3
+glyphs: 547
+glyphs with 7 contours: 4
+glyphs with 5 contours: 4
+glyphs with 4 contours: 20
+glyphs with 3 contours: 73
+glyphs with 2 contours: 219
+glyphs with 1 contours: 222
+glyphs with 0 contours: 5
+contours with 69 points: 2
+contours with 57 points: 2
+contours with 56 points: 4
+contours with 53 points: 10
+contours with 48 points: 3
+contours with 46 points: 6
+contours with 44 points: 1
+contours with 42 points: 8
+contours with 41 points: 14
+contours with 40 points: 1
+contours with 38 points: 4
+contours with 37 points: 6
+contours with 35 points: 6
+contours with 34 points: 5
+contours with 33 points: 3
+contours with 32 points: 9
+contours with 30 points: 1
+contours with 29 points: 26
+contours with 28 points: 14
+contours with 27 points: 29
+contours with 25 points: 21
+contours with 24 points: 7
+contours with 23 points: 18
+contours with 22 points: 1
+contours with 21 points: 8
+contours with 20 points: 22
+contours with 19 points: 15
+contours with 18 points: 10
+contours with 17 points: 13
+contours with 16 points: 11
+contours with 15 points: 117
+contours with 14 points: 28
+contours with 13 points: 68
+contours with 12 points: 48
+contours with 11 points: 18
+contours with 10 points: 19
+contours with 9 points: 24
+contours with 8 points: 36
+contours with 7 points: 83
+contours with 6 points: 20
+contours with 4 points: 235
+contours with 3 points: 31
+moveTo points: 1007
+lineTo points: 4816
+curveTo points: 2843
+qCurveTo points: 0
+<
+> 547 Glyphs (093f731bd9bf8066a224417f841eacb7)
+file name: 093f731bd9bf8066a224417f841eacb7
+file contents: c51874ec345fda421e785b7bd0104dfe
+glyphs: 547
+glyphs with 7 contours: 4
+glyphs with 5 contours: 4
+glyphs with 4 contours: 20
+glyphs with 3 contours: 73
+glyphs with 2 contours: 219
+glyphs with 1 contours: 222
+glyphs with 0 contours: 5
+contours with 67 points: 2
+contours with 56 points: 2
+contours with 54 points: 4
+contours with 53 points: 6
+contours with 51 points: 2
+contours with 50 points: 1
+contours with 49 points: 2
+contours with 48 points: 4
+contours with 46 points: 4
+contours with 42 points: 8
+contours with 41 points: 13
+contours with 40 points: 1
+contours with 39 points: 1
+contours with 38 points: 6
+contours with 37 points: 6
+contours with 36 points: 4
+contours with 35 points: 5
+contours with 33 points: 3
+contours with 32 points: 9
+contours with 30 points: 10
+contours with 29 points: 27
+contours with 28 points: 5
+contours with 27 points: 20
+contours with 26 points: 17
+contours with 25 points: 23
+contours with 24 points: 7
+contours with 23 points: 9
+contours with 21 points: 10
+contours with 20 points: 22
+contours with 19 points: 74
+contours with 18 points: 7
+contours with 17 points: 12
+contours with 16 points: 8
+contours with 15 points: 29
+contours with 14 points: 29
+contours with 13 points: 119
+contours with 12 points: 47
+contours with 11 points: 18
+contours with 10 points: 14
+contours with 9 points: 26
+contours with 8 points: 22
+contours with 7 points: 83
+contours with 6 points: 20
+contours with 4 points: 235
+contours with 3 points: 31
+moveTo points: 1007
+lineTo points: 4480
+curveTo points: 3042
+qCurveTo points: 0
+<
+> 547 Glyphs (73a64fd7e35b0d99fb3a73bf997bb43a)
+file name: 73a64fd7e35b0d99fb3a73bf997bb43a
+file contents: 2a9db0e6039ba9b69160c15a6f4ad2e5
+glyphs: 547
+glyphs with 7 contours: 4
+glyphs with 5 contours: 4
+glyphs with 4 contours: 16
+glyphs with 3 contours: 77
+glyphs with 2 contours: 219
+glyphs with 1 contours: 222
+glyphs with 0 contours: 5
+contours with 67 points: 2
+contours with 56 points: 4
+contours with 55 points: 2
+contours with 53 points: 6
+contours with 48 points: 1
+contours with 47 points: 2
+contours with 46 points: 5
+contours with 45 points: 2
+contours with 44 points: 1
+contours with 42 points: 9
+contours with 41 points: 12
+contours with 40 points: 1
+contours with 38 points: 4
+contours with 37 points: 6
+contours with 35 points: 10
+contours with 34 points: 5
+contours with 33 points: 3
+contours with 32 points: 9
+contours with 30 points: 1
+contours with 29 points: 26
+contours with 28 points: 14
+contours with 27 points: 19
+contours with 26 points: 10
+contours with 25 points: 13
+contours with 24 points: 11
+contours with 23 points: 22
+contours with 22 points: 1
+contours with 20 points: 28
+contours with 19 points: 14
+contours with 18 points: 9
+contours with 17 points: 13
+contours with 16 points: 9
+contours with 15 points: 119
+contours with 14 points: 32
+contours with 13 points: 68
+contours with 12 points: 33
+contours with 11 points: 31
+contours with 10 points: 19
+contours with 9 points: 25
+contours with 8 points: 37
+contours with 7 points: 83
+contours with 6 points: 20
+contours with 4 points: 235
+contours with 3 points: 27
+moveTo points: 1003
+lineTo points: 4765
+curveTo points: 2807
+qCurveTo points: 0
+<
+> 547 Glyphs (ce7b4967372dd1629bb9656dd224ef37)
+file name: ce7b4967372dd1629bb9656dd224ef37
+file contents: aaf0f211b541d07ae43f6a80211dd346
+glyphs: 547
+glyphs with 7 contours: 4
+glyphs with 5 contours: 4
+glyphs with 4 contours: 16
+glyphs with 3 contours: 77
+glyphs with 2 contours: 219
+glyphs with 1 contours: 222
+glyphs with 0 contours: 5
+contours with 67 points: 2
+contours with 59 points: 1
+contours with 56 points: 1
+contours with 54 points: 4
+contours with 53 points: 6
+contours with 51 points: 5
+contours with 50 points: 1
+contours with 48 points: 7
+contours with 46 points: 4
+contours with 42 points: 4
+contours with 41 points: 11
+contours with 40 points: 1
+contours with 39 points: 5
+contours with 38 points: 8
+contours with 37 points: 6
+contours with 35 points: 9
+contours with 33 points: 7
+contours with 32 points: 13
+contours with 30 points: 5
+contours with 29 points: 28
+contours with 28 points: 5
+contours with 27 points: 20
+contours with 26 points: 9
+contours with 25 points: 15
+contours with 24 points: 11
+contours with 23 points: 13
+contours with 20 points: 28
+contours with 19 points: 74
+contours with 18 points: 7
+contours with 17 points: 12
+contours with 16 points: 8
+contours with 15 points: 28
+contours with 14 points: 32
+contours with 13 points: 119
+contours with 12 points: 34
+contours with 11 points: 33
+contours with 10 points: 14
+contours with 9 points: 26
+contours with 8 points: 22
+contours with 7 points: 83
+contours with 6 points: 20
+contours with 4 points: 235
+contours with 3 points: 27
+moveTo points: 1003
+lineTo points: 4433
+curveTo points: 3070
+qCurveTo points: 0
+<
+> 547 Glyphs (f7289fceeb5fc07d91737fd5e5ba11bd)
+file name: f7289fceeb5fc07d91737fd5e5ba11bd
+file contents: d240fdd955ab5c7f04b5deb0208c046d
+glyphs: 547
+glyphs with 7 contours: 4
+glyphs with 5 contours: 4
+glyphs with 4 contours: 20
+glyphs with 3 contours: 77
+glyphs with 2 contours: 223
+glyphs with 1 contours: 214
+glyphs with 0 contours: 5
+contours with 69 points: 2
+contours with 57 points: 2
+contours with 56 points: 4
+contours with 53 points: 10
+contours with 50 points: 2
+contours with 48 points: 3
+contours with 45 points: 1
+contours with 42 points: 8
+contours with 41 points: 15
+contours with 39 points: 1
+contours with 38 points: 4
+contours with 37 points: 6
+contours with 36 points: 4
+contours with 35 points: 1
+contours with 34 points: 5
+contours with 33 points: 4
+contours with 32 points: 8
+contours with 31 points: 16
+contours with 30 points: 1
+contours with 29 points: 30
+contours with 28 points: 14
+contours with 27 points: 23
+contours with 25 points: 21
+contours with 24 points: 7
+contours with 23 points: 8
+contours with 22 points: 1
+contours with 21 points: 10
+contours with 20 points: 22
+contours with 19 points: 14
+contours with 18 points: 9
+contours with 17 points: 13
+contours with 16 points: 11
+contours with 15 points: 117
+contours with 14 points: 28
+contours with 13 points: 68
+contours with 12 points: 48
+contours with 11 points: 18
+contours with 10 points: 19
+contours with 9 points: 28
+contours with 8 points: 44
+contours with 7 points: 83
+contours with 6 points: 17
+contours with 4 points: 238
+contours with 3 points: 31
+moveTo points: 1019
+lineTo points: 4865
+curveTo points: 2874
+qCurveTo points: 0
+<
+> 547 Glyphs (044b189af2750b91c251710a20b19e04)
+file name: 044b189af2750b91c251710a20b19e04
+file contents: 0a7f3784a9cb8b223be0d40508dce1bb
+glyphs: 547
+glyphs with 7 contours: 4
+glyphs with 5 contours: 4
+glyphs with 4 contours: 20
+glyphs with 3 contours: 77
+glyphs with 2 contours: 223
+glyphs with 1 contours: 214
+glyphs with 0 contours: 5
+contours with 72 points: 1
+contours with 70 points: 1
+contours with 61 points: 1
+contours with 58 points: 1
+contours with 54 points: 8
+contours with 53 points: 6
+contours with 51 points: 2
+contours with 50 points: 1
+contours with 48 points: 2
+contours with 47 points: 1
+contours with 43 points: 4
+contours with 42 points: 8
+contours with 41 points: 15
+contours with 39 points: 1
+contours with 38 points: 4
+contours with 37 points: 6
+contours with 35 points: 5
+contours with 33 points: 7
+contours with 32 points: 9
+contours with 31 points: 1
+contours with 30 points: 9
+contours with 29 points: 27
+contours with 28 points: 5
+contours with 27 points: 20
+contours with 26 points: 17
+contours with 25 points: 23
+contours with 24 points: 7
+contours with 23 points: 9
+contours with 21 points: 10
+contours with 20 points: 22
+contours with 19 points: 74
+contours with 18 points: 7
+contours with 17 points: 12
+contours with 16 points: 8
+contours with 15 points: 30
+contours with 14 points: 28
+contours with 13 points: 119
+contours with 12 points: 51
+contours with 11 points: 26
+contours with 10 points: 14
+contours with 9 points: 26
+contours with 8 points: 22
+contours with 7 points: 83
+contours with 6 points: 17
+contours with 4 points: 238
+contours with 3 points: 31
+moveTo points: 1019
+lineTo points: 4512
+curveTo points: 3080
+qCurveTo points: 0
+<
+> 547 Glyphs (2046706c5c1b74c203245703a266bcdc)
+file name: 2046706c5c1b74c203245703a266bcdc
+file contents: 03d18e10292213377e68bbb876763680
+glyphs: 547
+glyphs with 7 contours: 4
+glyphs with 5 contours: 4
+glyphs with 4 contours: 16
+glyphs with 3 contours: 77
+glyphs with 2 contours: 219
+glyphs with 1 contours: 222
+glyphs with 0 contours: 5
+contours with 67 points: 2
+contours with 56 points: 4
+contours with 55 points: 2
+contours with 53 points: 6
+contours with 47 points: 1
+contours with 46 points: 5
+contours with 45 points: 2
+contours with 44 points: 1
+contours with 42 points: 9
+contours with 41 points: 14
+contours with 40 points: 1
+contours with 38 points: 4
+contours with 37 points: 4
+contours with 36 points: 2
+contours with 35 points: 10
+contours with 34 points: 5
+contours with 33 points: 3
+contours with 32 points: 9
+contours with 30 points: 1
+contours with 29 points: 26
+contours with 28 points: 14
+contours with 27 points: 19
+contours with 26 points: 10
+contours with 25 points: 13
+contours with 24 points: 8
+contours with 23 points: 25
+contours with 22 points: 1
+contours with 20 points: 28
+contours with 19 points: 14
+contours with 18 points: 9
+contours with 17 points: 13
+contours with 16 points: 9
+contours with 15 points: 119
+contours with 14 points: 32
+contours with 13 points: 68
+contours with 12 points: 31
+contours with 11 points: 31
+contours with 10 points: 19
+contours with 9 points: 24
+contours with 8 points: 40
+contours with 7 points: 83
+contours with 6 points: 20
+contours with 4 points: 235
+contours with 3 points: 27
+moveTo points: 1003
+lineTo points: 4753
+curveTo points: 2802
+qCurveTo points: 0
+<
+> 547 Glyphs (cdb6f8b4b13ba178131c9fda3f7f4de2)
+file name: cdb6f8b4b13ba178131c9fda3f7f4de2
+file contents: 0ec35ed13c6c9a5132ce07385b498f2a
+glyphs: 547
+glyphs with 7 contours: 4
+glyphs with 5 contours: 4
+glyphs with 4 contours: 16
+glyphs with 3 contours: 77
+glyphs with 2 contours: 219
+glyphs with 1 contours: 222
+glyphs with 0 contours: 5
+contours with 67 points: 2
+contours with 59 points: 1
+contours with 56 points: 1
+contours with 54 points: 4
+contours with 53 points: 6
+contours with 51 points: 4
+contours with 48 points: 12
+contours with 47 points: 1
+contours with 46 points: 3
+contours with 45 points: 1
+contours with 41 points: 11
+contours with 40 points: 3
+contours with 39 points: 3
+contours with 38 points: 12
+contours with 37 points: 4
+contours with 36 points: 2
+contours with 35 points: 9
+contours with 33 points: 7
+contours with 32 points: 9
+contours with 30 points: 5
+contours with 29 points: 28
+contours with 28 points: 5
+contours with 27 points: 19
+contours with 26 points: 10
+contours with 25 points: 15
+contours with 24 points: 11
+contours with 23 points: 13
+contours with 21 points: 1
+contours with 20 points: 28
+contours with 19 points: 74
+contours with 18 points: 8
+contours with 17 points: 12
+contours with 16 points: 8
+contours with 15 points: 28
+contours with 14 points: 32
+contours with 13 points: 119
+contours with 12 points: 46
+contours with 11 points: 19
+contours with 10 points: 14
+contours with 9 points: 26
+contours with 8 points: 22
+contours with 7 points: 83
+contours with 6 points: 20
+contours with 4 points: 235
+contours with 3 points: 27
+moveTo points: 1003
+lineTo points: 4448
+curveTo points: 3088
+qCurveTo points: 0
+<
+> 779 Glyphs (d29d0a05a326f69986304887af40bc58)
+file name: d29d0a05a326f69986304887af40bc58
+file contents: 026ca837236107160c79153849232af5
+glyphs: 779
+glyphs with 7 contours: 4
+glyphs with 5 contours: 4
+glyphs with 4 contours: 22
+glyphs with 3 contours: 110
+glyphs with 2 contours: 307
+glyphs with 1 contours: 327
+glyphs with 0 contours: 5
+contours with 175 points: 2
+contours with 151 points: 2
+contours with 117 points: 1
+contours with 115 points: 1
+contours with 114 points: 2
+contours with 97 points: 3
+contours with 95 points: 1
+contours with 91 points: 8
+contours with 89 points: 3
+contours with 86 points: 1
+contours with 85 points: 3
+contours with 83 points: 4
+contours with 80 points: 1
+contours with 79 points: 2
+contours with 78 points: 1
+contours with 77 points: 8
+contours with 76 points: 3
+contours with 75 points: 2
+contours with 74 points: 3
+contours with 73 points: 14
+contours with 72 points: 1
+contours with 71 points: 16
+contours with 70 points: 4
+contours with 69 points: 1
+contours with 67 points: 11
+contours with 66 points: 13
+contours with 65 points: 1
+contours with 63 points: 10
+contours with 62 points: 6
+contours with 61 points: 55
+contours with 58 points: 1
+contours with 55 points: 30
+contours with 53 points: 24
+contours with 52 points: 8
+contours with 51 points: 32
+contours with 50 points: 7
+contours with 49 points: 43
+contours with 48 points: 2
+contours with 47 points: 5
+contours with 46 points: 21
+contours with 44 points: 6
+contours with 43 points: 51
+contours with 42 points: 2
+contours with 41 points: 3
+contours with 40 points: 4
+contours with 39 points: 4
+contours with 38 points: 20
+contours with 37 points: 93
+contours with 35 points: 20
+contours with 34 points: 33
+contours with 33 points: 5
+contours with 31 points: 69
+contours with 29 points: 5
+contours with 28 points: 9
+contours with 27 points: 1
+contours with 26 points: 1
+contours with 25 points: 189
+contours with 23 points: 2
+contours with 22 points: 18
+contours with 19 points: 75
+contours with 17 points: 8
+contours with 16 points: 44
+contours with 15 points: 4
+contours with 14 points: 12
+contours with 13 points: 336
+contours with 12 points: 5
+contours with 11 points: 10
+contours with 10 points: 3
+contours with 9 points: 1
+contours with 8 points: 6
+contours with 7 points: 12
+moveTo points: 1407
+lineTo points: 557
+curveTo points: 14746
+qCurveTo points: 0
+<
+> 667 Glyphs (c851e5a33b706a0c48c0accba2c01764)
+file name: c851e5a33b706a0c48c0accba2c01764
+file contents: 1b141743c97f2a485f2059191e950aac
+glyphs: 667
+glyphs with 7 contours: 2
+glyphs with 5 contours: 2
+glyphs with 4 contours: 19
+glyphs with 3 contours: 103
+glyphs with 2 contours: 274
+glyphs with 1 contours: 262
+glyphs with 0 contours: 5
+contours with 175 points: 2
+contours with 151 points: 2
+contours with 112 points: 1
+contours with 107 points: 2
+contours with 100 points: 1
+contours with 97 points: 3
+contours with 96 points: 1
+contours with 92 points: 2
+contours with 91 points: 4
+contours with 88 points: 4
+contours with 86 points: 1
+contours with 85 points: 7
+contours with 83 points: 4
+contours with 82 points: 9
+contours with 80 points: 3
+contours with 79 points: 13
+contours with 78 points: 1
+contours with 77 points: 12
+contours with 76 points: 17
+contours with 75 points: 1
+contours with 73 points: 31
+contours with 71 points: 6
+contours with 70 points: 7
+contours with 69 points: 2
+contours with 67 points: 24
+contours with 64 points: 35
+contours with 63 points: 4
+contours with 62 points: 1
+contours with 61 points: 31
+contours with 59 points: 8
+contours with 58 points: 33
+contours with 56 points: 1
+contours with 55 points: 21
+contours with 53 points: 9
+contours with 52 points: 11
+contours with 51 points: 8
+contours with 50 points: 8
+contours with 49 points: 17
+contours with 48 points: 1
+contours with 47 points: 6
+contours with 46 points: 20
+contours with 44 points: 1
+contours with 43 points: 32
+contours with 42 points: 2
+contours with 41 points: 4
+contours with 40 points: 25
+contours with 37 points: 57
+contours with 35 points: 18
+contours with 34 points: 46
+contours with 31 points: 58
+contours with 29 points: 2
+contours with 28 points: 9
+contours with 25 points: 102
+contours with 22 points: 36
+contours with 20 points: 2
+contours with 19 points: 121
+contours with 16 points: 44
+contours with 15 points: 1
+contours with 14 points: 16
+contours with 13 points: 243
+contours with 11 points: 21
+contours with 10 points: 2
+contours with 8 points: 2
+contours with 7 points: 1
+moveTo points: 1219
+lineTo points: 219
+curveTo points: 14119
+qCurveTo points: 0
+<
+> 779 Glyphs (36621291f17e2589fb81a4ff0903a1ba)
+file name: 36621291f17e2589fb81a4ff0903a1ba
+file contents: 17fe455b52d1f47f5e64ed421aaf3a84
+glyphs: 779
+glyphs with 7 contours: 4
+glyphs with 5 contours: 4
+glyphs with 4 contours: 22
+glyphs with 3 contours: 109
+glyphs with 2 contours: 306
+glyphs with 1 contours: 329
+glyphs with 0 contours: 5
+contours with 175 points: 2
+contours with 151 points: 2
+contours with 123 points: 1
+contours with 121 points: 3
+contours with 114 points: 1
+contours with 108 points: 1
+contours with 97 points: 2
+contours with 95 points: 1
+contours with 92 points: 1
+contours with 91 points: 4
+contours with 89 points: 6
+contours with 87 points: 9
+contours with 85 points: 4
+contours with 83 points: 1
+contours with 81 points: 1
+contours with 79 points: 10
+contours with 75 points: 4
+contours with 74 points: 1
+contours with 73 points: 17
+contours with 72 points: 2
+contours with 71 points: 10
+contours with 70 points: 4
+contours with 69 points: 1
+contours with 68 points: 6
+contours with 67 points: 21
+contours with 66 points: 6
+contours with 64 points: 3
+contours with 63 points: 5
+contours with 61 points: 58
+contours with 60 points: 6
+contours with 58 points: 3
+contours with 57 points: 7
+contours with 56 points: 1
+contours with 55 points: 29
+contours with 54 points: 2
+contours with 53 points: 31
+contours with 52 points: 2
+contours with 51 points: 24
+contours with 50 points: 1
+contours with 49 points: 41
+contours with 48 points: 1
+contours with 46 points: 23
+contours with 44 points: 6
+contours with 43 points: 58
+contours with 40 points: 18
+contours with 38 points: 6
+contours with 37 points: 93
+contours with 35 points: 20
+contours with 34 points: 33
+contours with 33 points: 6
+contours with 31 points: 76
+contours with 29 points: 1
+contours with 28 points: 9
+contours with 25 points: 189
+contours with 22 points: 18
+contours with 21 points: 2
+contours with 19 points: 82
+contours with 17 points: 2
+contours with 16 points: 47
+contours with 14 points: 14
+contours with 13 points: 331
+contours with 12 points: 2
+contours with 11 points: 24
+contours with 10 points: 4
+contours with 8 points: 5
+moveTo points: 1404
+lineTo points: 392
+curveTo points: 15000
+qCurveTo points: 0
+<
+> 667 Glyphs (7f554881ee5aae023147cfb985676fe0)
+file name: 7f554881ee5aae023147cfb985676fe0
+file contents: 78c9c57db8b6ee858eddca0d2eb2a3fb
+glyphs: 667
+glyphs with 7 contours: 2
+glyphs with 5 contours: 2
+glyphs with 4 contours: 19
+glyphs with 3 contours: 102
+glyphs with 2 contours: 276
+glyphs with 1 contours: 261
+glyphs with 0 contours: 5
+contours with 175 points: 2
+contours with 151 points: 2
+contours with 118 points: 1
+contours with 111 points: 2
+contours with 101 points: 1
+contours with 100 points: 2
+contours with 99 points: 1
+contours with 97 points: 2
+contours with 92 points: 5
+contours with 91 points: 5
+contours with 88 points: 9
+contours with 86 points: 3
+contours with 85 points: 10
+contours with 83 points: 2
+contours with 82 points: 7
+contours with 80 points: 3
+contours with 79 points: 18
+contours with 77 points: 1
+contours with 76 points: 28
+contours with 74 points: 2
+contours with 73 points: 20
+contours with 72 points: 1
+contours with 71 points: 2
+contours with 70 points: 10
+contours with 67 points: 25
+contours with 66 points: 1
+contours with 65 points: 2
+contours with 64 points: 46
+contours with 62 points: 4
+contours with 61 points: 32
+contours with 59 points: 11
+contours with 58 points: 20
+contours with 56 points: 2
+contours with 55 points: 25
+contours with 53 points: 7
+contours with 52 points: 8
+contours with 51 points: 14
+contours with 50 points: 1
+contours with 49 points: 20
+contours with 47 points: 4
+contours with 46 points: 22
+contours with 44 points: 4
+contours with 43 points: 37
+contours with 41 points: 1
+contours with 40 points: 13
+contours with 37 points: 78
+contours with 35 points: 4
+contours with 34 points: 49
+contours with 31 points: 50
+contours with 30 points: 9
+contours with 28 points: 1
+contours with 26 points: 4
+contours with 25 points: 100
+contours with 23 points: 1
+contours with 22 points: 32
+contours with 20 points: 35
+contours with 19 points: 93
+contours with 16 points: 39
+contours with 14 points: 18
+contours with 13 points: 242
+contours with 11 points: 22
+contours with 10 points: 3
+contours with 8 points: 1
+moveTo points: 1219
+lineTo points: 244
+curveTo points: 14359
+qCurveTo points: 0
+<
+> 779 Glyphs (19a515006ddc7970e2858d40063366bd)
+file name: 19a515006ddc7970e2858d40063366bd
+file contents: 3c5101a94d90623e8d7d71f8adc82063
+glyphs: 779
+glyphs with 8 contours: 2
+glyphs with 7 contours: 4
+glyphs with 6 contours: 2
+glyphs with 5 contours: 4
+glyphs with 4 contours: 26
+glyphs with 3 contours: 111
+glyphs with 2 contours: 314
+glyphs with 1 contours: 311
+glyphs with 0 contours: 5
+contours with 175 points: 2
+contours with 151 points: 2
+contours with 133 points: 2
+contours with 131 points: 2
+contours with 114 points: 1
+contours with 109 points: 4
+contours with 108 points: 1
+contours with 106 points: 1
+contours with 101 points: 2
+contours with 98 points: 2
+contours with 97 points: 3
+contours with 95 points: 2
+contours with 94 points: 3
+contours with 93 points: 6
+contours with 92 points: 1
+contours with 91 points: 6
+contours with 90 points: 1
+contours with 89 points: 4
+contours with 85 points: 5
+contours with 83 points: 2
+contours with 82 points: 3
+contours with 81 points: 1
+contours with 79 points: 3
+contours with 76 points: 5
+contours with 75 points: 1
+contours with 73 points: 26
+contours with 71 points: 2
+contours with 70 points: 16
+contours with 69 points: 2
+contours with 68 points: 4
+contours with 67 points: 14
+contours with 66 points: 4
+contours with 65 points: 4
+contours with 64 points: 4
+contours with 61 points: 61
+contours with 58 points: 6
+contours with 55 points: 75
+contours with 53 points: 8
+contours with 52 points: 5
+contours with 49 points: 39
+contours with 47 points: 3
+contours with 46 points: 27
+contours with 43 points: 57
+contours with 40 points: 24
+contours with 37 points: 103
+contours with 35 points: 15
+contours with 34 points: 33
+contours with 33 points: 1
+contours with 31 points: 79
+contours with 28 points: 7
+contours with 25 points: 191
+contours with 23 points: 2
+contours with 22 points: 18
+contours with 19 points: 82
+contours with 17 points: 2
+contours with 16 points: 53
+contours with 14 points: 9
+contours with 13 points: 391
+contours with 10 points: 16
+contours with 7 points: 4
+moveTo points: 1452
+lineTo points: 136
+curveTo points: 15610
+qCurveTo points: 0
+<
+> 667 Glyphs (60a68e24c98ff1c1bc80cabf70b7be02)
+file name: 60a68e24c98ff1c1bc80cabf70b7be02
+file contents: 8332e71b6a6d61165cb04dfe2c9378d2
+glyphs: 667
+glyphs with 8 contours: 2
+glyphs with 7 contours: 2
+glyphs with 6 contours: 2
+glyphs with 5 contours: 4
+glyphs with 4 contours: 23
+glyphs with 3 contours: 102
+glyphs with 2 contours: 277
+glyphs with 1 contours: 250
+glyphs with 0 contours: 5
+contours with 175 points: 2
+contours with 151 points: 2
+contours with 140 points: 1
+contours with 139 points: 1
+contours with 137 points: 1
+contours with 121 points: 2
+contours with 118 points: 1
+contours with 115 points: 1
+contours with 114 points: 1
+contours with 101 points: 2
+contours with 100 points: 1
+contours with 98 points: 1
+contours with 97 points: 6
+contours with 94 points: 3
+contours with 93 points: 6
+contours with 91 points: 10
+contours with 88 points: 4
+contours with 87 points: 1
+contours with 85 points: 6
+contours with 84 points: 4
+contours with 83 points: 5
+contours with 82 points: 6
+contours with 79 points: 10
+contours with 78 points: 1
+contours with 76 points: 17
+contours with 74 points: 3
+contours with 73 points: 24
+contours with 70 points: 9
+contours with 67 points: 24
+contours with 66 points: 5
+contours with 64 points: 47
+contours with 62 points: 1
+contours with 61 points: 46
+contours with 59 points: 1
+contours with 58 points: 18
+contours with 55 points: 43
+contours with 53 points: 8
+contours with 52 points: 14
+contours with 50 points: 1
+contours with 49 points: 31
+contours with 47 points: 1
+contours with 46 points: 17
+contours with 43 points: 38
+contours with 40 points: 13
+contours with 37 points: 84
+contours with 34 points: 57
+contours with 32 points: 2
+contours with 31 points: 46
+contours with 28 points: 2
+contours with 25 points: 116
+contours with 22 points: 62
+contours with 20 points: 1
+contours with 19 points: 90
+contours with 17 points: 4
+contours with 16 points: 32
+contours with 14 points: 12
+contours with 13 points: 297
+contours with 11 points: 10
+contours with 10 points: 8
+contours with 7 points: 2
+moveTo points: 1264
+lineTo points: 123
+curveTo points: 14781
+qCurveTo points: 0
+<
+> 779 Glyphs (65fc6cbdec5d6c4a6a638154e7ffa539)
+file name: 65fc6cbdec5d6c4a6a638154e7ffa539
+file contents: 021ec16f351ee6b14fd390301f01caf0
+glyphs: 779
+glyphs with 8 contours: 2
+glyphs with 7 contours: 4
+glyphs with 6 contours: 2
+glyphs with 5 contours: 4
+glyphs with 4 contours: 26
+glyphs with 3 contours: 107
+glyphs with 2 contours: 310
+glyphs with 1 contours: 319
+glyphs with 0 contours: 5
+contours with 175 points: 2
+contours with 151 points: 2
+contours with 127 points: 4
+contours with 114 points: 1
+contours with 108 points: 2
+contours with 105 points: 3
+contours with 103 points: 1
+contours with 99 points: 2
+contours with 97 points: 3
+contours with 96 points: 2
+contours with 94 points: 2
+contours with 93 points: 8
+contours with 92 points: 1
+contours with 91 points: 6
+contours with 89 points: 1
+contours with 88 points: 5
+contours with 85 points: 5
+contours with 82 points: 3
+contours with 81 points: 2
+contours with 79 points: 8
+contours with 76 points: 4
+contours with 73 points: 27
+contours with 70 points: 14
+contours with 68 points: 4
+contours with 67 points: 19
+contours with 66 points: 2
+contours with 64 points: 8
+contours with 61 points: 61
+contours with 58 points: 6
+contours with 55 points: 53
+contours with 53 points: 27
+contours with 52 points: 4
+contours with 51 points: 3
+contours with 50 points: 1
+contours with 49 points: 39
+contours with 46 points: 25
+contours with 44 points: 5
+contours with 43 points: 57
+contours with 40 points: 24
+contours with 37 points: 93
+contours with 35 points: 20
+contours with 34 points: 33
+contours with 33 points: 6
+contours with 31 points: 79
+contours with 28 points: 7
+contours with 25 points: 191
+contours with 22 points: 18
+contours with 21 points: 2
+contours with 19 points: 82
+contours with 17 points: 2
+contours with 16 points: 53
+contours with 14 points: 8
+contours with 13 points: 386
+contours with 11 points: 2
+contours with 10 points: 5
+contours with 8 points: 3
+contours with 7 points: 4
+moveTo points: 1440
+lineTo points: 194
+curveTo points: 15498
+qCurveTo points: 0
+<
+> 667 Glyphs (6ab81cd5a8758da7f9aaa031858f6225)
+file name: 6ab81cd5a8758da7f9aaa031858f6225
+file contents: 7345591d7d87fac9a728bde1202b32df
+glyphs: 667
+glyphs with 8 contours: 2
+glyphs with 7 contours: 2
+glyphs with 6 contours: 2
+glyphs with 5 contours: 4
+glyphs with 4 contours: 23
+glyphs with 3 contours: 100
+glyphs with 2 contours: 275
+glyphs with 1 contours: 254
+glyphs with 0 contours: 5
+contours with 175 points: 2
+contours with 151 points: 2
+contours with 140 points: 1
+contours with 137 points: 2
+contours with 118 points: 1
+contours with 115 points: 2
+contours with 113 points: 2
+contours with 100 points: 1
+contours with 97 points: 6
+contours with 96 points: 1
+contours with 95 points: 1
+contours with 94 points: 4
+contours with 91 points: 9
+contours with 89 points: 4
+contours with 88 points: 4
+contours with 87 points: 2
+contours with 85 points: 6
+contours with 83 points: 2
+contours with 82 points: 8
+contours with 80 points: 4
+contours with 79 points: 15
+contours with 76 points: 18
+contours with 73 points: 23
+contours with 70 points: 9
+contours with 67 points: 26
+contours with 66 points: 4
+contours with 64 points: 48
+contours with 61 points: 45
+contours with 59 points: 1
+contours with 58 points: 20
+contours with 55 points: 39
+contours with 53 points: 11
+contours with 52 points: 14
+contours with 51 points: 1
+contours with 49 points: 32
+contours with 46 points: 15
+contours with 44 points: 3
+contours with 43 points: 36
+contours with 41 points: 1
+contours with 40 points: 14
+contours with 37 points: 78
+contours with 35 points: 4
+contours with 34 points: 57
+contours with 33 points: 2
+contours with 31 points: 48
+contours with 28 points: 2
+contours with 25 points: 116
+contours with 22 points: 62
+contours with 19 points: 91
+contours with 17 points: 1
+contours with 16 points: 47
+contours with 14 points: 9
+contours with 13 points: 295
+contours with 11 points: 1
+contours with 10 points: 4
+contours with 7 points: 2
+moveTo points: 1258
+lineTo points: 88
+curveTo points: 14736
+qCurveTo points: 0
+<
+> 779 Glyphs (4159557e346f36551229de5ee53483b2)
+file name: 4159557e346f36551229de5ee53483b2
+file contents: 22ba0051f39e31aa9ec2ff508b6d32d1
+glyphs: 779
+glyphs with 8 contours: 2
+glyphs with 7 contours: 4
+glyphs with 6 contours: 2
+glyphs with 5 contours: 4
+glyphs with 4 contours: 26
+glyphs with 3 contours: 111
+glyphs with 2 contours: 314
+glyphs with 1 contours: 311
+glyphs with 0 contours: 5
+contours with 175 points: 2
+contours with 151 points: 2
+contours with 133 points: 4
+contours with 116 points: 1
+contours with 113 points: 4
+contours with 110 points: 1
+contours with 104 points: 1
+contours with 98 points: 2
+contours with 97 points: 10
+contours with 96 points: 1
+contours with 95 points: 1
+contours with 94 points: 2
+contours with 93 points: 4
+contours with 91 points: 5
+contours with 89 points: 4
+contours with 87 points: 1
+contours with 86 points: 1
+contours with 85 points: 7
+contours with 83 points: 2
+contours with 82 points: 2
+contours with 79 points: 3
+contours with 77 points: 1
+contours with 76 points: 3
+contours with 73 points: 30
+contours with 71 points: 2
+contours with 70 points: 20
+contours with 68 points: 1
+contours with 67 points: 17
+contours with 66 points: 4
+contours with 64 points: 3
+contours with 63 points: 4
+contours with 62 points: 6
+contours with 61 points: 47
+contours with 59 points: 6
+contours with 58 points: 5
+contours with 55 points: 76
+contours with 53 points: 6
+contours with 52 points: 5
+contours with 49 points: 48
+contours with 47 points: 3
+contours with 46 points: 18
+contours with 44 points: 1
+contours with 43 points: 56
+contours with 40 points: 24
+contours with 37 points: 113
+contours with 35 points: 6
+contours with 34 points: 43
+contours with 31 points: 68
+contours with 29 points: 1
+contours with 28 points: 7
+contours with 25 points: 189
+contours with 23 points: 4
+contours with 22 points: 18
+contours with 19 points: 84
+contours with 16 points: 49
+contours with 14 points: 13
+contours with 13 points: 391
+contours with 10 points: 16
+contours with 7 points: 3
+contours with 5 points: 1
+moveTo points: 1452
+lineTo points: 114
+curveTo points: 15673
+qCurveTo points: 0
+<
+> 667 Glyphs (30208589b15ce49b6d3b49fa87208b11)
+file name: 30208589b15ce49b6d3b49fa87208b11
+file contents: 0c6ff0ffb60f9228b9cdb8f342cc30d6
+glyphs: 667
+glyphs with 8 contours: 2
+glyphs with 7 contours: 2
+glyphs with 6 contours: 2
+glyphs with 5 contours: 4
+glyphs with 4 contours: 23
+glyphs with 3 contours: 102
+glyphs with 2 contours: 277
+glyphs with 1 contours: 250
+glyphs with 0 contours: 5
+contours with 175 points: 2
+contours with 151 points: 3
+contours with 150 points: 1
+contours with 147 points: 1
+contours with 127 points: 1
+contours with 125 points: 1
+contours with 121 points: 2
+contours with 118 points: 1
+contours with 110 points: 2
+contours with 103 points: 5
+contours with 100 points: 2
+contours with 98 points: 1
+contours with 97 points: 11
+contours with 95 points: 1
+contours with 94 points: 7
+contours with 91 points: 6
+contours with 88 points: 7
+contours with 85 points: 10
+contours with 83 points: 1
+contours with 82 points: 11
+contours with 79 points: 18
+contours with 77 points: 2
+contours with 76 points: 15
+contours with 73 points: 18
+contours with 70 points: 3
+contours with 67 points: 25
+contours with 66 points: 8
+contours with 64 points: 43
+contours with 62 points: 1
+contours with 61 points: 53
+contours with 58 points: 11
+contours with 56 points: 1
+contours with 55 points: 52
+contours with 52 points: 22
+contours with 49 points: 32
+contours with 47 points: 5
+contours with 46 points: 6
+contours with 43 points: 35
+contours with 40 points: 13
+contours with 37 points: 86
+contours with 34 points: 58
+contours with 31 points: 45
+contours with 28 points: 2
+contours with 25 points: 115
+contours with 23 points: 2
+contours with 22 points: 62
+contours with 19 points: 93
+contours with 18 points: 1
+contours with 16 points: 28
+contours with 14 points: 12
+contours with 13 points: 313
+contours with 10 points: 6
+contours with 7 points: 2
+moveTo points: 1264
+lineTo points: 63
+curveTo points: 14987
+qCurveTo points: 0
+<
+> 376 Glyphs (721f9b5cfa2ec9e7aee0bb4875533871)
+file name: 721f9b5cfa2ec9e7aee0bb4875533871
+file contents: d2fc5836c121da5053860123fa0a8eb8
+glyphs: 376
+glyphs with 7 contours: 1
+glyphs with 5 contours: 1
+glyphs with 4 contours: 11
+glyphs with 3 contours: 33
+glyphs with 2 contours: 172
+glyphs with 1 contours: 156
+glyphs with 0 contours: 2
+contours with 318 points: 6
+contours with 254 points: 3
+contours with 242 points: 2
+contours with 239 points: 1
+contours with 238 points: 12
+contours with 233 points: 2
+contours with 232 points: 2
+contours with 222 points: 1
+contours with 221 points: 1
+contours with 218 points: 4
+contours with 217 points: 2
+contours with 206 points: 2
+contours with 204 points: 8
+contours with 202 points: 1
+contours with 190 points: 33
+contours with 188 points: 2
+contours with 185 points: 18
+contours with 182 points: 4
+contours with 178 points: 1
+contours with 176 points: 10
+contours with 174 points: 9
+contours with 172 points: 2
+contours with 168 points: 4
+contours with 165 points: 2
+contours with 158 points: 13
+contours with 154 points: 16
+contours with 150 points: 4
+contours with 148 points: 1
+contours with 142 points: 15
+contours with 134 points: 1
+contours with 126 points: 27
+contours with 125 points: 1
+contours with 121 points: 2
+contours with 118 points: 62
+contours with 117 points: 2
+contours with 112 points: 2
+contours with 110 points: 4
+contours with 108 points: 4
+contours with 107 points: 2
+contours with 103 points: 2
+contours with 101 points: 1
+contours with 94 points: 29
+contours with 93 points: 2
+contours with 90 points: 2
+contours with 89 points: 1
+contours with 86 points: 7
+contours with 78 points: 1
+contours with 74 points: 2
+contours with 70 points: 1
+contours with 67 points: 15
+contours with 62 points: 52
+contours with 61 points: 1
+contours with 60 points: 35
+contours with 58 points: 15
+contours with 55 points: 6
+contours with 54 points: 13
+contours with 51 points: 2
+contours with 46 points: 6
+contours with 42 points: 2
+contours with 38 points: 15
+contours with 37 points: 1
+contours with 36 points: 1
+contours with 35 points: 1
+contours with 30 points: 129
+contours with 29 points: 2
+contours with 26 points: 10
+contours with 14 points: 13
+moveTo points: 655
+lineTo points: 13162
+curveTo points: 17086
+qCurveTo points: 0
+<
+> 376 Glyphs (93f85a6bf947d84e79ac71b46ceb79fe)
+file name: 93f85a6bf947d84e79ac71b46ceb79fe
+file contents: b9f7589cdda1d90db29bd60f7e3395d8
+glyphs: 376
+glyphs with 7 contours: 1
+glyphs with 5 contours: 1
+glyphs with 4 contours: 10
+glyphs with 3 contours: 32
+glyphs with 2 contours: 156
+glyphs with 1 contours: 174
+glyphs with 0 contours: 2
+contours with 254 points: 1
+contours with 185 points: 2
+contours with 158 points: 10
+contours with 152 points: 1
+contours with 142 points: 5
+contours with 137 points: 2
+contours with 130 points: 1
+contours with 126 points: 5
+contours with 125 points: 3
+contours with 122 points: 2
+contours with 121 points: 2
+contours with 118 points: 4
+contours with 117 points: 2
+contours with 114 points: 4
+contours with 112 points: 2
+contours with 111 points: 10
+contours with 110 points: 7
+contours with 109 points: 1
+contours with 108 points: 6
+contours with 106 points: 2
+contours with 105 points: 2
+contours with 104 points: 8
+contours with 94 points: 38
+contours with 90 points: 24
+contours with 89 points: 1
+contours with 86 points: 4
+contours with 84 points: 10
+contours with 78 points: 17
+contours with 76 points: 4
+contours with 74 points: 19
+contours with 70 points: 11
+contours with 67 points: 15
+contours with 65 points: 2
+contours with 62 points: 29
+contours with 60 points: 35
+contours with 58 points: 76
+contours with 57 points: 2
+contours with 55 points: 6
+contours with 54 points: 13
+contours with 51 points: 2
+contours with 46 points: 29
+contours with 42 points: 2
+contours with 38 points: 18
+contours with 37 points: 1
+contours with 35 points: 1
+contours with 33 points: 2
+contours with 30 points: 168
+contours with 29 points: 2
+contours with 26 points: 10
+contours with 14 points: 11
+moveTo points: 634
+lineTo points: 7287
+curveTo points: 10523
+qCurveTo points: 0
+<
+> 376 Glyphs (ead0168e917bbeb5a4898626c1263954)
+file name: ead0168e917bbeb5a4898626c1263954
+file contents: 18374e7d84976e95f8f718d6af516555
+glyphs: 376
+glyphs with 7 contours: 1
+glyphs with 5 contours: 1
+glyphs with 4 contours: 10
+glyphs with 3 contours: 32
+glyphs with 2 contours: 156
+glyphs with 1 contours: 174
+glyphs with 0 contours: 2
+contours with 254 points: 1
+contours with 196 points: 1
+contours with 193 points: 1
+contours with 166 points: 8
+contours with 158 points: 2
+contours with 152 points: 1
+contours with 146 points: 4
+contours with 145 points: 2
+contours with 142 points: 1
+contours with 141 points: 3
+contours with 134 points: 5
+contours with 130 points: 1
+contours with 129 points: 2
+contours with 126 points: 2
+contours with 125 points: 3
+contours with 120 points: 2
+contours with 119 points: 10
+contours with 118 points: 3
+contours with 116 points: 6
+contours with 114 points: 2
+contours with 112 points: 2
+contours with 110 points: 4
+contours with 108 points: 6
+contours with 104 points: 8
+contours with 102 points: 33
+contours with 98 points: 4
+contours with 97 points: 18
+contours with 96 points: 2
+contours with 94 points: 5
+contours with 92 points: 10
+contours with 90 points: 2
+contours with 89 points: 1
+contours with 86 points: 19
+contours with 84 points: 17
+contours with 82 points: 4
+contours with 78 points: 11
+contours with 74 points: 2
+contours with 73 points: 2
+contours with 70 points: 15
+contours with 67 points: 15
+contours with 66 points: 62
+contours with 65 points: 2
+contours with 62 points: 13
+contours with 60 points: 35
+contours with 59 points: 2
+contours with 58 points: 14
+contours with 55 points: 6
+contours with 54 points: 30
+contours with 52 points: 6
+contours with 51 points: 2
+contours with 46 points: 7
+contours with 42 points: 2
+contours with 38 points: 57
+contours with 37 points: 1
+contours with 36 points: 2
+contours with 35 points: 1
+contours with 33 points: 2
+contours with 30 points: 127
+contours with 29 points: 2
+contours with 26 points: 10
+contours with 14 points: 11
+moveTo points: 634
+lineTo points: 7847
+curveTo points: 11124
+qCurveTo points: 0
+<
+> 482 Glyphs (628f6f1ea1600bfb377d6fa9005836cd)
+file name: 628f6f1ea1600bfb377d6fa9005836cd
+file contents: 24f94a6a0293d60e9017ab83dd70c658
+glyphs: 482
+glyphs with 7 contours: 2
+glyphs with 5 contours: 2
+glyphs with 4 contours: 15
+glyphs with 3 contours: 71
+glyphs with 2 contours: 201
+glyphs with 1 contours: 186
+glyphs with 0 contours: 5
+contours with 71 points: 4
+contours with 70 points: 4
+contours with 68 points: 2
+contours with 63 points: 1
+contours with 57 points: 2
+contours with 52 points: 2
+contours with 51 points: 1
+contours with 50 points: 3
+contours with 49 points: 2
+contours with 47 points: 2
+contours with 45 points: 9
+contours with 42 points: 1
+contours with 40 points: 7
+contours with 38 points: 1
+contours with 37 points: 2
+contours with 36 points: 9
+contours with 35 points: 20
+contours with 34 points: 10
+contours with 33 points: 6
+contours with 32 points: 22
+contours with 31 points: 8
+contours with 30 points: 17
+contours with 29 points: 10
+contours with 28 points: 21
+contours with 27 points: 7
+contours with 26 points: 4
+contours with 25 points: 9
+contours with 24 points: 13
+contours with 23 points: 4
+contours with 22 points: 2
+contours with 21 points: 5
+contours with 20 points: 5
+contours with 19 points: 34
+contours with 18 points: 22
+contours with 17 points: 18
+contours with 16 points: 53
+contours with 15 points: 130
+contours with 14 points: 30
+contours with 13 points: 76
+contours with 12 points: 32
+contours with 11 points: 12
+contours with 10 points: 31
+contours with 9 points: 16
+contours with 8 points: 58
+contours with 7 points: 16
+contours with 6 points: 32
+contours with 4 points: 110
+moveTo points: 885
+lineTo points: 4896
+curveTo points: 3079
+qCurveTo points: 0
+<
+> 482 Glyphs (96507f3ac9836ea1c7ef61eea66321ef)
+file name: 96507f3ac9836ea1c7ef61eea66321ef
+file contents: 00b8db605ab321c669884e704929f394
+glyphs: 482
+glyphs with 7 contours: 2
+glyphs with 5 contours: 2
+glyphs with 4 contours: 15
+glyphs with 3 contours: 71
+glyphs with 2 contours: 201
+glyphs with 1 contours: 186
+glyphs with 0 contours: 5
+contours with 73 points: 1
+contours with 70 points: 8
+contours with 68 points: 2
+contours with 57 points: 1
+contours with 54 points: 2
+contours with 52 points: 2
+contours with 51 points: 2
+contours with 50 points: 3
+contours with 47 points: 1
+contours with 45 points: 1
+contours with 44 points: 9
+contours with 42 points: 1
+contours with 40 points: 7
+contours with 38 points: 2
+contours with 37 points: 5
+contours with 36 points: 8
+contours with 35 points: 8
+contours with 34 points: 12
+contours with 33 points: 23
+contours with 32 points: 5
+contours with 31 points: 8
+contours with 30 points: 16
+contours with 29 points: 11
+contours with 28 points: 31
+contours with 27 points: 9
+contours with 26 points: 2
+contours with 25 points: 7
+contours with 24 points: 2
+contours with 23 points: 14
+contours with 22 points: 1
+contours with 21 points: 6
+contours with 20 points: 5
+contours with 19 points: 18
+contours with 18 points: 40
+contours with 17 points: 16
+contours with 16 points: 64
+contours with 15 points: 133
+contours with 14 points: 30
+contours with 13 points: 76
+contours with 12 points: 32
+contours with 11 points: 12
+contours with 10 points: 31
+contours with 9 points: 2
+contours with 8 points: 58
+contours with 7 points: 16
+contours with 6 points: 32
+contours with 4 points: 110
+moveTo points: 885
+lineTo points: 4791
+curveTo points: 3132
+qCurveTo points: 0
+<
+> 482 Glyphs (5cf10116d87aa493507ba15d7b3cc0ab)
+file name: 5cf10116d87aa493507ba15d7b3cc0ab
+file contents: 6a294494f08fa729dce38091389fba53
+glyphs: 482
+glyphs with 7 contours: 2
+glyphs with 5 contours: 2
+glyphs with 4 contours: 15
+glyphs with 3 contours: 71
+glyphs with 2 contours: 201
+glyphs with 1 contours: 186
+glyphs with 0 contours: 5
+contours with 71 points: 4
+contours with 70 points: 4
+contours with 68 points: 2
+contours with 63 points: 1
+contours with 58 points: 1
+contours with 57 points: 1
+contours with 52 points: 2
+contours with 51 points: 2
+contours with 50 points: 2
+contours with 49 points: 2
+contours with 47 points: 2
+contours with 45 points: 9
+contours with 42 points: 1
+contours with 40 points: 7
+contours with 38 points: 1
+contours with 37 points: 2
+contours with 36 points: 9
+contours with 35 points: 20
+contours with 34 points: 10
+contours with 33 points: 6
+contours with 32 points: 23
+contours with 31 points: 7
+contours with 30 points: 18
+contours with 29 points: 9
+contours with 28 points: 21
+contours with 27 points: 7
+contours with 26 points: 5
+contours with 25 points: 13
+contours with 24 points: 13
+contours with 22 points: 1
+contours with 21 points: 5
+contours with 20 points: 5
+contours with 19 points: 34
+contours with 18 points: 22
+contours with 17 points: 18
+contours with 16 points: 53
+contours with 15 points: 130
+contours with 14 points: 30
+contours with 13 points: 76
+contours with 12 points: 36
+contours with 11 points: 12
+contours with 10 points: 31
+contours with 9 points: 14
+contours with 8 points: 56
+contours with 7 points: 16
+contours with 6 points: 32
+contours with 4 points: 110
+moveTo points: 885
+lineTo points: 4902
+curveTo points: 3087
+qCurveTo points: 0
+<
+> 482 Glyphs (db5de0552ca48dd0988faa97e76baf7b)
+file name: db5de0552ca48dd0988faa97e76baf7b
+file contents: 1542dbe445be6dfc92713f19f00f26d7
+glyphs: 482
+glyphs with 7 contours: 2
+glyphs with 5 contours: 2
+glyphs with 4 contours: 15
+glyphs with 3 contours: 71
+glyphs with 2 contours: 201
+glyphs with 1 contours: 186
+glyphs with 0 contours: 5
+contours with 73 points: 1
+contours with 70 points: 8
+contours with 68 points: 2
+contours with 57 points: 1
+contours with 56 points: 2
+contours with 52 points: 3
+contours with 51 points: 2
+contours with 50 points: 2
+contours with 47 points: 1
+contours with 46 points: 1
+contours with 44 points: 9
+contours with 42 points: 1
+contours with 41 points: 1
+contours with 40 points: 7
+contours with 38 points: 1
+contours with 37 points: 5
+contours with 36 points: 8
+contours with 35 points: 8
+contours with 34 points: 12
+contours with 33 points: 23
+contours with 32 points: 6
+contours with 31 points: 7
+contours with 30 points: 18
+contours with 29 points: 19
+contours with 28 points: 21
+contours with 27 points: 9
+contours with 26 points: 3
+contours with 25 points: 11
+contours with 24 points: 2
+contours with 23 points: 10
+contours with 22 points: 1
+contours with 21 points: 5
+contours with 20 points: 5
+contours with 19 points: 18
+contours with 18 points: 40
+contours with 17 points: 16
+contours with 16 points: 64
+contours with 15 points: 132
+contours with 14 points: 31
+contours with 13 points: 76
+contours with 12 points: 36
+contours with 11 points: 12
+contours with 10 points: 31
+contours with 8 points: 56
+contours with 7 points: 16
+contours with 6 points: 32
+contours with 4 points: 110
+moveTo points: 885
+lineTo points: 4813
+curveTo points: 3141
+qCurveTo points: 0
+<
+> 482 Glyphs (22c66102b01eca5a8bd01dba3706c984)
+file name: 22c66102b01eca5a8bd01dba3706c984
+file contents: ef3f0062e9f2bae60444191d1b25dc2b
+glyphs: 482
+glyphs with 7 contours: 2
+glyphs with 5 contours: 4
+glyphs with 4 contours: 13
+glyphs with 3 contours: 73
+glyphs with 2 contours: 203
+glyphs with 1 contours: 182
+glyphs with 0 contours: 5
+contours with 71 points: 4
+contours with 70 points: 4
+contours with 68 points: 2
+contours with 63 points: 1
+contours with 58 points: 1
+contours with 57 points: 1
+contours with 52 points: 2
+contours with 51 points: 2
+contours with 49 points: 2
+contours with 47 points: 1
+contours with 45 points: 10
+contours with 42 points: 1
+contours with 40 points: 7
+contours with 39 points: 1
+contours with 38 points: 2
+contours with 37 points: 2
+contours with 36 points: 5
+contours with 35 points: 22
+contours with 34 points: 10
+contours with 33 points: 6
+contours with 32 points: 24
+contours with 31 points: 6
+contours with 30 points: 18
+contours with 29 points: 11
+contours with 28 points: 21
+contours with 27 points: 9
+contours with 26 points: 4
+contours with 25 points: 12
+contours with 24 points: 13
+contours with 22 points: 1
+contours with 21 points: 6
+contours with 20 points: 5
+contours with 19 points: 34
+contours with 18 points: 22
+contours with 17 points: 18
+contours with 16 points: 45
+contours with 15 points: 137
+contours with 14 points: 30
+contours with 13 points: 77
+contours with 12 points: 35
+contours with 11 points: 12
+contours with 10 points: 33
+contours with 9 points: 20
+contours with 8 points: 56
+contours with 7 points: 16
+contours with 6 points: 32
+contours with 4 points: 110
+moveTo points: 893
+lineTo points: 4918
+curveTo points: 3091
+qCurveTo points: 0
+<
+> 482 Glyphs (d07b112a5df7d0ac3bfc2c40522e7245)
+file name: d07b112a5df7d0ac3bfc2c40522e7245
+file contents: c2b0bd736cb0d3410a0ecd81b158c742
+glyphs: 482
+glyphs with 7 contours: 2
+glyphs with 5 contours: 4
+glyphs with 4 contours: 13
+glyphs with 3 contours: 73
+glyphs with 2 contours: 203
+glyphs with 1 contours: 182
+glyphs with 0 contours: 5
+contours with 73 points: 1
+contours with 70 points: 8
+contours with 68 points: 2
+contours with 57 points: 1
+contours with 56 points: 2
+contours with 55 points: 1
+contours with 52 points: 2
+contours with 51 points: 2
+contours with 46 points: 1
+contours with 45 points: 1
+contours with 44 points: 9
+contours with 42 points: 1
+contours with 41 points: 1
+contours with 40 points: 1
+contours with 39 points: 7
+contours with 38 points: 2
+contours with 37 points: 5
+contours with 36 points: 4
+contours with 35 points: 10
+contours with 34 points: 12
+contours with 33 points: 23
+contours with 32 points: 5
+contours with 31 points: 2
+contours with 30 points: 24
+contours with 29 points: 21
+contours with 28 points: 20
+contours with 27 points: 12
+contours with 26 points: 2
+contours with 25 points: 10
+contours with 24 points: 2
+contours with 23 points: 10
+contours with 22 points: 1
+contours with 21 points: 6
+contours with 20 points: 5
+contours with 19 points: 20
+contours with 18 points: 31
+contours with 17 points: 18
+contours with 16 points: 59
+contours with 15 points: 122
+contours with 14 points: 47
+contours with 13 points: 80
+contours with 12 points: 35
+contours with 11 points: 6
+contours with 10 points: 35
+contours with 9 points: 10
+contours with 8 points: 39
+contours with 7 points: 31
+contours with 6 points: 34
+contours with 4 points: 110
+moveTo points: 893
+lineTo points: 4751
+curveTo points: 3146
+qCurveTo points: 0
+<
+> 482 Glyphs (964a939ce4284bfc75b4b493e2edc800)
+file name: 964a939ce4284bfc75b4b493e2edc800
+file contents: 289f7438f6cbb5ded671bb79bbf9c282
+glyphs: 482
+glyphs with 7 contours: 2
+glyphs with 5 contours: 4
+glyphs with 4 contours: 13
+glyphs with 3 contours: 73
+glyphs with 2 contours: 203
+glyphs with 1 contours: 182
+glyphs with 0 contours: 5
+contours with 71 points: 4
+contours with 70 points: 4
+contours with 68 points: 2
+contours with 63 points: 1
+contours with 58 points: 1
+contours with 57 points: 1
+contours with 52 points: 2
+contours with 51 points: 2
+contours with 49 points: 2
+contours with 48 points: 1
+contours with 45 points: 10
+contours with 44 points: 1
+contours with 40 points: 7
+contours with 39 points: 1
+contours with 38 points: 2
+contours with 37 points: 2
+contours with 36 points: 5
+contours with 35 points: 22
+contours with 34 points: 10
+contours with 33 points: 6
+contours with 32 points: 24
+contours with 31 points: 6
+contours with 30 points: 18
+contours with 29 points: 11
+contours with 28 points: 21
+contours with 27 points: 9
+contours with 26 points: 3
+contours with 25 points: 12
+contours with 24 points: 13
+contours with 22 points: 1
+contours with 21 points: 6
+contours with 20 points: 7
+contours with 19 points: 34
+contours with 18 points: 21
+contours with 17 points: 21
+contours with 16 points: 49
+contours with 15 points: 130
+contours with 14 points: 29
+contours with 13 points: 77
+contours with 12 points: 36
+contours with 11 points: 12
+contours with 10 points: 33
+contours with 9 points: 20
+contours with 8 points: 56
+contours with 7 points: 16
+contours with 6 points: 32
+contours with 4 points: 110
+moveTo points: 893
+lineTo points: 4922
+curveTo points: 3092
+qCurveTo points: 0
+<
+> 482 Glyphs (626e5c91f9c41b40a665057ce4dbdf9e)
+file name: 626e5c91f9c41b40a665057ce4dbdf9e
+file contents: 4e89ab51cc04d64b2fdacd93a333b1a9
+glyphs: 482
+glyphs with 7 contours: 2
+glyphs with 5 contours: 4
+glyphs with 4 contours: 13
+glyphs with 3 contours: 73
+glyphs with 2 contours: 203
+glyphs with 1 contours: 182
+glyphs with 0 contours: 5
+contours with 73 points: 1
+contours with 70 points: 8
+contours with 69 points: 1
+contours with 68 points: 1
+contours with 57 points: 1
+contours with 56 points: 2
+contours with 55 points: 1
+contours with 52 points: 2
+contours with 51 points: 1
+contours with 50 points: 1
+contours with 45 points: 1
+contours with 44 points: 10
+contours with 42 points: 1
+contours with 41 points: 1
+contours with 40 points: 7
+contours with 39 points: 1
+contours with 38 points: 2
+contours with 37 points: 5
+contours with 36 points: 4
+contours with 35 points: 10
+contours with 34 points: 12
+contours with 33 points: 23
+contours with 32 points: 6
+contours with 31 points: 6
+contours with 30 points: 19
+contours with 29 points: 21
+contours with 28 points: 21
+contours with 27 points: 11
+contours with 26 points: 2
+contours with 25 points: 10
+contours with 24 points: 2
+contours with 23 points: 10
+contours with 22 points: 1
+contours with 21 points: 6
+contours with 20 points: 5
+contours with 19 points: 20
+contours with 18 points: 38
+contours with 17 points: 16
+contours with 16 points: 54
+contours with 15 points: 128
+contours with 14 points: 44
+contours with 13 points: 77
+contours with 12 points: 35
+contours with 11 points: 8
+contours with 10 points: 33
+contours with 9 points: 10
+contours with 8 points: 56
+contours with 7 points: 16
+contours with 6 points: 32
+contours with 4 points: 110
+moveTo points: 893
+lineTo points: 4816
+curveTo points: 3142
+qCurveTo points: 0
+<
+> 482 Glyphs (163e19fdfc9ab307957f56253117cb5d)
+file name: 163e19fdfc9ab307957f56253117cb5d
+file contents: 8737bbd2eb1a8a2045319589b43d3264
+glyphs: 482
+glyphs with 7 contours: 2
+glyphs with 5 contours: 4
+glyphs with 4 contours: 13
+glyphs with 3 contours: 71
+glyphs with 2 contours: 201
+glyphs with 1 contours: 186
+glyphs with 0 contours: 5
+contours with 71 points: 4
+contours with 70 points: 4
+contours with 68 points: 2
+contours with 63 points: 1
+contours with 58 points: 1
+contours with 57 points: 1
+contours with 52 points: 2
+contours with 51 points: 2
+contours with 50 points: 2
+contours with 49 points: 2
+contours with 47 points: 1
+contours with 45 points: 10
+contours with 42 points: 1
+contours with 40 points: 7
+contours with 38 points: 1
+contours with 37 points: 2
+contours with 36 points: 9
+contours with 35 points: 20
+contours with 34 points: 10
+contours with 33 points: 6
+contours with 32 points: 24
+contours with 31 points: 6
+contours with 30 points: 18
+contours with 29 points: 9
+contours with 28 points: 21
+contours with 27 points: 7
+contours with 26 points: 5
+contours with 25 points: 13
+contours with 24 points: 13
+contours with 22 points: 1
+contours with 21 points: 6
+contours with 20 points: 5
+contours with 19 points: 34
+contours with 18 points: 22
+contours with 17 points: 18
+contours with 16 points: 53
+contours with 15 points: 129
+contours with 14 points: 30
+contours with 13 points: 76
+contours with 12 points: 36
+contours with 11 points: 12
+contours with 10 points: 33
+contours with 9 points: 14
+contours with 8 points: 56
+contours with 7 points: 16
+contours with 6 points: 32
+contours with 4 points: 110
+moveTo points: 887
+lineTo points: 4913
+curveTo points: 3091
+qCurveTo points: 0
+<
+> 482 Glyphs (fff7b7f58938eea89b21d76d0845106c)
+file name: fff7b7f58938eea89b21d76d0845106c
+file contents: 7bd7bd1c17152805401bc3e295cb9152
+glyphs: 482
+glyphs with 7 contours: 2
+glyphs with 5 contours: 4
+glyphs with 4 contours: 13
+glyphs with 3 contours: 71
+glyphs with 2 contours: 201
+glyphs with 1 contours: 186
+glyphs with 0 contours: 5
+contours with 73 points: 1
+contours with 70 points: 8
+contours with 68 points: 2
+contours with 57 points: 1
+contours with 56 points: 2
+contours with 52 points: 3
+contours with 51 points: 2
+contours with 50 points: 2
+contours with 46 points: 1
+contours with 45 points: 1
+contours with 44 points: 9
+contours with 42 points: 1
+contours with 41 points: 1
+contours with 40 points: 7
+contours with 39 points: 1
+contours with 37 points: 5
+contours with 36 points: 4
+contours with 35 points: 12
+contours with 34 points: 12
+contours with 33 points: 23
+contours with 32 points: 6
+contours with 31 points: 7
+contours with 30 points: 18
+contours with 29 points: 19
+contours with 28 points: 21
+contours with 27 points: 9
+contours with 26 points: 3
+contours with 25 points: 11
+contours with 24 points: 2
+contours with 23 points: 10
+contours with 22 points: 1
+contours with 21 points: 6
+contours with 20 points: 5
+contours with 19 points: 20
+contours with 18 points: 38
+contours with 17 points: 16
+contours with 16 points: 64
+contours with 15 points: 118
+contours with 14 points: 44
+contours with 13 points: 77
+contours with 12 points: 35
+contours with 11 points: 12
+contours with 10 points: 32
+contours with 8 points: 57
+contours with 7 points: 16
+contours with 6 points: 32
+contours with 4 points: 110
+moveTo points: 887
+lineTo points: 4811
+curveTo points: 3144
+qCurveTo points: 0
+<
+> 482 Glyphs (16ca13d7096862a3858bbc854be05550)
+file name: 16ca13d7096862a3858bbc854be05550
+file contents: 044a023584351dfb881045d0a5cf30db
+glyphs: 482
+glyphs with 7 contours: 2
+glyphs with 5 contours: 4
+glyphs with 4 contours: 13
+glyphs with 3 contours: 73
+glyphs with 2 contours: 203
+glyphs with 1 contours: 182
+glyphs with 0 contours: 5
+contours with 71 points: 4
+contours with 70 points: 4
+contours with 68 points: 2
+contours with 63 points: 1
+contours with 57 points: 2
+contours with 52 points: 2
+contours with 51 points: 1
+contours with 50 points: 2
+contours with 49 points: 2
+contours with 45 points: 10
+contours with 44 points: 1
+contours with 40 points: 1
+contours with 39 points: 1
+contours with 38 points: 8
+contours with 37 points: 2
+contours with 36 points: 5
+contours with 35 points: 22
+contours with 33 points: 6
+contours with 32 points: 22
+contours with 31 points: 1
+contours with 30 points: 17
+contours with 29 points: 18
+contours with 28 points: 13
+contours with 27 points: 9
+contours with 26 points: 1
+contours with 25 points: 12
+contours with 24 points: 19
+contours with 22 points: 11
+contours with 21 points: 7
+contours with 20 points: 10
+contours with 19 points: 36
+contours with 18 points: 18
+contours with 17 points: 20
+contours with 16 points: 49
+contours with 15 points: 102
+contours with 14 points: 37
+contours with 13 points: 83
+contours with 12 points: 42
+contours with 11 points: 6
+contours with 10 points: 27
+contours with 9 points: 20
+contours with 8 points: 56
+contours with 7 points: 20
+contours with 6 points: 45
+contours with 5 points: 2
+contours with 4 points: 114
+moveTo points: 893
+lineTo points: 5150
+curveTo points: 2878
+qCurveTo points: 0
+<
+> 482 Glyphs (5425d842bf5851c12f827d40f6d1d14f)
+file name: 5425d842bf5851c12f827d40f6d1d14f
+file contents: a783d108bd15850af52aae504a6d1fc9
+glyphs: 482
+glyphs with 7 contours: 2
+glyphs with 5 contours: 4
+glyphs with 4 contours: 13
+glyphs with 3 contours: 73
+glyphs with 2 contours: 203
+glyphs with 1 contours: 182
+glyphs with 0 contours: 5
+contours with 73 points: 1
+contours with 71 points: 2
+contours with 70 points: 8
+contours with 57 points: 1
+contours with 56 points: 2
+contours with 55 points: 1
+contours with 52 points: 2
+contours with 51 points: 1
+contours with 50 points: 1
+contours with 45 points: 1
+contours with 44 points: 10
+contours with 42 points: 1
+contours with 41 points: 1
+contours with 40 points: 1
+contours with 39 points: 3
+contours with 38 points: 6
+contours with 37 points: 5
+contours with 36 points: 4
+contours with 35 points: 10
+contours with 34 points: 2
+contours with 33 points: 23
+contours with 32 points: 4
+contours with 31 points: 2
+contours with 30 points: 17
+contours with 29 points: 28
+contours with 28 points: 13
+contours with 27 points: 9
+contours with 26 points: 1
+contours with 25 points: 10
+contours with 24 points: 9
+contours with 23 points: 10
+contours with 22 points: 6
+contours with 21 points: 11
+contours with 20 points: 8
+contours with 19 points: 20
+contours with 18 points: 25
+contours with 17 points: 16
+contours with 16 points: 42
+contours with 15 points: 123
+contours with 14 points: 53
+contours with 13 points: 83
+contours with 12 points: 41
+contours with 11 points: 6
+contours with 10 points: 27
+contours with 9 points: 6
+contours with 8 points: 56
+contours with 7 points: 20
+contours with 6 points: 49
+contours with 5 points: 2
+contours with 4 points: 110
+moveTo points: 893
+lineTo points: 5028
+curveTo points: 2920
+qCurveTo points: 0
+<
+> 558 Glyphs (768dae93b9a0577c54465951496e07ec)
+file name: 768dae93b9a0577c54465951496e07ec
+file contents: 11dbbe08b839c3085e703c475199aa33
+glyphs: 558
+glyphs with 7 contours: 2
+glyphs with 5 contours: 4
+glyphs with 4 contours: 18
+glyphs with 3 contours: 94
+glyphs with 2 contours: 251
+glyphs with 1 contours: 185
+glyphs with 0 contours: 4
+contours with 70 points: 3
+contours with 59 points: 3
+contours with 55 points: 5
+contours with 54 points: 2
+contours with 51 points: 7
+contours with 50 points: 13
+contours with 45 points: 1
+contours with 44 points: 2
+contours with 42 points: 1
+contours with 41 points: 1
+contours with 40 points: 1
+contours with 38 points: 13
+contours with 37 points: 11
+contours with 36 points: 7
+contours with 35 points: 10
+contours with 34 points: 12
+contours with 33 points: 4
+contours with 32 points: 12
+contours with 31 points: 6
+contours with 30 points: 1
+contours with 29 points: 28
+contours with 28 points: 16
+contours with 27 points: 2
+contours with 26 points: 2
+contours with 25 points: 1
+contours with 24 points: 7
+contours with 23 points: 5
+contours with 22 points: 1
+contours with 21 points: 28
+contours with 20 points: 20
+contours with 19 points: 22
+contours with 17 points: 55
+contours with 16 points: 42
+contours with 15 points: 69
+contours with 14 points: 71
+contours with 13 points: 45
+contours with 12 points: 46
+contours with 11 points: 8
+contours with 10 points: 68
+contours with 9 points: 15
+contours with 8 points: 37
+contours with 7 points: 51
+contours with 6 points: 22
+contours with 4 points: 269
+contours with 3 points: 30
+moveTo points: 1075
+lineTo points: 6440
+curveTo points: 2630
+qCurveTo points: 0
+<
+> 558 Glyphs (5785d38350c8be60bb0b4c9d03a636c5)
+file name: 5785d38350c8be60bb0b4c9d03a636c5
+file contents: d07caa7d19d5e15675fba915561ee8d2
+glyphs: 558
+glyphs with 7 contours: 2
+glyphs with 6 contours: 1
+glyphs with 5 contours: 3
+glyphs with 4 contours: 18
+glyphs with 3 contours: 94
+glyphs with 2 contours: 251
+glyphs with 1 contours: 185
+glyphs with 0 contours: 4
+contours with 70 points: 3
+contours with 59 points: 3
+contours with 55 points: 5
+contours with 54 points: 2
+contours with 52 points: 1
+contours with 51 points: 6
+contours with 50 points: 13
+contours with 45 points: 1
+contours with 44 points: 2
+contours with 42 points: 1
+contours with 41 points: 1
+contours with 40 points: 1
+contours with 39 points: 1
+contours with 38 points: 11
+contours with 37 points: 12
+contours with 36 points: 11
+contours with 35 points: 4
+contours with 34 points: 14
+contours with 33 points: 4
+contours with 32 points: 13
+contours with 31 points: 5
+contours with 30 points: 1
+contours with 29 points: 5
+contours with 28 points: 40
+contours with 27 points: 1
+contours with 26 points: 2
+contours with 25 points: 1
+contours with 24 points: 7
+contours with 23 points: 5
+contours with 22 points: 1
+contours with 21 points: 29
+contours with 20 points: 19
+contours with 19 points: 20
+contours with 18 points: 2
+contours with 17 points: 51
+contours with 16 points: 46
+contours with 15 points: 50
+contours with 14 points: 90
+contours with 13 points: 45
+contours with 12 points: 46
+contours with 11 points: 8
+contours with 10 points: 68
+contours with 9 points: 15
+contours with 8 points: 37
+contours with 7 points: 51
+contours with 6 points: 22
+contours with 4 points: 269
+contours with 3 points: 31
+moveTo points: 1076
+lineTo points: 6400
+curveTo points: 2630
+qCurveTo points: 0
+<
+> 558 Glyphs (589f3505ce4daa49362ac4595ed2fdfe)
+file name: 589f3505ce4daa49362ac4595ed2fdfe
+file contents: 27739a5c727401aa9b4e867f7c0f35d8
+glyphs: 558
+glyphs with 7 contours: 2
+glyphs with 6 contours: 2
+glyphs with 5 contours: 2
+glyphs with 4 contours: 18
+glyphs with 3 contours: 94
+glyphs with 2 contours: 251
+glyphs with 1 contours: 185
+glyphs with 0 contours: 4
+contours with 70 points: 3
+contours with 59 points: 3
+contours with 55 points: 5
+contours with 54 points: 2
+contours with 51 points: 7
+contours with 50 points: 13
+contours with 48 points: 1
+contours with 45 points: 2
+contours with 44 points: 1
+contours with 41 points: 2
+contours with 38 points: 13
+contours with 37 points: 11
+contours with 36 points: 7
+contours with 35 points: 10
+contours with 34 points: 12
+contours with 33 points: 4
+contours with 32 points: 13
+contours with 31 points: 5
+contours with 30 points: 1
+contours with 29 points: 28
+contours with 28 points: 18
+contours with 27 points: 2
+contours with 25 points: 1
+contours with 24 points: 7
+contours with 23 points: 5
+contours with 22 points: 3
+contours with 21 points: 28
+contours with 20 points: 18
+contours with 19 points: 22
+contours with 17 points: 55
+contours with 16 points: 42
+contours with 15 points: 69
+contours with 14 points: 71
+contours with 13 points: 45
+contours with 12 points: 46
+contours with 11 points: 8
+contours with 10 points: 65
+contours with 9 points: 15
+contours with 8 points: 40
+contours with 7 points: 51
+contours with 6 points: 22
+contours with 4 points: 271
+contours with 3 points: 30
+moveTo points: 1077
+lineTo points: 6448
+curveTo points: 2633
+qCurveTo points: 0
+<
+> 558 Glyphs (162ab90e5a5ce2caab248d67df90de20)
+file name: 162ab90e5a5ce2caab248d67df90de20
+file contents: 0780549e1ecc01480f12d0d5a736a139
+glyphs: 558
+glyphs with 7 contours: 2
+glyphs with 6 contours: 2
+glyphs with 5 contours: 2
+glyphs with 4 contours: 18
+glyphs with 3 contours: 94
+glyphs with 2 contours: 251
+glyphs with 1 contours: 185
+glyphs with 0 contours: 4
+contours with 70 points: 3
+contours with 59 points: 3
+contours with 55 points: 5
+contours with 54 points: 2
+contours with 52 points: 1
+contours with 51 points: 6
+contours with 50 points: 13
+contours with 48 points: 1
+contours with 45 points: 2
+contours with 44 points: 1
+contours with 41 points: 1
+contours with 40 points: 1
+contours with 39 points: 1
+contours with 38 points: 11
+contours with 37 points: 12
+contours with 36 points: 11
+contours with 35 points: 4
+contours with 34 points: 14
+contours with 33 points: 4
+contours with 32 points: 13
+contours with 31 points: 5
+contours with 30 points: 1
+contours with 29 points: 5
+contours with 28 points: 40
+contours with 27 points: 1
+contours with 26 points: 2
+contours with 25 points: 1
+contours with 24 points: 10
+contours with 23 points: 2
+contours with 22 points: 1
+contours with 21 points: 29
+contours with 20 points: 19
+contours with 19 points: 20
+contours with 18 points: 2
+contours with 17 points: 51
+contours with 16 points: 46
+contours with 15 points: 50
+contours with 14 points: 90
+contours with 13 points: 45
+contours with 12 points: 46
+contours with 11 points: 8
+contours with 10 points: 65
+contours with 9 points: 15
+contours with 8 points: 40
+contours with 7 points: 51
+contours with 6 points: 22
+contours with 4 points: 271
+contours with 3 points: 30
+moveTo points: 1077
+lineTo points: 6405
+curveTo points: 2631
+qCurveTo points: 0
+<
+> 558 Glyphs (0fc8c6f4f887a19527a65801add03bf4)
+file name: 0fc8c6f4f887a19527a65801add03bf4
+file contents: ce679bc5e2d52231f1cef4cce1c45efc
+glyphs: 558
+glyphs with 7 contours: 4
+glyphs with 5 contours: 2
+glyphs with 4 contours: 18
+glyphs with 3 contours: 96
+glyphs with 2 contours: 252
+glyphs with 1 contours: 182
+glyphs with 0 contours: 4
+contours with 70 points: 3
+contours with 59 points: 3
+contours with 55 points: 5
+contours with 51 points: 7
+contours with 50 points: 15
+contours with 45 points: 1
+contours with 44 points: 1
+contours with 42 points: 2
+contours with 41 points: 1
+contours with 40 points: 1
+contours with 38 points: 11
+contours with 37 points: 9
+contours with 36 points: 10
+contours with 35 points: 10
+contours with 34 points: 12
+contours with 33 points: 5
+contours with 32 points: 12
+contours with 31 points: 6
+contours with 30 points: 3
+contours with 29 points: 28
+contours with 28 points: 16
+contours with 27 points: 2
+contours with 25 points: 1
+contours with 24 points: 7
+contours with 23 points: 5
+contours with 22 points: 1
+contours with 21 points: 28
+contours with 20 points: 20
+contours with 19 points: 22
+contours with 17 points: 55
+contours with 16 points: 42
+contours with 15 points: 69
+contours with 14 points: 27
+contours with 13 points: 45
+contours with 12 points: 76
+contours with 11 points: 28
+contours with 10 points: 68
+contours with 9 points: 14
+contours with 8 points: 37
+contours with 7 points: 51
+contours with 6 points: 22
+contours with 4 points: 271
+contours with 3 points: 32
+moveTo points: 1084
+lineTo points: 6353
+curveTo points: 2642
+qCurveTo points: 0
+<
+> 558 Glyphs (734e52b94105d28d231197eb2cee1ba4)
+file name: 734e52b94105d28d231197eb2cee1ba4
+file contents: 0ef60459c88ee5377da36bf759685359
+glyphs: 558
+glyphs with 7 contours: 4
+glyphs with 5 contours: 2
+glyphs with 4 contours: 18
+glyphs with 3 contours: 96
+glyphs with 2 contours: 252
+glyphs with 1 contours: 182
+glyphs with 0 contours: 4
+contours with 72 points: 1
+contours with 69 points: 2
+contours with 59 points: 3
+contours with 55 points: 2
+contours with 54 points: 3
+contours with 51 points: 7
+contours with 50 points: 15
+contours with 45 points: 1
+contours with 44 points: 2
+contours with 43 points: 1
+contours with 41 points: 1
+contours with 40 points: 1
+contours with 38 points: 11
+contours with 37 points: 9
+contours with 36 points: 14
+contours with 35 points: 4
+contours with 34 points: 15
+contours with 33 points: 4
+contours with 32 points: 12
+contours with 31 points: 6
+contours with 30 points: 1
+contours with 29 points: 5
+contours with 28 points: 40
+contours with 27 points: 3
+contours with 25 points: 1
+contours with 24 points: 7
+contours with 23 points: 5
+contours with 21 points: 30
+contours with 20 points: 19
+contours with 19 points: 20
+contours with 18 points: 2
+contours with 17 points: 51
+contours with 16 points: 46
+contours with 15 points: 50
+contours with 14 points: 46
+contours with 13 points: 45
+contours with 12 points: 78
+contours with 11 points: 26
+contours with 10 points: 69
+contours with 9 points: 13
+contours with 8 points: 37
+contours with 7 points: 51
+contours with 6 points: 22
+contours with 4 points: 271
+contours with 3 points: 32
+moveTo points: 1084
+lineTo points: 6312
+curveTo points: 2640
+qCurveTo points: 0
+<
+> 558 Glyphs (9f0a207ce1075c114a93a7af6b1f0a93)
+file name: 9f0a207ce1075c114a93a7af6b1f0a93
+file contents: 706f53ad66716e5d42c749b2146055c8
+glyphs: 558
+glyphs with 7 contours: 4
+glyphs with 5 contours: 2
+glyphs with 4 contours: 18
+glyphs with 3 contours: 96
+glyphs with 2 contours: 252
+glyphs with 1 contours: 182
+glyphs with 0 contours: 4
+contours with 70 points: 3
+contours with 59 points: 3
+contours with 55 points: 5
+contours with 51 points: 7
+contours with 50 points: 15
+contours with 45 points: 1
+contours with 44 points: 1
+contours with 42 points: 2
+contours with 41 points: 1
+contours with 40 points: 1
+contours with 38 points: 12
+contours with 37 points: 8
+contours with 36 points: 10
+contours with 35 points: 10
+contours with 34 points: 12
+contours with 33 points: 4
+contours with 32 points: 14
+contours with 31 points: 5
+contours with 30 points: 1
+contours with 29 points: 28
+contours with 28 points: 19
+contours with 27 points: 1
+contours with 25 points: 1
+contours with 24 points: 9
+contours with 23 points: 3
+contours with 22 points: 1
+contours with 21 points: 28
+contours with 20 points: 20
+contours with 19 points: 22
+contours with 17 points: 55
+contours with 16 points: 42
+contours with 15 points: 69
+contours with 14 points: 27
+contours with 13 points: 45
+contours with 12 points: 49
+contours with 11 points: 55
+contours with 10 points: 65
+contours with 9 points: 17
+contours with 8 points: 37
+contours with 7 points: 51
+contours with 6 points: 22
+contours with 4 points: 271
+contours with 3 points: 32
+moveTo points: 1084
+lineTo points: 6329
+curveTo points: 2640
+qCurveTo points: 0
+<
+> 558 Glyphs (35c9193db12f4ce24092b3dbfee3ff27)
+file name: 35c9193db12f4ce24092b3dbfee3ff27
+file contents: ca55fd4537f29d8af0d0d17ed51ff3fd
+glyphs: 558
+glyphs with 7 contours: 4
+glyphs with 5 contours: 2
+glyphs with 4 contours: 18
+glyphs with 3 contours: 96
+glyphs with 2 contours: 252
+glyphs with 1 contours: 182
+glyphs with 0 contours: 4
+contours with 70 points: 3
+contours with 59 points: 3
+contours with 55 points: 5
+contours with 51 points: 7
+contours with 50 points: 15
+contours with 45 points: 1
+contours with 44 points: 1
+contours with 43 points: 1
+contours with 42 points: 1
+contours with 41 points: 1
+contours with 40 points: 1
+contours with 38 points: 11
+contours with 37 points: 9
+contours with 36 points: 14
+contours with 35 points: 4
+contours with 34 points: 14
+contours with 33 points: 5
+contours with 32 points: 13
+contours with 31 points: 5
+contours with 30 points: 1
+contours with 29 points: 5
+contours with 28 points: 40
+contours with 27 points: 2
+contours with 26 points: 1
+contours with 25 points: 1
+contours with 24 points: 7
+contours with 23 points: 5
+contours with 22 points: 1
+contours with 21 points: 29
+contours with 20 points: 19
+contours with 19 points: 20
+contours with 18 points: 2
+contours with 17 points: 51
+contours with 16 points: 46
+contours with 15 points: 50
+contours with 14 points: 46
+contours with 13 points: 45
+contours with 12 points: 76
+contours with 11 points: 28
+contours with 10 points: 65
+contours with 9 points: 17
+contours with 8 points: 37
+contours with 7 points: 51
+contours with 6 points: 22
+contours with 4 points: 271
+contours with 3 points: 32
+moveTo points: 1084
+lineTo points: 6307
+curveTo points: 2640
+qCurveTo points: 0
+<
+> 558 Glyphs (95c69a928b2e4ea9ebe4e0ee4bfead06)
+file name: 95c69a928b2e4ea9ebe4e0ee4bfead06
+file contents: 93c89fbd7cff02db3628d49613ac8e85
+glyphs: 558
+glyphs with 7 contours: 2
+glyphs with 5 contours: 4
+glyphs with 4 contours: 18
+glyphs with 3 contours: 94
+glyphs with 2 contours: 251
+glyphs with 1 contours: 185
+glyphs with 0 contours: 4
+contours with 71 points: 1
+contours with 70 points: 2
+contours with 59 points: 3
+contours with 55 points: 5
+contours with 54 points: 2
+contours with 51 points: 7
+contours with 50 points: 13
+contours with 45 points: 1
+contours with 44 points: 1
+contours with 42 points: 1
+contours with 41 points: 1
+contours with 40 points: 1
+contours with 39 points: 1
+contours with 38 points: 13
+contours with 37 points: 11
+contours with 36 points: 7
+contours with 35 points: 10
+contours with 34 points: 12
+contours with 33 points: 4
+contours with 32 points: 10
+contours with 31 points: 8
+contours with 30 points: 1
+contours with 29 points: 27
+contours with 28 points: 17
+contours with 27 points: 2
+contours with 26 points: 2
+contours with 25 points: 1
+contours with 24 points: 7
+contours with 23 points: 5
+contours with 22 points: 3
+contours with 21 points: 28
+contours with 20 points: 18
+contours with 19 points: 22
+contours with 17 points: 55
+contours with 16 points: 42
+contours with 15 points: 69
+contours with 14 points: 71
+contours with 13 points: 45
+contours with 12 points: 40
+contours with 11 points: 14
+contours with 10 points: 66
+contours with 9 points: 15
+contours with 8 points: 39
+contours with 7 points: 51
+contours with 6 points: 22
+contours with 4 points: 269
+contours with 3 points: 30
+moveTo points: 1075
+lineTo points: 6436
+curveTo points: 2627
+qCurveTo points: 0
+<
+> 558 Glyphs (9d96b2d141924a32f06359b7e683b5d1)
+file name: 9d96b2d141924a32f06359b7e683b5d1
+file contents: 03a7702f06acbdab71e8552b61168331
+glyphs: 558
+glyphs with 7 contours: 2
+glyphs with 5 contours: 4
+glyphs with 4 contours: 18
+glyphs with 3 contours: 94
+glyphs with 2 contours: 251
+glyphs with 1 contours: 185
+glyphs with 0 contours: 4
+contours with 72 points: 1
+contours with 71 points: 1
+contours with 70 points: 1
+contours with 59 points: 3
+contours with 55 points: 5
+contours with 54 points: 2
+contours with 51 points: 7
+contours with 50 points: 13
+contours with 45 points: 1
+contours with 44 points: 1
+contours with 42 points: 1
+contours with 41 points: 1
+contours with 40 points: 1
+contours with 39 points: 2
+contours with 38 points: 11
+contours with 37 points: 12
+contours with 36 points: 11
+contours with 35 points: 4
+contours with 34 points: 14
+contours with 33 points: 4
+contours with 32 points: 10
+contours with 31 points: 8
+contours with 30 points: 1
+contours with 29 points: 4
+contours with 28 points: 40
+contours with 27 points: 2
+contours with 26 points: 1
+contours with 25 points: 2
+contours with 24 points: 7
+contours with 23 points: 5
+contours with 22 points: 1
+contours with 21 points: 29
+contours with 20 points: 19
+contours with 19 points: 20
+contours with 18 points: 2
+contours with 17 points: 51
+contours with 16 points: 46
+contours with 15 points: 50
+contours with 14 points: 90
+contours with 13 points: 45
+contours with 12 points: 40
+contours with 11 points: 14
+contours with 10 points: 66
+contours with 9 points: 16
+contours with 8 points: 38
+contours with 7 points: 51
+contours with 6 points: 22
+contours with 4 points: 269
+contours with 3 points: 30
+moveTo points: 1075
+lineTo points: 6392
+curveTo points: 2626
+qCurveTo points: 0
+<
+> 709 Glyphs (35fee11cacbbe247527c52c1c0e6f874)
+file name: 35fee11cacbbe247527c52c1c0e6f874
+file contents: 969562b2453b7ce61b97ffc0eab2ff8c
+glyphs: 709
+glyphs with 7 contours: 1
+glyphs with 5 contours: 1
+glyphs with 4 contours: 30
+glyphs with 3 contours: 167
+glyphs with 2 contours: 306
+glyphs with 1 contours: 201
+glyphs with 0 contours: 3
+contours with 136 points: 2
+contours with 120 points: 5
+contours with 113 points: 2
+contours with 110 points: 2
+contours with 104 points: 3
+contours with 96 points: 6
+contours with 94 points: 2
+contours with 92 points: 4
+contours with 91 points: 1
+contours with 88 points: 3
+contours with 84 points: 14
+contours with 83 points: 2
+contours with 81 points: 3
+contours with 80 points: 20
+contours with 79 points: 2
+contours with 76 points: 2
+contours with 72 points: 11
+contours with 71 points: 3
+contours with 68 points: 7
+contours with 67 points: 1
+contours with 64 points: 66
+contours with 61 points: 4
+contours with 60 points: 10
+contours with 57 points: 7
+contours with 56 points: 71
+contours with 53 points: 1
+contours with 52 points: 16
+contours with 51 points: 1
+contours with 49 points: 23
+contours with 48 points: 94
+contours with 47 points: 1
+contours with 45 points: 5
+contours with 44 points: 16
+contours with 41 points: 22
+contours with 40 points: 74
+contours with 37 points: 7
+contours with 36 points: 41
+contours with 33 points: 23
+contours with 32 points: 164
+contours with 31 points: 6
+contours with 29 points: 9
+contours with 28 points: 91
+contours with 25 points: 7
+contours with 24 points: 132
+contours with 20 points: 147
+contours with 19 points: 2
+contours with 17 points: 200
+contours with 16 points: 90
+contours with 15 points: 2
+contours with 12 points: 17
+contours with 5 points: 2
+moveTo points: 1446
+lineTo points: 11558
+curveTo points: 12718
+qCurveTo points: 0
+<
+> 709 Glyphs (7a3b7ea6b7cf64edff26dac75d771034)
+file name: 7a3b7ea6b7cf64edff26dac75d771034
+file contents: 497ab050f7700f07d6b02d10f82daae9
+glyphs: 709
+glyphs with 7 contours: 1
+glyphs with 5 contours: 1
+glyphs with 4 contours: 32
+glyphs with 3 contours: 165
+glyphs with 2 contours: 310
+glyphs with 1 contours: 197
+glyphs with 0 contours: 3
+contours with 136 points: 2
+contours with 120 points: 5
+contours with 112 points: 4
+contours with 111 points: 2
+contours with 104 points: 3
+contours with 96 points: 8
+contours with 92 points: 5
+contours with 88 points: 4
+contours with 84 points: 15
+contours with 81 points: 4
+contours with 80 points: 18
+contours with 76 points: 2
+contours with 72 points: 11
+contours with 71 points: 1
+contours with 68 points: 11
+contours with 66 points: 1
+contours with 64 points: 67
+contours with 61 points: 4
+contours with 60 points: 8
+contours with 57 points: 5
+contours with 56 points: 67
+contours with 55 points: 6
+contours with 53 points: 3
+contours with 52 points: 13
+contours with 49 points: 35
+contours with 48 points: 90
+contours with 47 points: 1
+contours with 45 points: 5
+contours with 44 points: 16
+contours with 41 points: 20
+contours with 40 points: 70
+contours with 37 points: 1
+contours with 36 points: 47
+contours with 33 points: 4
+contours with 32 points: 183
+contours with 31 points: 6
+contours with 30 points: 1
+contours with 29 points: 8
+contours with 28 points: 91
+contours with 26 points: 1
+contours with 25 points: 18
+contours with 24 points: 120
+contours with 23 points: 2
+contours with 22 points: 2
+contours with 20 points: 147
+contours with 19 points: 2
+contours with 18 points: 2
+contours with 17 points: 124
+contours with 16 points: 166
+contours with 13 points: 1
+contours with 12 points: 15
+contours with 7 points: 2
+contours with 6 points: 1
+contours with 5 points: 2
+moveTo points: 1452
+lineTo points: 11536
+curveTo points: 12768
+qCurveTo points: 0
+<
+> 494 Glyphs (821027680cf48f72ebe4cc5e5d062573)
+file name: 821027680cf48f72ebe4cc5e5d062573
+file contents: cfa4cbe3724cb901421dbaa7c5678c4e
+glyphs: 494
+glyphs with 13 contours: 1
+glyphs with 9 contours: 3
+glyphs with 8 contours: 17
+glyphs with 7 contours: 6
+glyphs with 6 contours: 91
+glyphs with 5 contours: 51
+glyphs with 4 contours: 176
+glyphs with 3 contours: 49
+glyphs with 2 contours: 96
+glyphs with 1 contours: 2
+glyphs with 0 contours: 2
+contours with 120 points: 1
+contours with 112 points: 1
+contours with 106 points: 2
+contours with 98 points: 2
+contours with 97 points: 4
+contours with 90 points: 1
+contours with 88 points: 1
+contours with 85 points: 2
+contours with 82 points: 1
+contours with 81 points: 2
+contours with 80 points: 1
+contours with 77 points: 1
+contours with 74 points: 28
+contours with 70 points: 1
+contours with 69 points: 1
+contours with 66 points: 19
+contours with 65 points: 1
+contours with 64 points: 2
+contours with 62 points: 5
+contours with 61 points: 4
+contours with 58 points: 26
+contours with 57 points: 42
+contours with 56 points: 7
+contours with 54 points: 16
+contours with 52 points: 2
+contours with 50 points: 43
+contours with 49 points: 2
+contours with 46 points: 2
+contours with 45 points: 2
+contours with 44 points: 1
+contours with 42 points: 127
+contours with 41 points: 5
+contours with 40 points: 2
+contours with 39 points: 10
+contours with 38 points: 48
+contours with 37 points: 7
+contours with 36 points: 6
+contours with 34 points: 111
+contours with 33 points: 1
+contours with 32 points: 160
+contours with 31 points: 1
+contours with 30 points: 11
+contours with 28 points: 6
+contours with 27 points: 6
+contours with 26 points: 285
+contours with 25 points: 2
+contours with 24 points: 147
+contours with 23 points: 2
+contours with 22 points: 63
+contours with 21 points: 6
+contours with 20 points: 92
+contours with 19 points: 12
+contours with 18 points: 179
+contours with 16 points: 45
+contours with 13 points: 35
+contours with 12 points: 26
+contours with 11 points: 4
+contours with 10 points: 408
+contours with 9 points: 32
+contours with 5 points: 2
+moveTo points: 2064
+lineTo points: 13975
+curveTo points: 13119
+qCurveTo points: 0
+<
+> 709 Glyphs (deb1fd4795876f88b396e2b7086b0350)
+file name: deb1fd4795876f88b396e2b7086b0350
+file contents: cd4ad6f9e9fcb4a6a41fb99004d2cb5f
+glyphs: 709
+glyphs with 7 contours: 1
+glyphs with 5 contours: 1
+glyphs with 4 contours: 32
+glyphs with 3 contours: 165
+glyphs with 2 contours: 310
+glyphs with 1 contours: 197
+glyphs with 0 contours: 3
+contours with 136 points: 2
+contours with 121 points: 1
+contours with 120 points: 4
+contours with 113 points: 2
+contours with 112 points: 2
+contours with 111 points: 2
+contours with 105 points: 1
+contours with 104 points: 2
+contours with 96 points: 9
+contours with 93 points: 2
+contours with 92 points: 3
+contours with 88 points: 4
+contours with 85 points: 2
+contours with 84 points: 12
+contours with 83 points: 1
+contours with 81 points: 9
+contours with 80 points: 13
+contours with 76 points: 2
+contours with 73 points: 4
+contours with 72 points: 7
+contours with 70 points: 1
+contours with 69 points: 1
+contours with 68 points: 10
+contours with 65 points: 36
+contours with 64 points: 31
+contours with 61 points: 4
+contours with 60 points: 8
+contours with 57 points: 15
+contours with 56 points: 57
+contours with 55 points: 6
+contours with 53 points: 8
+contours with 52 points: 8
+contours with 49 points: 64
+contours with 48 points: 61
+contours with 47 points: 1
+contours with 45 points: 5
+contours with 44 points: 16
+contours with 41 points: 22
+contours with 40 points: 68
+contours with 37 points: 7
+contours with 36 points: 41
+contours with 33 points: 57
+contours with 32 points: 130
+contours with 30 points: 6
+contours with 29 points: 12
+contours with 28 points: 88
+contours with 25 points: 8
+contours with 24 points: 133
+contours with 22 points: 2
+contours with 20 points: 149
+contours with 18 points: 2
+contours with 17 points: 258
+contours with 16 points: 32
+contours with 12 points: 19
+contours with 5 points: 2
+moveTo points: 1452
+lineTo points: 11818
+curveTo points: 12782
+qCurveTo points: 0
+<
+> 709 Glyphs (2d89f948db4430cf949df9246b9d7d37)
+file name: 2d89f948db4430cf949df9246b9d7d37
+file contents: 9a9c8c31e303bdacef16227f5c22d935
+glyphs: 709
+glyphs with 7 contours: 1
+glyphs with 5 contours: 1
+glyphs with 4 contours: 30
+glyphs with 3 contours: 167
+glyphs with 2 contours: 310
+glyphs with 1 contours: 197
+glyphs with 0 contours: 3
+contours with 136 points: 2
+contours with 120 points: 5
+contours with 112 points: 4
+contours with 111 points: 2
+contours with 104 points: 3
+contours with 96 points: 9
+contours with 92 points: 5
+contours with 88 points: 4
+contours with 84 points: 14
+contours with 83 points: 1
+contours with 81 points: 4
+contours with 80 points: 18
+contours with 76 points: 2
+contours with 72 points: 11
+contours with 71 points: 1
+contours with 68 points: 11
+contours with 64 points: 67
+contours with 61 points: 4
+contours with 60 points: 8
+contours with 57 points: 5
+contours with 56 points: 67
+contours with 55 points: 6
+contours with 53 points: 3
+contours with 52 points: 13
+contours with 49 points: 31
+contours with 48 points: 94
+contours with 47 points: 1
+contours with 45 points: 5
+contours with 44 points: 16
+contours with 41 points: 20
+contours with 40 points: 70
+contours with 37 points: 1
+contours with 36 points: 47
+contours with 33 points: 4
+contours with 32 points: 183
+contours with 31 points: 6
+contours with 29 points: 8
+contours with 28 points: 92
+contours with 25 points: 18
+contours with 24 points: 123
+contours with 22 points: 2
+contours with 20 points: 149
+contours with 18 points: 2
+contours with 17 points: 124
+contours with 16 points: 166
+contours with 13 points: 1
+contours with 12 points: 16
+contours with 5 points: 2
+moveTo points: 1450
+lineTo points: 11531
+curveTo points: 12776
+qCurveTo points: 0
+<
+> 709 Glyphs (cd6db29baf3c88307a5775b7e38cb99f)
+file name: cd6db29baf3c88307a5775b7e38cb99f
+file contents: 610592b613bc684e81c4a72632b2965c
+glyphs: 709
+glyphs with 7 contours: 1
+glyphs with 5 contours: 1
+glyphs with 4 contours: 30
+glyphs with 3 contours: 167
+glyphs with 2 contours: 306
+glyphs with 1 contours: 201
+glyphs with 0 contours: 3
+contours with 136 points: 2
+contours with 120 points: 5
+contours with 112 points: 2
+contours with 111 points: 1
+contours with 110 points: 1
+contours with 104 points: 3
+contours with 96 points: 6
+contours with 94 points: 2
+contours with 92 points: 4
+contours with 91 points: 1
+contours with 88 points: 3
+contours with 84 points: 11
+contours with 83 points: 1
+contours with 81 points: 2
+contours with 80 points: 23
+contours with 77 points: 1
+contours with 76 points: 5
+contours with 73 points: 2
+contours with 72 points: 9
+contours with 71 points: 2
+contours with 70 points: 1
+contours with 68 points: 8
+contours with 64 points: 66
+contours with 61 points: 2
+contours with 60 points: 12
+contours with 56 points: 69
+contours with 55 points: 6
+contours with 52 points: 16
+contours with 51 points: 2
+contours with 49 points: 2
+contours with 48 points: 115
+contours with 47 points: 1
+contours with 44 points: 21
+contours with 40 points: 99
+contours with 36 points: 48
+contours with 33 points: 4
+contours with 32 points: 183
+contours with 31 points: 6
+contours with 29 points: 2
+contours with 28 points: 85
+contours with 24 points: 137
+contours with 20 points: 160
+contours with 19 points: 2
+contours with 16 points: 292
+contours with 15 points: 2
+contours with 13 points: 1
+contours with 12 points: 16
+contours with 5 points: 2
+moveTo points: 1446
+lineTo points: 11208
+curveTo points: 12668
+qCurveTo points: 0
+<
