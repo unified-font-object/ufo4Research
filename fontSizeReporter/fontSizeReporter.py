@@ -6,10 +6,6 @@ the file contents and the file name as a way of
 filtering out duplicate data in the overall data set.
 
 To Do:
-- rather than hash the file contents and file name,
-  find some way to hash the glyph outlines. this will
-  make it so that UFOs and OTFs of the same data only
-  count as one instance.
 - if defcon is installed, read UFOs with that.
 - if extractor is installed, use it to pull kerning from binaries.
 - should component transformations be extracted?
@@ -19,6 +15,13 @@ To Do:
 - in UFOs, measure the number of characters in the features.
 - in UFOs, count the number of points with identifiers.
 - count the number of smooth curve points.
+- measure string lengths in font info and note them as an overall total.
+  this can then be split or stored in a single field in the generated UFOs.
+- should glyph name lengths be measured?
+- should point identifiers be assigned? these can potentially be a lot of data.
+- measure feature string length.
+- lib should be ignored.
+- measure glyph note lengths and store that as a single value.
 """
 
 import md5
@@ -63,9 +66,11 @@ def isFontPath(path):
 # --------
 
 def profileFont(path):
-	data = dict(
-		fileName=None,
-		fileContents=None,
+	"""
+	Profile a font and dump the result to stdout.
+	"""
+	profile = dict(
+		fingerprinter={},
 		glyphs=0,
 		contourOccurance={},
 		pointOccurance={},
@@ -75,70 +80,89 @@ def profileFont(path):
 			lineTo=0,
 			curveTo=0,
 			qCurveTo=0
-		),
-		kerningPairs=0,
-		kerningGroups=0
+		)
 	)
-	contourOccurance = data["contourOccurance"]
-	pointOccurance = data["pointOccurance"]
-	# file name
-	data["fileName"] = makeHash(os.path.basename(path).lower())
-	# file contents
-	f = open(path, "rb")
-	d = f.read()
-	f.close()
-	data["fileContents"] = makeHash(d)
 	# counting
 	font = TTFont(path)
 	glyphOrder = font.getGlyphOrder()
 	glyphSet = font.getGlyphSet()
 	for glyphName in glyphOrder:
 		glyph = glyphSet[glyphName]
-		pen = CounterPen()
-		glyph.draw(pen)
-		# contour counts
-		contourCount = len(pen.contours)
-		if contourCount not in contourOccurance:
-			contourOccurance[contourCount] = 0
-		contourOccurance[contourCount] += 1
-		# point counts
-		for contour in pen.contours:
-			pointCount = contour["total"]
-			if pointCount not in pointOccurance:
-				pointOccurance[pointCount] = 0
-			pointOccurance[pointCount] += 1
-			# point types
-			data["pointTypes"]["moveTo"] += contour["moveTo"]
-			data["pointTypes"]["lineTo"] += contour["lineTo"]
-			data["pointTypes"]["curveTo"] += contour["curveTo"]
-			data["pointTypes"]["qCurveTo"] += contour["qCurveTo"]
-		# component counts
-		data["componentOccurance"] += pen.components
-	data["glyphs"] = len(glyphOrder)
+		profileGlyph(glyph, profile)
+	profile["glyphs"] = len(glyphOrder)
+	fingerprintProfile(profile)
 	# dump
-	print "> %d Glyphs (%s)" % (data["glyphs"], data["fileName"])
-	print "file name:", data["fileName"]
-	print "file contents:", data["fileContents"]
-	print "glyphs:", data["glyphs"]
-	for contourCount, occurance in reversed(sorted(data["contourOccurance"].items())):
+	print "> %d Glyphs (%s)" % (profile["glyphs"], profile["fingerprint"])
+	print "fingerprint:", profile["fingerprint"]
+	print "glyphs:", profile["glyphs"]
+	for contourCount, occurance in reversed(sorted(profile["contourOccurance"].items())):
 		print "glyphs with %d contours:" % contourCount, occurance
-	for pointCount, occurance in reversed(sorted(data["pointOccurance"].items())):
+	for pointCount, occurance in reversed(sorted(profile["pointOccurance"].items())):
 		print "contours with %d points:" % pointCount, occurance
 	for pointType in ("moveTo", "lineTo", "curveTo", "qCurveTo"):
-		print "%s points:" % pointType, data["pointTypes"][pointType]
+		print "%s points:" % pointType, profile["pointTypes"][pointType]
 	print "<"
 
-def makeHash(data):
+def profileGlyph(glyph, profile):
+	"""
+	Profile a glyph that supports the pen protocol.
+	"""
+	pen = ProfilePen(profile["fingerprinter"])
+	glyph.draw(pen)
+	# contour counts
+	contourOccurance = profile["contourOccurance"]
+	contourCount = len(pen.contours)
+	if contourCount not in contourOccurance:
+		contourOccurance[contourCount] = 0
+	contourOccurance[contourCount] += 1
+	# point counts
+	pointOccurance = profile["pointOccurance"]
+	for contour in pen.contours:
+		pointCount = contour["total"]
+		if pointCount not in pointOccurance:
+			pointOccurance[pointCount] = 0
+		pointOccurance[pointCount] += 1
+		# point types
+		profile["pointTypes"]["moveTo"] += contour["moveTo"]
+		profile["pointTypes"]["lineTo"] += contour["lineTo"]
+		profile["pointTypes"]["curveTo"] += contour["curveTo"]
+		profile["pointTypes"]["qCurveTo"] += contour["qCurveTo"]
+	# component counts
+	profile["componentOccurance"] += pen.components
+
+def fingerprintProfile(profile):
+	"""
+	Generate a unique hash for the font contents.
+	"""
+	hashable = []
+	for (x, y), count in sorted(profile["fingerprinter"].items()):
+		line = "%.1f %.1f %d" % (x, y, count)
+		hashable.append(line)
+	hashable = "\n".join(hashable)
 	m = md5.md5()
-	m.update(data)
-	return m.hexdigest()
+	m.update(hashable)
+	profile["fingerprint"] = m.hexdigest()
+	del profile["fingerprinter"]
 
 
-class CounterPen(BasePen):
+class ProfilePen(BasePen):
 
-	def __init__(self):
+	"""
+	This will record the number of contours,
+	points (including their various types),
+	and contours. It will simultaneously store
+	all point locations for full font fingerprinting.
+	"""
+
+	def __init__(self, fingerprinter):
 		self.contours = []
 		self.components = 0
+		self._fingerprinter = fingerprinter
+
+	def _logPoint(self, pt):
+		if pt not in self._fingerprinter:
+			self._fingerprinter[pt] = 0
+		self._fingerprinter[pt] += 1
 
 	def _moveTo(self, pt):
 		d = dict(
@@ -149,22 +173,28 @@ class CounterPen(BasePen):
 			total=1
 		)
 		self.contours.append(d)
+		self._logPoint(pt)
 
 	def _lineTo(self, pt):
 		self.contours[-1]["lineTo"] += 1
 		self.contours[-1]["total"] += 1
+		self._logPoint(pt)
 
 	def _curveToOne(self, pt1, pt2, pt3):
 		self.contours[-1]["curveTo"] += 1
 		self.contours[-1]["total"] += 3
+		self._logPoint(pt1)
+		self._logPoint(pt2)
+		self._logPoint(pt3)
 
 	def _qCurveToOne(self, pt1, pt2):
 		self.contours[-1]["qCurveTo"] += 1
 		self.contours[-1]["total"] += 2
+		self._logPoint(pt1)
+		self._logPoint(pt2)
 
 	def addComponent(self, glyphName, transformation):
 		self.components += 1
-
 
 # --------------------
 # Command Line Behvior
@@ -182,7 +212,6 @@ def main():
 	(options, args) = parser.parse_args()
 	paths = gatherFontPaths(args)
 	dumpProfilesForFonts(paths)
-
 
 if __name__ == "__main__":
 	main()

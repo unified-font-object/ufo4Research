@@ -1,6 +1,5 @@
-> 547 Glyphs (08f8d227c54460b05bdbe03419ed0457)
-file name: 08f8d227c54460b05bdbe03419ed0457
-file contents: e135e3180c5d9c38f8b88d0786e52548
+> 547 Glyphs (5f56c55f79fca275347df60876794810)
+fingerprint: 5f56c55f79fca275347df60876794810
 glyphs: 547
 glyphs with 7 contours: 4
 glyphs with 5 contours: 4
@@ -57,9 +56,8 @@ lineTo points: 4768
 curveTo points: 2815
 qCurveTo points: 0
 <
-> 547 Glyphs (55dbba4f87e11907ea5d52ea83a3730c)
-file name: 55dbba4f87e11907ea5d52ea83a3730c
-file contents: a2011576ba8579bb58b2a064dad57c54
+> 547 Glyphs (b69219110ac3f13e3ca1e383704992a7)
+fingerprint: b69219110ac3f13e3ca1e383704992a7
 glyphs: 547
 glyphs with 7 contours: 4
 glyphs with 5 contours: 4
@@ -117,9 +115,8 @@ lineTo points: 4438
 curveTo points: 3035
 qCurveTo points: 0
 <
-> 547 Glyphs (2bb0bf852bc289ca196f9aee02a6b461)
-file name: 2bb0bf852bc289ca196f9aee02a6b461
-file contents: b072d698ca621d891f7d8a17db9b1650
+> 547 Glyphs (2ce00cf92024230e94b26e1c7b939c88)
+fingerprint: 2ce00cf92024230e94b26e1c7b939c88
 glyphs: 547
 glyphs with 7 contours: 4
 glyphs with 5 contours: 4
@@ -178,9 +175,8 @@ lineTo points: 4807
 curveTo points: 2823
 qCurveTo points: 0
 <
-> 547 Glyphs (d446cee54cd8c5581022c5d058a0f585)
-file name: d446cee54cd8c5581022c5d058a0f585
-file contents: eb9a321224f6dc666e98aa2dfc176bf1
+> 547 Glyphs (319bf103d7c7e95c7079d5b18292ea23)
+fingerprint: 319bf103d7c7e95c7079d5b18292ea23
 glyphs: 547
 glyphs with 7 contours: 4
 glyphs with 5 contours: 4
@@ -237,9 +233,8 @@ lineTo points: 4459
 curveTo points: 3027
 qCurveTo points: 0
 <
-> 547 Glyphs (320387015a63217645afaa0157f1e6da)
-file name: 320387015a63217645afaa0157f1e6da
-file contents: b5e7d5d88aab2593a400687d18ec802f
+> 547 Glyphs (a0473dcb2424a6abbb2fceaa1ae8cf41)
+fingerprint: a0473dcb2424a6abbb2fceaa1ae8cf41
 glyphs: 547
 glyphs with 7 contours: 4
 glyphs with 5 contours: 4
@@ -296,9 +291,8 @@ lineTo points: 4836
 curveTo points: 2845
 qCurveTo points: 0
 <
-> 547 Glyphs (79d598d13174b0b5553546f0a000ba52)
-file name: 79d598d13174b0b5553546f0a000ba52
-file contents: 8e85761d559f5e9ccd3cd795e6499c83
+> 547 Glyphs (0b0c48acf127794eeb01a77e0c0a2448)
+fingerprint: 0b0c48acf127794eeb01a77e0c0a2448
 glyphs: 547
 glyphs with 7 contours: 4
 glyphs with 5 contours: 4
@@ -356,9 +350,8 @@ lineTo points: 4499
 curveTo points: 3052
 qCurveTo points: 0
 <
-> 547 Glyphs (083f0796a458971b80aed0224bc728b7)
-file name: 083f0796a458971b80aed0224bc728b7
-file contents: 22d94d0901d9684ce697c454650f8653
+> 547 Glyphs (c37dae14faa70f76e46bc8278ebe4971)
+fingerprint: c37dae14faa70f76e46bc8278ebe4971
 glyphs: 547
 glyphs with 7 contours: 4
 glyphs with 5 contours: 4
@@ -416,9 +409,8 @@ lineTo points: 4876
 curveTo points: 2863
 qCurveTo points: 0
 <
-> 547 Glyphs (39959a00c8e92ebf9a7681aa2b7d3910)
-file name: 39959a00c8e92ebf9a7681aa2b7d3910
-file contents: 2daa51def730836b690667d2ad1a3445
+> 547 Glyphs (838cfe1fbb2bf3a6b9b078debd010ad7)
+fingerprint: 838cfe1fbb2bf3a6b9b078debd010ad7
 glyphs: 547
 glyphs with 7 contours: 4
 glyphs with 5 contours: 4
@@ -479,9 +471,8 @@ lineTo points: 4505
 curveTo points: 3075
 qCurveTo points: 0
 <
-> 547 Glyphs (bb94efb014b6e54ebf931be92502e538)
-file name: bb94efb014b6e54ebf931be92502e538
-file contents: 13016c36d1730e48757b9ca71c8cdae3
+> 547 Glyphs (7c86dc0ac0f341d1a3cdee0533709d4e)
+fingerprint: 7c86dc0ac0f341d1a3cdee0533709d4e
 glyphs: 547
 glyphs with 7 contours: 4
 glyphs with 5 contours: 4
@@ -537,9 +528,8 @@ lineTo points: 4816
 curveTo points: 2843
 qCurveTo points: 0
 <
-> 547 Glyphs (093f731bd9bf8066a224417f841eacb7)
-file name: 093f731bd9bf8066a224417f841eacb7
-file contents: c51874ec345fda421e785b7bd0104dfe
+> 547 Glyphs (d6556682de774171784adb9536dd2ba3)
+fingerprint: d6556682de774171784adb9536dd2ba3
 glyphs: 547
 glyphs with 7 contours: 4
 glyphs with 5 contours: 4
@@ -598,9 +588,8 @@ lineTo points: 4480
 curveTo points: 3042
 qCurveTo points: 0
 <
-> 547 Glyphs (73a64fd7e35b0d99fb3a73bf997bb43a)
-file name: 73a64fd7e35b0d99fb3a73bf997bb43a
-file contents: 2a9db0e6039ba9b69160c15a6f4ad2e5
+> 547 Glyphs (233d942f3533b6885e761cb4ee3750d0)
+fingerprint: 233d942f3533b6885e761cb4ee3750d0
 glyphs: 547
 glyphs with 7 contours: 4
 glyphs with 5 contours: 4
@@ -658,9 +647,8 @@ lineTo points: 4765
 curveTo points: 2807
 qCurveTo points: 0
 <
-> 547 Glyphs (ce7b4967372dd1629bb9656dd224ef37)
-file name: ce7b4967372dd1629bb9656dd224ef37
-file contents: aaf0f211b541d07ae43f6a80211dd346
+> 547 Glyphs (2b660544e181ad073ddfdd65bb51010b)
+fingerprint: 2b660544e181ad073ddfdd65bb51010b
 glyphs: 547
 glyphs with 7 contours: 4
 glyphs with 5 contours: 4
@@ -717,9 +705,8 @@ lineTo points: 4433
 curveTo points: 3070
 qCurveTo points: 0
 <
-> 547 Glyphs (f7289fceeb5fc07d91737fd5e5ba11bd)
-file name: f7289fceeb5fc07d91737fd5e5ba11bd
-file contents: d240fdd955ab5c7f04b5deb0208c046d
+> 547 Glyphs (5ac0da8defe7ec9c9bc7e626ee0539be)
+fingerprint: 5ac0da8defe7ec9c9bc7e626ee0539be
 glyphs: 547
 glyphs with 7 contours: 4
 glyphs with 5 contours: 4
@@ -777,9 +764,8 @@ lineTo points: 4865
 curveTo points: 2874
 qCurveTo points: 0
 <
-> 547 Glyphs (044b189af2750b91c251710a20b19e04)
-file name: 044b189af2750b91c251710a20b19e04
-file contents: 0a7f3784a9cb8b223be0d40508dce1bb
+> 547 Glyphs (c1b07d80f11c9d27c8f3845a59c60332)
+fingerprint: c1b07d80f11c9d27c8f3845a59c60332
 glyphs: 547
 glyphs with 7 contours: 4
 glyphs with 5 contours: 4
@@ -839,9 +825,8 @@ lineTo points: 4512
 curveTo points: 3080
 qCurveTo points: 0
 <
-> 547 Glyphs (2046706c5c1b74c203245703a266bcdc)
-file name: 2046706c5c1b74c203245703a266bcdc
-file contents: 03d18e10292213377e68bbb876763680
+> 547 Glyphs (07e42c36456e7c8fc75e4daca1e64c8a)
+fingerprint: 07e42c36456e7c8fc75e4daca1e64c8a
 glyphs: 547
 glyphs with 7 contours: 4
 glyphs with 5 contours: 4
@@ -899,9 +884,8 @@ lineTo points: 4753
 curveTo points: 2802
 qCurveTo points: 0
 <
-> 547 Glyphs (cdb6f8b4b13ba178131c9fda3f7f4de2)
-file name: cdb6f8b4b13ba178131c9fda3f7f4de2
-file contents: 0ec35ed13c6c9a5132ce07385b498f2a
+> 547 Glyphs (f53e54553d47bf743afc65946ee51ee6)
+fingerprint: f53e54553d47bf743afc65946ee51ee6
 glyphs: 547
 glyphs with 7 contours: 4
 glyphs with 5 contours: 4
@@ -960,9 +944,8 @@ lineTo points: 4448
 curveTo points: 3088
 qCurveTo points: 0
 <
-> 779 Glyphs (d29d0a05a326f69986304887af40bc58)
-file name: d29d0a05a326f69986304887af40bc58
-file contents: 026ca837236107160c79153849232af5
+> 779 Glyphs (8d961c5719707d2782afbbb725dbe1de)
+fingerprint: 8d961c5719707d2782afbbb725dbe1de
 glyphs: 779
 glyphs with 7 contours: 4
 glyphs with 5 contours: 4
@@ -1047,9 +1030,8 @@ lineTo points: 557
 curveTo points: 14746
 qCurveTo points: 0
 <
-> 667 Glyphs (c851e5a33b706a0c48c0accba2c01764)
-file name: c851e5a33b706a0c48c0accba2c01764
-file contents: 1b141743c97f2a485f2059191e950aac
+> 667 Glyphs (586779a6d32881d795599160084d1eb9)
+fingerprint: 586779a6d32881d795599160084d1eb9
 glyphs: 667
 glyphs with 7 contours: 2
 glyphs with 5 contours: 2
@@ -1127,9 +1109,8 @@ lineTo points: 219
 curveTo points: 14119
 qCurveTo points: 0
 <
-> 779 Glyphs (36621291f17e2589fb81a4ff0903a1ba)
-file name: 36621291f17e2589fb81a4ff0903a1ba
-file contents: 17fe455b52d1f47f5e64ed421aaf3a84
+> 779 Glyphs (63d69f986373c99b0e9273780d9509c2)
+fingerprint: 63d69f986373c99b0e9273780d9509c2
 glyphs: 779
 glyphs with 7 contours: 4
 glyphs with 5 contours: 4
@@ -1208,9 +1189,8 @@ lineTo points: 392
 curveTo points: 15000
 qCurveTo points: 0
 <
-> 667 Glyphs (7f554881ee5aae023147cfb985676fe0)
-file name: 7f554881ee5aae023147cfb985676fe0
-file contents: 78c9c57db8b6ee858eddca0d2eb2a3fb
+> 667 Glyphs (e6fbd96c081a4eab2c4b2d5dd25321d7)
+fingerprint: e6fbd96c081a4eab2c4b2d5dd25321d7
 glyphs: 667
 glyphs with 7 contours: 2
 glyphs with 5 contours: 2
@@ -1287,9 +1267,8 @@ lineTo points: 244
 curveTo points: 14359
 qCurveTo points: 0
 <
-> 779 Glyphs (19a515006ddc7970e2858d40063366bd)
-file name: 19a515006ddc7970e2858d40063366bd
-file contents: 3c5101a94d90623e8d7d71f8adc82063
+> 779 Glyphs (93cad5745625a26f1d6650763e9430d7)
+fingerprint: 93cad5745625a26f1d6650763e9430d7
 glyphs: 779
 glyphs with 8 contours: 2
 glyphs with 7 contours: 4
@@ -1365,9 +1344,8 @@ lineTo points: 136
 curveTo points: 15610
 qCurveTo points: 0
 <
-> 667 Glyphs (60a68e24c98ff1c1bc80cabf70b7be02)
-file name: 60a68e24c98ff1c1bc80cabf70b7be02
-file contents: 8332e71b6a6d61165cb04dfe2c9378d2
+> 667 Glyphs (d834c59ee719f4490bbeeea64225b349)
+fingerprint: d834c59ee719f4490bbeeea64225b349
 glyphs: 667
 glyphs with 8 contours: 2
 glyphs with 7 contours: 2
@@ -1443,9 +1421,8 @@ lineTo points: 123
 curveTo points: 14781
 qCurveTo points: 0
 <
-> 779 Glyphs (65fc6cbdec5d6c4a6a638154e7ffa539)
-file name: 65fc6cbdec5d6c4a6a638154e7ffa539
-file contents: 021ec16f351ee6b14fd390301f01caf0
+> 779 Glyphs (acffddd9209d06fde93604264b558a35)
+fingerprint: acffddd9209d06fde93604264b558a35
 glyphs: 779
 glyphs with 8 contours: 2
 glyphs with 7 contours: 4
@@ -1518,9 +1495,8 @@ lineTo points: 194
 curveTo points: 15498
 qCurveTo points: 0
 <
-> 667 Glyphs (6ab81cd5a8758da7f9aaa031858f6225)
-file name: 6ab81cd5a8758da7f9aaa031858f6225
-file contents: 7345591d7d87fac9a728bde1202b32df
+> 667 Glyphs (ad324bf93f0705ece33d48ad9d74ff09)
+fingerprint: ad324bf93f0705ece33d48ad9d74ff09
 glyphs: 667
 glyphs with 8 contours: 2
 glyphs with 7 contours: 2
@@ -1592,9 +1568,8 @@ lineTo points: 88
 curveTo points: 14736
 qCurveTo points: 0
 <
-> 779 Glyphs (4159557e346f36551229de5ee53483b2)
-file name: 4159557e346f36551229de5ee53483b2
-file contents: 22ba0051f39e31aa9ec2ff508b6d32d1
+> 779 Glyphs (45bf6d94ce5278d90cf3e6c91a837f3f)
+fingerprint: 45bf6d94ce5278d90cf3e6c91a837f3f
 glyphs: 779
 glyphs with 8 contours: 2
 glyphs with 7 contours: 4
@@ -1670,9 +1645,8 @@ lineTo points: 114
 curveTo points: 15673
 qCurveTo points: 0
 <
-> 667 Glyphs (30208589b15ce49b6d3b49fa87208b11)
-file name: 30208589b15ce49b6d3b49fa87208b11
-file contents: 0c6ff0ffb60f9228b9cdb8f342cc30d6
+> 667 Glyphs (ce900f2ec4d5d81fdf3e66e2498bf1d0)
+fingerprint: ce900f2ec4d5d81fdf3e66e2498bf1d0
 glyphs: 667
 glyphs with 8 contours: 2
 glyphs with 7 contours: 2
@@ -1741,9 +1715,8 @@ lineTo points: 63
 curveTo points: 14987
 qCurveTo points: 0
 <
-> 376 Glyphs (721f9b5cfa2ec9e7aee0bb4875533871)
-file name: 721f9b5cfa2ec9e7aee0bb4875533871
-file contents: d2fc5836c121da5053860123fa0a8eb8
+> 376 Glyphs (bfae1ea94adb892d69b0a8547c902ba3)
+fingerprint: bfae1ea94adb892d69b0a8547c902ba3
 glyphs: 376
 glyphs with 7 contours: 1
 glyphs with 5 contours: 1
@@ -1824,9 +1797,8 @@ lineTo points: 13162
 curveTo points: 17086
 qCurveTo points: 0
 <
-> 376 Glyphs (93f85a6bf947d84e79ac71b46ceb79fe)
-file name: 93f85a6bf947d84e79ac71b46ceb79fe
-file contents: b9f7589cdda1d90db29bd60f7e3395d8
+> 376 Glyphs (102016704f3c19a8faf5b1dcd23bd558)
+fingerprint: 102016704f3c19a8faf5b1dcd23bd558
 glyphs: 376
 glyphs with 7 contours: 1
 glyphs with 5 contours: 1
@@ -1890,9 +1862,8 @@ lineTo points: 7287
 curveTo points: 10523
 qCurveTo points: 0
 <
-> 376 Glyphs (ead0168e917bbeb5a4898626c1263954)
-file name: ead0168e917bbeb5a4898626c1263954
-file contents: 18374e7d84976e95f8f718d6af516555
+> 376 Glyphs (972377116cb99ffb559051e742f2e74e)
+fingerprint: 972377116cb99ffb559051e742f2e74e
 glyphs: 376
 glyphs with 7 contours: 1
 glyphs with 5 contours: 1
@@ -1967,9 +1938,8 @@ lineTo points: 7847
 curveTo points: 11124
 qCurveTo points: 0
 <
-> 482 Glyphs (628f6f1ea1600bfb377d6fa9005836cd)
-file name: 628f6f1ea1600bfb377d6fa9005836cd
-file contents: 24f94a6a0293d60e9017ab83dd70c658
+> 482 Glyphs (3f7e16f065fe30c858c55d26bc09b39d)
+fingerprint: 3f7e16f065fe30c858c55d26bc09b39d
 glyphs: 482
 glyphs with 7 contours: 2
 glyphs with 5 contours: 2
@@ -2030,9 +2000,8 @@ lineTo points: 4896
 curveTo points: 3079
 qCurveTo points: 0
 <
-> 482 Glyphs (96507f3ac9836ea1c7ef61eea66321ef)
-file name: 96507f3ac9836ea1c7ef61eea66321ef
-file contents: 00b8db605ab321c669884e704929f394
+> 482 Glyphs (a185b05cf40a29a0d39085bbe3fe5e3a)
+fingerprint: a185b05cf40a29a0d39085bbe3fe5e3a
 glyphs: 482
 glyphs with 7 contours: 2
 glyphs with 5 contours: 2
@@ -2093,9 +2062,8 @@ lineTo points: 4791
 curveTo points: 3132
 qCurveTo points: 0
 <
-> 482 Glyphs (5cf10116d87aa493507ba15d7b3cc0ab)
-file name: 5cf10116d87aa493507ba15d7b3cc0ab
-file contents: 6a294494f08fa729dce38091389fba53
+> 482 Glyphs (30172edd102ec0c227e80d4d04cf26fe)
+fingerprint: 30172edd102ec0c227e80d4d04cf26fe
 glyphs: 482
 glyphs with 7 contours: 2
 glyphs with 5 contours: 2
@@ -2156,9 +2124,8 @@ lineTo points: 4902
 curveTo points: 3087
 qCurveTo points: 0
 <
-> 482 Glyphs (db5de0552ca48dd0988faa97e76baf7b)
-file name: db5de0552ca48dd0988faa97e76baf7b
-file contents: 1542dbe445be6dfc92713f19f00f26d7
+> 482 Glyphs (1bd28c98a5932b6aa445d812b174ab5c)
+fingerprint: 1bd28c98a5932b6aa445d812b174ab5c
 glyphs: 482
 glyphs with 7 contours: 2
 glyphs with 5 contours: 2
@@ -2219,9 +2186,8 @@ lineTo points: 4813
 curveTo points: 3141
 qCurveTo points: 0
 <
-> 482 Glyphs (22c66102b01eca5a8bd01dba3706c984)
-file name: 22c66102b01eca5a8bd01dba3706c984
-file contents: ef3f0062e9f2bae60444191d1b25dc2b
+> 482 Glyphs (bc49d913fbe3473e3a229b85e371da27)
+fingerprint: bc49d913fbe3473e3a229b85e371da27
 glyphs: 482
 glyphs with 7 contours: 2
 glyphs with 5 contours: 4
@@ -2282,9 +2248,8 @@ lineTo points: 4918
 curveTo points: 3091
 qCurveTo points: 0
 <
-> 482 Glyphs (d07b112a5df7d0ac3bfc2c40522e7245)
-file name: d07b112a5df7d0ac3bfc2c40522e7245
-file contents: c2b0bd736cb0d3410a0ecd81b158c742
+> 482 Glyphs (20cc7ffd537e5028abc44fbe972b5f13)
+fingerprint: 20cc7ffd537e5028abc44fbe972b5f13
 glyphs: 482
 glyphs with 7 contours: 2
 glyphs with 5 contours: 4
@@ -2347,9 +2312,8 @@ lineTo points: 4751
 curveTo points: 3146
 qCurveTo points: 0
 <
-> 482 Glyphs (964a939ce4284bfc75b4b493e2edc800)
-file name: 964a939ce4284bfc75b4b493e2edc800
-file contents: 289f7438f6cbb5ded671bb79bbf9c282
+> 482 Glyphs (be3be6fac38234ff61d4dc04a54cd14d)
+fingerprint: be3be6fac38234ff61d4dc04a54cd14d
 glyphs: 482
 glyphs with 7 contours: 2
 glyphs with 5 contours: 4
@@ -2410,9 +2374,8 @@ lineTo points: 4922
 curveTo points: 3092
 qCurveTo points: 0
 <
-> 482 Glyphs (626e5c91f9c41b40a665057ce4dbdf9e)
-file name: 626e5c91f9c41b40a665057ce4dbdf9e
-file contents: 4e89ab51cc04d64b2fdacd93a333b1a9
+> 482 Glyphs (24cba6a63d1ed40e4040d7788ae409d3)
+fingerprint: 24cba6a63d1ed40e4040d7788ae409d3
 glyphs: 482
 glyphs with 7 contours: 2
 glyphs with 5 contours: 4
@@ -2476,9 +2439,8 @@ lineTo points: 4816
 curveTo points: 3142
 qCurveTo points: 0
 <
-> 482 Glyphs (163e19fdfc9ab307957f56253117cb5d)
-file name: 163e19fdfc9ab307957f56253117cb5d
-file contents: 8737bbd2eb1a8a2045319589b43d3264
+> 482 Glyphs (20eaf91f2124447c4fe6bcd9aaffcc88)
+fingerprint: 20eaf91f2124447c4fe6bcd9aaffcc88
 glyphs: 482
 glyphs with 7 contours: 2
 glyphs with 5 contours: 4
@@ -2539,9 +2501,8 @@ lineTo points: 4913
 curveTo points: 3091
 qCurveTo points: 0
 <
-> 482 Glyphs (fff7b7f58938eea89b21d76d0845106c)
-file name: fff7b7f58938eea89b21d76d0845106c
-file contents: 7bd7bd1c17152805401bc3e295cb9152
+> 482 Glyphs (8b7cffe99529e76943a000f3420c19a9)
+fingerprint: 8b7cffe99529e76943a000f3420c19a9
 glyphs: 482
 glyphs with 7 contours: 2
 glyphs with 5 contours: 4
@@ -2602,9 +2563,8 @@ lineTo points: 4811
 curveTo points: 3144
 qCurveTo points: 0
 <
-> 482 Glyphs (16ca13d7096862a3858bbc854be05550)
-file name: 16ca13d7096862a3858bbc854be05550
-file contents: 044a023584351dfb881045d0a5cf30db
+> 482 Glyphs (f7fcd7fa35d727d14b9436e0ad4dd81f)
+fingerprint: f7fcd7fa35d727d14b9436e0ad4dd81f
 glyphs: 482
 glyphs with 7 contours: 2
 glyphs with 5 contours: 4
@@ -2664,9 +2624,8 @@ lineTo points: 5150
 curveTo points: 2878
 qCurveTo points: 0
 <
-> 482 Glyphs (5425d842bf5851c12f827d40f6d1d14f)
-file name: 5425d842bf5851c12f827d40f6d1d14f
-file contents: a783d108bd15850af52aae504a6d1fc9
+> 482 Glyphs (c28eb370d362ea30c827290a5fe571f3)
+fingerprint: c28eb370d362ea30c827290a5fe571f3
 glyphs: 482
 glyphs with 7 contours: 2
 glyphs with 5 contours: 4
@@ -2730,9 +2689,8 @@ lineTo points: 5028
 curveTo points: 2920
 qCurveTo points: 0
 <
-> 558 Glyphs (768dae93b9a0577c54465951496e07ec)
-file name: 768dae93b9a0577c54465951496e07ec
-file contents: 11dbbe08b839c3085e703c475199aa33
+> 558 Glyphs (819d43389decb4fe0a027820872ec69b)
+fingerprint: 819d43389decb4fe0a027820872ec69b
 glyphs: 558
 glyphs with 7 contours: 2
 glyphs with 5 contours: 4
@@ -2791,9 +2749,8 @@ lineTo points: 6440
 curveTo points: 2630
 qCurveTo points: 0
 <
-> 558 Glyphs (5785d38350c8be60bb0b4c9d03a636c5)
-file name: 5785d38350c8be60bb0b4c9d03a636c5
-file contents: d07caa7d19d5e15675fba915561ee8d2
+> 558 Glyphs (db637f7adb3be96abbef9efd586deaa8)
+fingerprint: db637f7adb3be96abbef9efd586deaa8
 glyphs: 558
 glyphs with 7 contours: 2
 glyphs with 6 contours: 1
@@ -2856,9 +2813,8 @@ lineTo points: 6400
 curveTo points: 2630
 qCurveTo points: 0
 <
-> 558 Glyphs (589f3505ce4daa49362ac4595ed2fdfe)
-file name: 589f3505ce4daa49362ac4595ed2fdfe
-file contents: 27739a5c727401aa9b4e867f7c0f35d8
+> 558 Glyphs (d62296f9fc48360ba9b1aacdd17677f2)
+fingerprint: d62296f9fc48360ba9b1aacdd17677f2
 glyphs: 558
 glyphs with 7 contours: 2
 glyphs with 6 contours: 2
@@ -2916,9 +2872,8 @@ lineTo points: 6448
 curveTo points: 2633
 qCurveTo points: 0
 <
-> 558 Glyphs (162ab90e5a5ce2caab248d67df90de20)
-file name: 162ab90e5a5ce2caab248d67df90de20
-file contents: 0780549e1ecc01480f12d0d5a736a139
+> 558 Glyphs (6150142e0587e31f901fbb5dcc77cb5b)
+fingerprint: 6150142e0587e31f901fbb5dcc77cb5b
 glyphs: 558
 glyphs with 7 contours: 2
 glyphs with 6 contours: 2
@@ -2981,9 +2936,8 @@ lineTo points: 6405
 curveTo points: 2631
 qCurveTo points: 0
 <
-> 558 Glyphs (0fc8c6f4f887a19527a65801add03bf4)
-file name: 0fc8c6f4f887a19527a65801add03bf4
-file contents: ce679bc5e2d52231f1cef4cce1c45efc
+> 558 Glyphs (6c723bc4f47024be76118fd09259bfc5)
+fingerprint: 6c723bc4f47024be76118fd09259bfc5
 glyphs: 558
 glyphs with 7 contours: 4
 glyphs with 5 contours: 2
@@ -3040,9 +2994,8 @@ lineTo points: 6353
 curveTo points: 2642
 qCurveTo points: 0
 <
-> 558 Glyphs (734e52b94105d28d231197eb2cee1ba4)
-file name: 734e52b94105d28d231197eb2cee1ba4
-file contents: 0ef60459c88ee5377da36bf759685359
+> 558 Glyphs (23039f1c6e8b7f8b378d100870282f17)
+fingerprint: 23039f1c6e8b7f8b378d100870282f17
 glyphs: 558
 glyphs with 7 contours: 4
 glyphs with 5 contours: 2
@@ -3101,9 +3054,8 @@ lineTo points: 6312
 curveTo points: 2640
 qCurveTo points: 0
 <
-> 558 Glyphs (9f0a207ce1075c114a93a7af6b1f0a93)
-file name: 9f0a207ce1075c114a93a7af6b1f0a93
-file contents: 706f53ad66716e5d42c749b2146055c8
+> 558 Glyphs (b836f24c21558119eeacf2807ee0d11d)
+fingerprint: b836f24c21558119eeacf2807ee0d11d
 glyphs: 558
 glyphs with 7 contours: 4
 glyphs with 5 contours: 2
@@ -3160,9 +3112,8 @@ lineTo points: 6329
 curveTo points: 2640
 qCurveTo points: 0
 <
-> 558 Glyphs (35c9193db12f4ce24092b3dbfee3ff27)
-file name: 35c9193db12f4ce24092b3dbfee3ff27
-file contents: ca55fd4537f29d8af0d0d17ed51ff3fd
+> 558 Glyphs (bc366485bc52a8e352fa5250a09a38ea)
+fingerprint: bc366485bc52a8e352fa5250a09a38ea
 glyphs: 558
 glyphs with 7 contours: 4
 glyphs with 5 contours: 2
@@ -3222,9 +3173,8 @@ lineTo points: 6307
 curveTo points: 2640
 qCurveTo points: 0
 <
-> 558 Glyphs (95c69a928b2e4ea9ebe4e0ee4bfead06)
-file name: 95c69a928b2e4ea9ebe4e0ee4bfead06
-file contents: 93c89fbd7cff02db3628d49613ac8e85
+> 558 Glyphs (848173583d2032e9647178a2a75c552c)
+fingerprint: 848173583d2032e9647178a2a75c552c
 glyphs: 558
 glyphs with 7 contours: 2
 glyphs with 5 contours: 4
@@ -3285,9 +3235,8 @@ lineTo points: 6436
 curveTo points: 2627
 qCurveTo points: 0
 <
-> 558 Glyphs (9d96b2d141924a32f06359b7e683b5d1)
-file name: 9d96b2d141924a32f06359b7e683b5d1
-file contents: 03a7702f06acbdab71e8552b61168331
+> 558 Glyphs (5dff1fd3d4c14b8ecdc5cd2cd95add05)
+fingerprint: 5dff1fd3d4c14b8ecdc5cd2cd95add05
 glyphs: 558
 glyphs with 7 contours: 2
 glyphs with 5 contours: 4
@@ -3350,9 +3299,8 @@ lineTo points: 6392
 curveTo points: 2626
 qCurveTo points: 0
 <
-> 709 Glyphs (35fee11cacbbe247527c52c1c0e6f874)
-file name: 35fee11cacbbe247527c52c1c0e6f874
-file contents: 969562b2453b7ce61b97ffc0eab2ff8c
+> 709 Glyphs (a607379fb0ae5ff2577b94a66d389c7c)
+fingerprint: a607379fb0ae5ff2577b94a66d389c7c
 glyphs: 709
 glyphs with 7 contours: 1
 glyphs with 5 contours: 1
@@ -3417,9 +3365,8 @@ lineTo points: 11558
 curveTo points: 12718
 qCurveTo points: 0
 <
-> 709 Glyphs (7a3b7ea6b7cf64edff26dac75d771034)
-file name: 7a3b7ea6b7cf64edff26dac75d771034
-file contents: 497ab050f7700f07d6b02d10f82daae9
+> 709 Glyphs (0f96d7e596ec649904416c7486269803)
+fingerprint: 0f96d7e596ec649904416c7486269803
 glyphs: 709
 glyphs with 7 contours: 1
 glyphs with 5 contours: 1
@@ -3487,9 +3434,8 @@ lineTo points: 11536
 curveTo points: 12768
 qCurveTo points: 0
 <
-> 494 Glyphs (821027680cf48f72ebe4cc5e5d062573)
-file name: 821027680cf48f72ebe4cc5e5d062573
-file contents: cfa4cbe3724cb901421dbaa7c5678c4e
+> 494 Glyphs (bacb60955bc32d97915e67e9bdeb7be5)
+fingerprint: bacb60955bc32d97915e67e9bdeb7be5
 glyphs: 494
 glyphs with 13 contours: 1
 glyphs with 9 contours: 3
@@ -3567,9 +3513,8 @@ lineTo points: 13975
 curveTo points: 13119
 qCurveTo points: 0
 <
-> 709 Glyphs (deb1fd4795876f88b396e2b7086b0350)
-file name: deb1fd4795876f88b396e2b7086b0350
-file contents: cd4ad6f9e9fcb4a6a41fb99004d2cb5f
+> 709 Glyphs (9221676261bd482fcc1d8725afb154ae)
+fingerprint: 9221676261bd482fcc1d8725afb154ae
 glyphs: 709
 glyphs with 7 contours: 1
 glyphs with 5 contours: 1
@@ -3638,9 +3583,8 @@ lineTo points: 11818
 curveTo points: 12782
 qCurveTo points: 0
 <
-> 709 Glyphs (2d89f948db4430cf949df9246b9d7d37)
-file name: 2d89f948db4430cf949df9246b9d7d37
-file contents: 9a9c8c31e303bdacef16227f5c22d935
+> 709 Glyphs (5615c7734b681fd1f0a7602542f34156)
+fingerprint: 5615c7734b681fd1f0a7602542f34156
 glyphs: 709
 glyphs with 7 contours: 1
 glyphs with 5 contours: 1
@@ -3702,9 +3646,8 @@ lineTo points: 11531
 curveTo points: 12776
 qCurveTo points: 0
 <
-> 709 Glyphs (cd6db29baf3c88307a5775b7e38cb99f)
-file name: cd6db29baf3c88307a5775b7e38cb99f
-file contents: 610592b613bc684e81c4a72632b2965c
+> 709 Glyphs (613439c118f045f42f549f818eab3fd9)
+fingerprint: 613439c118f045f42f549f818eab3fd9
 glyphs: 709
 glyphs with 7 contours: 1
 glyphs with 5 contours: 1
