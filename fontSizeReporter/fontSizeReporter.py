@@ -15,9 +15,6 @@ General:
 - count points with names/identifiers
 - count smooth points
 - measure glyph name lengths
-- output component data
-- output group data
-- output feature data
 - the commandline functions are clumsy
 - build a vanilla interface for use in RoboFont and Glyphs
 - write documentation
@@ -113,9 +110,9 @@ def profileFont(path):
 		# component transformations
 		componentOccurance={},
 		# kerning pairs
-		kerningPairs=0,
+		kerning=0,
 		# groups
-		groups={},
+		groups=[],
 		# characters in features
 		features=0,
 		# characters in all font info strings
@@ -129,6 +126,10 @@ def profileFont(path):
 	elif ext == ".ufo" and (haveRoboFont or haveDefcon or haveRoboFab):
 		if haveRoboFont:
 			_profileFont_RoboFont(path, profile)
+		elif haveDefcon:
+			_profileFont_defcon(path, profile)
+		elif haveRoboFab:
+			_profileFont_RoboFab(path, profile)
 	elif ext == ".glyphs" and haveGlyphsApp:
 		_profileFont_Glyphs(path, profile)
 	else:
@@ -303,6 +304,7 @@ class ProfilePen(BasePen):
 		self._logPoint(pt2)
 
 	def addComponent(self, glyphName, transformation):
+		transformation = " ".join(_numberToString(i) for i in transformation)
 		self.components.append(transformation)
 
 # ----------------
@@ -319,11 +321,7 @@ def profileKerning(kerning, profile):
 def profileGroups(groups, profile):
 	for group in groups.values():
 		count = len(group)
-		if not count:
-			continue
-		if count not in profile["groups"]:
-			profile["groups"][count] = 0
-		profile["groups"][count] += 1
+		profile["groups"].append(count)
 
 # -----------------
 # Profile: Features
@@ -352,7 +350,10 @@ def profileToString(profile):
 		"fingerprint: %s" % profile["fingerprint"],
 		"layers: %d" % len(profile["glyphs"]),
 		"glyphs: %d" % sum(profile["glyphs"]),
-		"kerning pairs: %d" % profile["kerning"]
+		"kerning pairs: %d" % profile["kerning"],
+		"groups: %d" % len(profile["groups"]),
+		"grouped glyphs: %d" % sum(profile["groups"]),
+		"feature characters: %d" % profile["features"],
 	]
 	for contourCount, occurance in reversed(sorted(profile["contourOccurance"].items())):
 		lines.append(
@@ -366,8 +367,18 @@ def profileToString(profile):
 		lines.append(
 			"%s points: %s" % (pointType, profile["pointTypes"][pointType])
 		)
+	for transformation, occurance in sorted(profile["componentOccurance"].items()):
+		lines.append(
+			"components with (%s) transformation: %d" % (transformation, occurance)
+		)
 	lines.append("<")
 	return "\n".join(lines)
+
+def _numberToString(n):
+	if int(n) == n:
+		return str(int(n))
+	else:
+		return "%.2f" % n
 
 # ----
 # Main
@@ -381,15 +392,14 @@ def dumpProfilesForFonts(paths):
 def gatherFontPaths(paths):
 	found = []
 	for path in paths:
-		if os.path.isdir(path):
+		if isFontPath(path):
+			found.append(path)
+		elif os.path.isdir(path):
 			for fileName in os.listdir(path):
 				if fileName.startswith("."):
 					continue
 				p = os.path.join(path, fileName)
 				found += gatherFontPaths([p])
-		else:
-			if isFontPath(path):
-				found.append(path)
 	return found
 
 def isFontPath(path):
