@@ -9,12 +9,6 @@ To Do
 -----
 
 General:
-- measure font info string length
-- store anchor count
-- measure glyph note lengths
-- count points with names/identifiers
-- count smooth points
-- measure glyph name lengths
 - the commandline functions are clumsy
 - build a vanilla interface for use in RoboFont and Glyphs
 - write documentation
@@ -96,6 +90,10 @@ def profileFont(path):
 		fingerprinter={},
 		# number of glyphs per layer
 		glyphs=[],
+		# length of the glyph names
+		glyphNames=0,
+		# length of glyph notes
+		glyphNotes=0,
 		# mapping of contour counts : number of glyphs with this number of contours
 		contourOccurance={},
 		# mapping of point count : number of contours with this point count
@@ -207,8 +205,13 @@ def profileGlyphSet(glyphNames, glyphSet, profile):
 	"""
 	profile["glyphs"].append(len(glyphNames))
 	for glyphName in glyphNames:
+		profile["glyphNames"] += len(glyphName)
 		glyph = glyphSet[glyphName]
 		profileGlyph(glyph, profile)
+		if hasattr(glyph, "note"):
+			note = glyph.note
+			if isinstance(note, basestring):
+				profile["glyphNotes"] += len(note)
 
 def profileGlyph(glyph, profile):
 	"""
@@ -335,8 +338,41 @@ def profileFeatures(text, profile):
 # Profile: Font Info
 # ------------------
 
+fontInfoStringAttributes = """
+familyName
+styleName
+styleMapFamilyName
+styleMapStyleName
+copyright
+trademark
+note
+openTypeNameDesigner
+openTypeNameDesignerURL
+openTypeNameManufacturer
+openTypeNameManufacturerURL
+openTypeNameLicense
+openTypeNameLicenseURL
+openTypeNameVersion
+openTypeNameUniqueID
+openTypeNameDescription
+openTypeNamePreferredFamilyName
+openTypeNamePreferredSubfamilyName
+openTypeNameCompatibleFullName
+openTypeNameSampleText
+openTypeNameWWSFamilyName
+openTypeNameWWSSubfamilyName
+postscriptFontName
+postscriptFullName
+postscriptWeightName
+macintoshFONDName
+""".strip().split()
+
 def profileFontInfo(info, profile):
-	pass
+	for attr in fontInfoStringAttributes:
+		if hasattr(info, attr):
+			value = getattr(info, attr)
+			if isinstance(value, basestring):
+				profile["fontInfo"] += len(value)
 
 # -----------------
 # Profile to String
@@ -348,12 +384,15 @@ def profileToString(profile):
 		"source format: %s" % profile["sourceFormat"],
 		"output environment: %s" % profile["outputEnvironment"],
 		"fingerprint: %s" % profile["fingerprint"],
-		"layers: %d" % len(profile["glyphs"]),
-		"glyphs: %d" % sum(profile["glyphs"]),
+		"font info characters: %d" % profile["fontInfo"],
 		"kerning pairs: %d" % profile["kerning"],
 		"groups: %d" % len(profile["groups"]),
 		"grouped glyphs: %d" % sum(profile["groups"]),
 		"feature characters: %d" % profile["features"],
+		"layers: %d" % len(profile["glyphs"]),
+		"glyphs: %d" % sum(profile["glyphs"]),
+		"glyph name characters: %d" % profile["glyphNames"],
+		"glyph note characters: %d" % profile["glyphNotes"],
 	]
 	for contourCount, occurance in reversed(sorted(profile["contourOccurance"].items())):
 		lines.append(
