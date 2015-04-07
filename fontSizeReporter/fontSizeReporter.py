@@ -1,15 +1,11 @@
 """
 This will dump an anonymous profile of a given font,
-for each font (OTF-CFF, OTF-TTF formats) in a directory
-and sub-directories. The profile contains hashes of
-the file contents and the file name as a way of
-filtering out duplicate data in the overall data set.
+for each font in a directory and sub-directories.
 
 To Do
 -----
 
 General:
-- the commandline functions are clumsy
 - build a vanilla interface for use in RoboFont and Glyphs
 - write documentation
 
@@ -33,6 +29,8 @@ import optparse
 from fontTools.ttLib import TTFont
 from fontTools.pens.basePen import BasePen
 
+supportedFormats = set((".otf", ".ttf"))
+
 # ---------------------
 # Environment Detection
 # ---------------------
@@ -52,18 +50,22 @@ except ImportError:
 try:
 	import defcon
 	haveDefcon = True
+	supportedFormats.add(".ufo")
 except ImportError:
 	pass
 
 try:
 	import robofab
 	haveRoboFab = True
+	supportedFormats.add(".ufo")
 except ImportError:
 	pass
 
 try:
 	import mojo
 	haveRoboFont = True
+	supportedFormats.add(".ufo")
+	supportedFormats.add(".vfb")
 except ImportError:
 	pass
 
@@ -379,15 +381,35 @@ def profileFontInfo(info, profile):
 # -----------------
 
 def profileToString(profile):
+	"""
+	> start of profile
+	source format: source file extension
+	output environment: library/app used to output the profile
+	fingerprint: hash of all points in the font
+	font info characters: total number of characters used in string fields in the font info
+	kerning pairs: total number of kerning pairs
+	groups: total number of groups
+	group members: sum of the length of all groups
+	feature characters: number of characters in the features
+	layers: number of layers
+	glyphs: number of glyphs
+	glyph name characters: total number of characters used in glyph names
+	glyph not characters: total number of characters used in glyph notes
+	glyphs with (number) contours: number of glyphs with a particular number of contours
+	contours with (number) points: number of contours with a particular number of points
+	(point type) points: number of points of a particular type
+	components with (transformation) transformation: number of components with a particular transformation
+	< end of profile
+	"""
 	lines = [
-		"> %s" % profile["fingerprint"],
+		">",
 		"source format: %s" % profile["sourceFormat"],
 		"output environment: %s" % profile["outputEnvironment"],
 		"fingerprint: %s" % profile["fingerprint"],
 		"font info characters: %d" % profile["fontInfo"],
 		"kerning pairs: %d" % profile["kerning"],
 		"groups: %d" % len(profile["groups"]),
-		"grouped glyphs: %d" % sum(profile["groups"]),
+		"group members: %d" % sum(profile["groups"]),
 		"feature characters: %d" % profile["features"],
 		"layers: %d" % len(profile["glyphs"]),
 		"glyphs: %d" % sum(profile["glyphs"]),
@@ -444,7 +466,7 @@ def gatherFontPaths(paths):
 def isFontPath(path):
 	fileName = os.path.basename(path)
 	suffix = os.path.splitext(fileName)[-1].lower()
-	return suffix in (".otf", ".ttf", ".ufo")
+	return suffix in supportedFormats
 
 # ------------
 # Command Line
@@ -452,10 +474,11 @@ def isFontPath(path):
 
 usage = "%prog [options] fontpath1 fontpath2 fontdirectory"
 
-description = """This tool dumps an anonymous profile
+description = """
+This tool dumps an anonymous profile
 of the given fonts of the fonts found by
 recursively searching given directories.
-"""
+""".strip()
 
 def main():
 	parser = optparse.OptionParser(usage=usage, description=description, version="%prog 0.0beta")

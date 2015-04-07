@@ -1,6 +1,16 @@
-> 547 Glyphs (5f56c55f79fca275347df60876794810)
+>
+source format: .otf
+output environment: defcon
 fingerprint: 5f56c55f79fca275347df60876794810
+font info characters: 18039
+kerning pairs: 3527
+groups: 96
+group members: 527
+feature characters: 0
+layers: 1
 glyphs: 547
+glyph name characters: 4206
+glyph note characters: 0
 glyphs with 7 contours: 4
 glyphs with 5 contours: 4
 glyphs with 4 contours: 16
@@ -56,9 +66,19 @@ lineTo points: 4768
 curveTo points: 2815
 qCurveTo points: 0
 <
-> 547 Glyphs (b69219110ac3f13e3ca1e383704992a7)
+>
+source format: .otf
+output environment: defcon
 fingerprint: b69219110ac3f13e3ca1e383704992a7
+font info characters: 18071
+kerning pairs: 3122
+groups: 97
+group members: 529
+feature characters: 0
+layers: 1
 glyphs: 547
+glyph name characters: 4206
+glyph note characters: 0
 glyphs with 7 contours: 4
 glyphs with 5 contours: 4
 glyphs with 4 contours: 16
@@ -115,9 +135,19 @@ lineTo points: 4438
 curveTo points: 3035
 qCurveTo points: 0
 <
-> 547 Glyphs (2ce00cf92024230e94b26e1c7b939c88)
+>
+source format: .otf
+output environment: defcon
 fingerprint: 2ce00cf92024230e94b26e1c7b939c88
+font info characters: 18038
+kerning pairs: 4136
+groups: 97
+group members: 529
+feature characters: 0
+layers: 1
 glyphs: 547
+glyph name characters: 4206
+glyph note characters: 0
 glyphs with 7 contours: 4
 glyphs with 5 contours: 4
 glyphs with 4 contours: 16
@@ -175,9 +205,19 @@ lineTo points: 4807
 curveTo points: 2823
 qCurveTo points: 0
 <
-> 547 Glyphs (319bf103d7c7e95c7079d5b18292ea23)
+>
+source format: .otf
+output environment: defcon
 fingerprint: 319bf103d7c7e95c7079d5b18292ea23
+font info characters: 18070
+kerning pairs: 3682
+groups: 97
+group members: 529
+feature characters: 0
+layers: 1
 glyphs: 547
+glyph name characters: 4206
+glyph note characters: 0
 glyphs with 7 contours: 4
 glyphs with 5 contours: 4
 glyphs with 4 contours: 16
@@ -233,9 +273,19 @@ lineTo points: 4459
 curveTo points: 3027
 qCurveTo points: 0
 <
-> 547 Glyphs (a0473dcb2424a6abbb2fceaa1ae8cf41)
+>
+source format: .otf
+output environment: defcon
 fingerprint: a0473dcb2424a6abbb2fceaa1ae8cf41
+font info characters: 18035
+kerning pairs: 3265
+groups: 96
+group members: 526
+feature characters: 0
+layers: 1
 glyphs: 547
+glyph name characters: 4206
+glyph note characters: 0
 glyphs with 7 contours: 4
 glyphs with 5 contours: 4
 glyphs with 4 contours: 20
@@ -291,9 +341,19 @@ lineTo points: 4836
 curveTo points: 2845
 qCurveTo points: 0
 <
-> 547 Glyphs (0b0c48acf127794eeb01a77e0c0a2448)
+>
+source format: .otf
+output environment: defcon
 fingerprint: 0b0c48acf127794eeb01a77e0c0a2448
+font info characters: 18067
+kerning pairs: 2921
+groups: 97
+group members: 529
+feature characters: 0
+layers: 1
 glyphs: 547
+glyph name characters: 4206
+glyph note characters: 0
 glyphs with 7 contours: 4
 glyphs with 5 contours: 4
 glyphs with 4 contours: 20
@@ -350,9 +410,19 @@ lineTo points: 4499
 curveTo points: 3052
 qCurveTo points: 0
 <
-> 547 Glyphs (c37dae14faa70f76e46bc8278ebe4971)
+>
+source format: .otf
+output environment: defcon
 fingerprint: c37dae14faa70f76e46bc8278ebe4971
+font info characters: 18040
+kerning pairs: 3777
+groups: 97
+group members: 529
+feature characters: 0
+layers: 1
 glyphs: 547
+glyph name characters: 4206
+glyph note characters: 0
 glyphs with 7 contours: 4
 glyphs with 5 contours: 4
 glyphs with 4 contours: 20
@@ -409,9 +479,19 @@ lineTo points: 4876
 curveTo points: 2863
 qCurveTo points: 0
 <
-> 547 Glyphs (838cfe1fbb2bf3a6b9b078debd010ad7)
-fingerprint: 838cfe1fbb2bf3a6b9b078debd010ad7
+>
+source format: .otf
+output environment: defcon
+fingerprint: 20cf4985b759c76d5fc24f838dd24990
+font info characters: 18072
+kerning pairs: 3397
+groups: 97
+group members: 529
+feature characters: 0
+layers: 1
 glyphs: 547
+glyph name characters: 4206
+glyph note characters: 0
 glyphs with 7 contours: 4
 glyphs with 5 contours: 4
 glyphs with 4 contours: 20
@@ -442,8 +522,8 @@ contours with 32 points: 9
 contours with 31 points: 1
 contours with 30 points: 10
 contours with 29 points: 26
-contours with 28 points: 9
-contours with 27 points: 20
+contours with 28 points: 7
+contours with 27 points: 22
 contours with 26 points: 19
 contours with 25 points: 21
 contours with 24 points: 7
@@ -467,13 +547,23 @@ contours with 6 points: 17
 contours with 4 points: 238
 contours with 3 points: 31
 moveTo points: 1019
-lineTo points: 4505
+lineTo points: 4503
 curveTo points: 3075
 qCurveTo points: 0
 <
-> 547 Glyphs (7c86dc0ac0f341d1a3cdee0533709d4e)
+>
+source format: .otf
+output environment: defcon
 fingerprint: 7c86dc0ac0f341d1a3cdee0533709d4e
+font info characters: 18047
+kerning pairs: 4133
+groups: 97
+group members: 529
+feature characters: 0
+layers: 1
 glyphs: 547
+glyph name characters: 4206
+glyph note characters: 0
 glyphs with 7 contours: 4
 glyphs with 5 contours: 4
 glyphs with 4 contours: 20
@@ -528,9 +618,19 @@ lineTo points: 4816
 curveTo points: 2843
 qCurveTo points: 0
 <
-> 547 Glyphs (d6556682de774171784adb9536dd2ba3)
+>
+source format: .otf
+output environment: defcon
 fingerprint: d6556682de774171784adb9536dd2ba3
+font info characters: 18079
+kerning pairs: 3678
+groups: 97
+group members: 529
+feature characters: 0
+layers: 1
 glyphs: 547
+glyph name characters: 4206
+glyph note characters: 0
 glyphs with 7 contours: 4
 glyphs with 5 contours: 4
 glyphs with 4 contours: 20
@@ -588,9 +688,19 @@ lineTo points: 4480
 curveTo points: 3042
 qCurveTo points: 0
 <
-> 547 Glyphs (233d942f3533b6885e761cb4ee3750d0)
+>
+source format: .otf
+output environment: defcon
 fingerprint: 233d942f3533b6885e761cb4ee3750d0
+font info characters: 18045
+kerning pairs: 4062
+groups: 97
+group members: 529
+feature characters: 0
+layers: 1
 glyphs: 547
+glyph name characters: 4206
+glyph note characters: 0
 glyphs with 7 contours: 4
 glyphs with 5 contours: 4
 glyphs with 4 contours: 16
@@ -647,9 +757,19 @@ lineTo points: 4765
 curveTo points: 2807
 qCurveTo points: 0
 <
-> 547 Glyphs (2b660544e181ad073ddfdd65bb51010b)
+>
+source format: .otf
+output environment: defcon
 fingerprint: 2b660544e181ad073ddfdd65bb51010b
+font info characters: 18077
+kerning pairs: 3568
+groups: 97
+group members: 529
+feature characters: 0
+layers: 1
 glyphs: 547
+glyph name characters: 4206
+glyph note characters: 0
 glyphs with 7 contours: 4
 glyphs with 5 contours: 4
 glyphs with 4 contours: 16
@@ -705,9 +825,19 @@ lineTo points: 4433
 curveTo points: 3070
 qCurveTo points: 0
 <
-> 547 Glyphs (5ac0da8defe7ec9c9bc7e626ee0539be)
+>
+source format: .otf
+output environment: defcon
 fingerprint: 5ac0da8defe7ec9c9bc7e626ee0539be
+font info characters: 18040
+kerning pairs: 3187
+groups: 97
+group members: 529
+feature characters: 0
+layers: 1
 glyphs: 547
+glyph name characters: 4206
+glyph note characters: 0
 glyphs with 7 contours: 4
 glyphs with 5 contours: 4
 glyphs with 4 contours: 20
@@ -764,9 +894,19 @@ lineTo points: 4865
 curveTo points: 2874
 qCurveTo points: 0
 <
-> 547 Glyphs (c1b07d80f11c9d27c8f3845a59c60332)
+>
+source format: .otf
+output environment: defcon
 fingerprint: c1b07d80f11c9d27c8f3845a59c60332
+font info characters: 18072
+kerning pairs: 2866
+groups: 95
+group members: 525
+feature characters: 0
+layers: 1
 glyphs: 547
+glyph name characters: 4206
+glyph note characters: 0
 glyphs with 7 contours: 4
 glyphs with 5 contours: 4
 glyphs with 4 contours: 20
@@ -825,9 +965,19 @@ lineTo points: 4512
 curveTo points: 3080
 qCurveTo points: 0
 <
-> 547 Glyphs (07e42c36456e7c8fc75e4daca1e64c8a)
+>
+source format: .otf
+output environment: defcon
 fingerprint: 07e42c36456e7c8fc75e4daca1e64c8a
+font info characters: 18040
+kerning pairs: 3407
+groups: 97
+group members: 529
+feature characters: 0
+layers: 1
 glyphs: 547
+glyph name characters: 4206
+glyph note characters: 0
 glyphs with 7 contours: 4
 glyphs with 5 contours: 4
 glyphs with 4 contours: 16
@@ -884,9 +1034,19 @@ lineTo points: 4753
 curveTo points: 2802
 qCurveTo points: 0
 <
-> 547 Glyphs (f53e54553d47bf743afc65946ee51ee6)
+>
+source format: .otf
+output environment: defcon
 fingerprint: f53e54553d47bf743afc65946ee51ee6
+font info characters: 18072
+kerning pairs: 3022
+groups: 97
+group members: 529
+feature characters: 0
+layers: 1
 glyphs: 547
+glyph name characters: 4206
+glyph note characters: 0
 glyphs with 7 contours: 4
 glyphs with 5 contours: 4
 glyphs with 4 contours: 16
@@ -944,9 +1104,19 @@ lineTo points: 4448
 curveTo points: 3088
 qCurveTo points: 0
 <
-> 779 Glyphs (8d961c5719707d2782afbbb725dbe1de)
+>
+source format: .otf
+output environment: defcon
 fingerprint: 8d961c5719707d2782afbbb725dbe1de
+font info characters: 18054
+kerning pairs: 4445
+groups: 136
+group members: 812
+feature characters: 0
+layers: 1
 glyphs: 779
+glyph name characters: 6449
+glyph note characters: 0
 glyphs with 7 contours: 4
 glyphs with 5 contours: 4
 glyphs with 4 contours: 22
@@ -1030,9 +1200,19 @@ lineTo points: 557
 curveTo points: 14746
 qCurveTo points: 0
 <
-> 667 Glyphs (586779a6d32881d795599160084d1eb9)
+>
+source format: .otf
+output environment: defcon
 fingerprint: 586779a6d32881d795599160084d1eb9
+font info characters: 18086
+kerning pairs: 5586
+groups: 109
+group members: 733
+feature characters: 0
+layers: 1
 glyphs: 667
+glyph name characters: 6180
+glyph note characters: 0
 glyphs with 7 contours: 2
 glyphs with 5 contours: 2
 glyphs with 4 contours: 19
@@ -1109,9 +1289,19 @@ lineTo points: 219
 curveTo points: 14119
 qCurveTo points: 0
 <
-> 779 Glyphs (63d69f986373c99b0e9273780d9509c2)
+>
+source format: .otf
+output environment: defcon
 fingerprint: 63d69f986373c99b0e9273780d9509c2
+font info characters: 18053
+kerning pairs: 4518
+groups: 136
+group members: 812
+feature characters: 0
+layers: 1
 glyphs: 779
+glyph name characters: 6449
+glyph note characters: 0
 glyphs with 7 contours: 4
 glyphs with 5 contours: 4
 glyphs with 4 contours: 22
@@ -1189,9 +1379,19 @@ lineTo points: 392
 curveTo points: 15000
 qCurveTo points: 0
 <
-> 667 Glyphs (e6fbd96c081a4eab2c4b2d5dd25321d7)
+>
+source format: .otf
+output environment: defcon
 fingerprint: e6fbd96c081a4eab2c4b2d5dd25321d7
+font info characters: 18085
+kerning pairs: 5462
+groups: 109
+group members: 733
+feature characters: 0
+layers: 1
 glyphs: 667
+glyph name characters: 6180
+glyph note characters: 0
 glyphs with 7 contours: 2
 glyphs with 5 contours: 2
 glyphs with 4 contours: 19
@@ -1267,9 +1467,19 @@ lineTo points: 244
 curveTo points: 14359
 qCurveTo points: 0
 <
-> 779 Glyphs (93cad5745625a26f1d6650763e9430d7)
+>
+source format: .otf
+output environment: defcon
 fingerprint: 93cad5745625a26f1d6650763e9430d7
+font info characters: 18049
+kerning pairs: 4864
+groups: 136
+group members: 812
+feature characters: 0
+layers: 1
 glyphs: 779
+glyph name characters: 6449
+glyph note characters: 0
 glyphs with 8 contours: 2
 glyphs with 7 contours: 4
 glyphs with 6 contours: 2
@@ -1344,9 +1554,19 @@ lineTo points: 136
 curveTo points: 15610
 qCurveTo points: 0
 <
-> 667 Glyphs (d834c59ee719f4490bbeeea64225b349)
+>
+source format: .otf
+output environment: defcon
 fingerprint: d834c59ee719f4490bbeeea64225b349
+font info characters: 18081
+kerning pairs: 5338
+groups: 109
+group members: 733
+feature characters: 0
+layers: 1
 glyphs: 667
+glyph name characters: 6180
+glyph note characters: 0
 glyphs with 8 contours: 2
 glyphs with 7 contours: 2
 glyphs with 6 contours: 2
@@ -1421,9 +1641,19 @@ lineTo points: 123
 curveTo points: 14781
 qCurveTo points: 0
 <
-> 779 Glyphs (acffddd9209d06fde93604264b558a35)
+>
+source format: .otf
+output environment: defcon
 fingerprint: acffddd9209d06fde93604264b558a35
+font info characters: 18061
+kerning pairs: 4932
+groups: 136
+group members: 812
+feature characters: 0
+layers: 1
 glyphs: 779
+glyph name characters: 6449
+glyph note characters: 0
 glyphs with 8 contours: 2
 glyphs with 7 contours: 4
 glyphs with 6 contours: 2
@@ -1495,9 +1725,19 @@ lineTo points: 194
 curveTo points: 15498
 qCurveTo points: 0
 <
-> 667 Glyphs (ad324bf93f0705ece33d48ad9d74ff09)
+>
+source format: .otf
+output environment: defcon
 fingerprint: ad324bf93f0705ece33d48ad9d74ff09
+font info characters: 18093
+kerning pairs: 5333
+groups: 109
+group members: 733
+feature characters: 0
+layers: 1
 glyphs: 667
+glyph name characters: 6180
+glyph note characters: 0
 glyphs with 8 contours: 2
 glyphs with 7 contours: 2
 glyphs with 6 contours: 2
@@ -1568,9 +1808,19 @@ lineTo points: 88
 curveTo points: 14736
 qCurveTo points: 0
 <
-> 779 Glyphs (45bf6d94ce5278d90cf3e6c91a837f3f)
+>
+source format: .otf
+output environment: defcon
 fingerprint: 45bf6d94ce5278d90cf3e6c91a837f3f
+font info characters: 18048
+kerning pairs: 5017
+groups: 135
+group members: 810
+feature characters: 0
+layers: 1
 glyphs: 779
+glyph name characters: 6449
+glyph note characters: 0
 glyphs with 8 contours: 2
 glyphs with 7 contours: 4
 glyphs with 6 contours: 2
@@ -1645,9 +1895,19 @@ lineTo points: 114
 curveTo points: 15673
 qCurveTo points: 0
 <
-> 667 Glyphs (ce900f2ec4d5d81fdf3e66e2498bf1d0)
+>
+source format: .otf
+output environment: defcon
 fingerprint: ce900f2ec4d5d81fdf3e66e2498bf1d0
+font info characters: 18080
+kerning pairs: 3619
+groups: 109
+group members: 733
+feature characters: 0
+layers: 1
 glyphs: 667
+glyph name characters: 6180
+glyph note characters: 0
 glyphs with 8 contours: 2
 glyphs with 7 contours: 2
 glyphs with 6 contours: 2
@@ -1715,9 +1975,19 @@ lineTo points: 63
 curveTo points: 14987
 qCurveTo points: 0
 <
-> 376 Glyphs (bfae1ea94adb892d69b0a8547c902ba3)
+>
+source format: .otf
+output environment: defcon
 fingerprint: bfae1ea94adb892d69b0a8547c902ba3
+font info characters: 18024
+kerning pairs: 901
+groups: 72
+group members: 461
+feature characters: 0
+layers: 1
 glyphs: 376
+glyph name characters: 2497
+glyph note characters: 0
 glyphs with 7 contours: 1
 glyphs with 5 contours: 1
 glyphs with 4 contours: 11
@@ -1797,9 +2067,19 @@ lineTo points: 13162
 curveTo points: 17086
 qCurveTo points: 0
 <
-> 376 Glyphs (102016704f3c19a8faf5b1dcd23bd558)
+>
+source format: .otf
+output environment: defcon
 fingerprint: 102016704f3c19a8faf5b1dcd23bd558
+font info characters: 18031
+kerning pairs: 864
+groups: 67
+group members: 483
+feature characters: 0
+layers: 1
 glyphs: 376
+glyph name characters: 2497
+glyph note characters: 0
 glyphs with 7 contours: 1
 glyphs with 5 contours: 1
 glyphs with 4 contours: 10
@@ -1862,9 +2142,19 @@ lineTo points: 7287
 curveTo points: 10523
 qCurveTo points: 0
 <
-> 376 Glyphs (972377116cb99ffb559051e742f2e74e)
+>
+source format: .otf
+output environment: defcon
 fingerprint: 972377116cb99ffb559051e742f2e74e
+font info characters: 18038
+kerning pairs: 901
+groups: 72
+group members: 461
+feature characters: 0
+layers: 1
 glyphs: 376
+glyph name characters: 2497
+glyph note characters: 0
 glyphs with 7 contours: 1
 glyphs with 5 contours: 1
 glyphs with 4 contours: 10
@@ -1938,9 +2228,19 @@ lineTo points: 7847
 curveTo points: 11124
 qCurveTo points: 0
 <
-> 482 Glyphs (3f7e16f065fe30c858c55d26bc09b39d)
+>
+source format: .otf
+output environment: defcon
 fingerprint: 3f7e16f065fe30c858c55d26bc09b39d
+font info characters: 18045
+kerning pairs: 2425
+groups: 86
+group members: 457
+feature characters: 0
+layers: 1
 glyphs: 482
+glyph name characters: 3518
+glyph note characters: 0
 glyphs with 7 contours: 2
 glyphs with 5 contours: 2
 glyphs with 4 contours: 15
@@ -2000,9 +2300,19 @@ lineTo points: 4896
 curveTo points: 3079
 qCurveTo points: 0
 <
-> 482 Glyphs (a185b05cf40a29a0d39085bbe3fe5e3a)
+>
+source format: .otf
+output environment: defcon
 fingerprint: a185b05cf40a29a0d39085bbe3fe5e3a
+font info characters: 18077
+kerning pairs: 2390
+groups: 89
+group members: 466
+feature characters: 0
+layers: 1
 glyphs: 482
+glyph name characters: 3518
+glyph note characters: 0
 glyphs with 7 contours: 2
 glyphs with 5 contours: 2
 glyphs with 4 contours: 15
@@ -2062,9 +2372,19 @@ lineTo points: 4791
 curveTo points: 3132
 qCurveTo points: 0
 <
-> 482 Glyphs (30172edd102ec0c227e80d4d04cf26fe)
+>
+source format: .otf
+output environment: defcon
 fingerprint: 30172edd102ec0c227e80d4d04cf26fe
+font info characters: 18033
+kerning pairs: 3082
+groups: 87
+group members: 461
+feature characters: 0
+layers: 1
 glyphs: 482
+glyph name characters: 3518
+glyph note characters: 0
 glyphs with 7 contours: 2
 glyphs with 5 contours: 2
 glyphs with 4 contours: 15
@@ -2124,9 +2444,19 @@ lineTo points: 4902
 curveTo points: 3087
 qCurveTo points: 0
 <
-> 482 Glyphs (1bd28c98a5932b6aa445d812b174ab5c)
+>
+source format: .otf
+output environment: defcon
 fingerprint: 1bd28c98a5932b6aa445d812b174ab5c
+font info characters: 18065
+kerning pairs: 2990
+groups: 90
+group members: 468
+feature characters: 0
+layers: 1
 glyphs: 482
+glyph name characters: 3518
+glyph note characters: 0
 glyphs with 7 contours: 2
 glyphs with 5 contours: 2
 glyphs with 4 contours: 15
@@ -2186,9 +2516,19 @@ lineTo points: 4813
 curveTo points: 3141
 qCurveTo points: 0
 <
-> 482 Glyphs (bc49d913fbe3473e3a229b85e371da27)
+>
+source format: .otf
+output environment: defcon
 fingerprint: bc49d913fbe3473e3a229b85e371da27
+font info characters: 18035
+kerning pairs: 3082
+groups: 87
+group members: 461
+feature characters: 0
+layers: 1
 glyphs: 482
+glyph name characters: 3518
+glyph note characters: 0
 glyphs with 7 contours: 2
 glyphs with 5 contours: 4
 glyphs with 4 contours: 13
@@ -2248,9 +2588,19 @@ lineTo points: 4918
 curveTo points: 3091
 qCurveTo points: 0
 <
-> 482 Glyphs (20cc7ffd537e5028abc44fbe972b5f13)
+>
+source format: .otf
+output environment: defcon
 fingerprint: 20cc7ffd537e5028abc44fbe972b5f13
+font info characters: 18067
+kerning pairs: 2990
+groups: 90
+group members: 468
+feature characters: 0
+layers: 1
 glyphs: 482
+glyph name characters: 3518
+glyph note characters: 0
 glyphs with 7 contours: 2
 glyphs with 5 contours: 4
 glyphs with 4 contours: 13
@@ -2312,9 +2662,19 @@ lineTo points: 4751
 curveTo points: 3146
 qCurveTo points: 0
 <
-> 482 Glyphs (be3be6fac38234ff61d4dc04a54cd14d)
+>
+source format: .otf
+output environment: defcon
 fingerprint: be3be6fac38234ff61d4dc04a54cd14d
+font info characters: 18040
+kerning pairs: 3082
+groups: 87
+group members: 461
+feature characters: 0
+layers: 1
 glyphs: 482
+glyph name characters: 3518
+glyph note characters: 0
 glyphs with 7 contours: 2
 glyphs with 5 contours: 4
 glyphs with 4 contours: 13
@@ -2374,9 +2734,19 @@ lineTo points: 4922
 curveTo points: 3092
 qCurveTo points: 0
 <
-> 482 Glyphs (24cba6a63d1ed40e4040d7788ae409d3)
+>
+source format: .otf
+output environment: defcon
 fingerprint: 24cba6a63d1ed40e4040d7788ae409d3
+font info characters: 18072
+kerning pairs: 2990
+groups: 90
+group members: 468
+feature characters: 0
+layers: 1
 glyphs: 482
+glyph name characters: 3518
+glyph note characters: 0
 glyphs with 7 contours: 2
 glyphs with 5 contours: 4
 glyphs with 4 contours: 13
@@ -2439,9 +2809,19 @@ lineTo points: 4816
 curveTo points: 3142
 qCurveTo points: 0
 <
-> 482 Glyphs (20eaf91f2124447c4fe6bcd9aaffcc88)
+>
+source format: .otf
+output environment: defcon
 fingerprint: 20eaf91f2124447c4fe6bcd9aaffcc88
+font info characters: 18047
+kerning pairs: 3081
+groups: 87
+group members: 461
+feature characters: 0
+layers: 1
 glyphs: 482
+glyph name characters: 3518
+glyph note characters: 0
 glyphs with 7 contours: 2
 glyphs with 5 contours: 4
 glyphs with 4 contours: 13
@@ -2501,9 +2881,19 @@ lineTo points: 4913
 curveTo points: 3091
 qCurveTo points: 0
 <
-> 482 Glyphs (8b7cffe99529e76943a000f3420c19a9)
+>
+source format: .otf
+output environment: defcon
 fingerprint: 8b7cffe99529e76943a000f3420c19a9
+font info characters: 18079
+kerning pairs: 2990
+groups: 90
+group members: 468
+feature characters: 0
+layers: 1
 glyphs: 482
+glyph name characters: 3518
+glyph note characters: 0
 glyphs with 7 contours: 2
 glyphs with 5 contours: 4
 glyphs with 4 contours: 13
@@ -2563,9 +2953,19 @@ lineTo points: 4811
 curveTo points: 3144
 qCurveTo points: 0
 <
-> 482 Glyphs (f7fcd7fa35d727d14b9436e0ad4dd81f)
+>
+source format: .otf
+output environment: defcon
 fingerprint: f7fcd7fa35d727d14b9436e0ad4dd81f
+font info characters: 18040
+kerning pairs: 2741
+groups: 87
+group members: 461
+feature characters: 0
+layers: 1
 glyphs: 482
+glyph name characters: 3518
+glyph note characters: 0
 glyphs with 7 contours: 2
 glyphs with 5 contours: 4
 glyphs with 4 contours: 13
@@ -2624,9 +3024,19 @@ lineTo points: 5150
 curveTo points: 2878
 qCurveTo points: 0
 <
-> 482 Glyphs (c28eb370d362ea30c827290a5fe571f3)
+>
+source format: .otf
+output environment: defcon
 fingerprint: c28eb370d362ea30c827290a5fe571f3
+font info characters: 18072
+kerning pairs: 2647
+groups: 89
+group members: 465
+feature characters: 0
+layers: 1
 glyphs: 482
+glyph name characters: 3518
+glyph note characters: 0
 glyphs with 7 contours: 2
 glyphs with 5 contours: 4
 glyphs with 4 contours: 13
@@ -2689,9 +3099,19 @@ lineTo points: 5028
 curveTo points: 2920
 qCurveTo points: 0
 <
-> 558 Glyphs (819d43389decb4fe0a027820872ec69b)
+>
+source format: .otf
+output environment: defcon
 fingerprint: 819d43389decb4fe0a027820872ec69b
+font info characters: 18066
+kerning pairs: 3828
+groups: 123
+group members: 741
+feature characters: 0
+layers: 1
 glyphs: 558
+glyph name characters: 4106
+glyph note characters: 0
 glyphs with 7 contours: 2
 glyphs with 5 contours: 4
 glyphs with 4 contours: 18
@@ -2749,9 +3169,19 @@ lineTo points: 6440
 curveTo points: 2630
 qCurveTo points: 0
 <
-> 558 Glyphs (db637f7adb3be96abbef9efd586deaa8)
+>
+source format: .otf
+output environment: defcon
 fingerprint: db637f7adb3be96abbef9efd586deaa8
+font info characters: 18098
+kerning pairs: 3831
+groups: 123
+group members: 742
+feature characters: 0
+layers: 1
 glyphs: 558
+glyph name characters: 4106
+glyph note characters: 0
 glyphs with 7 contours: 2
 glyphs with 6 contours: 1
 glyphs with 5 contours: 3
@@ -2813,9 +3243,19 @@ lineTo points: 6400
 curveTo points: 2630
 qCurveTo points: 0
 <
-> 558 Glyphs (d62296f9fc48360ba9b1aacdd17677f2)
+>
+source format: .otf
+output environment: defcon
 fingerprint: d62296f9fc48360ba9b1aacdd17677f2
+font info characters: 18054
+kerning pairs: 3826
+groups: 123
+group members: 741
+feature characters: 0
+layers: 1
 glyphs: 558
+glyph name characters: 4106
+glyph note characters: 0
 glyphs with 7 contours: 2
 glyphs with 6 contours: 2
 glyphs with 5 contours: 2
@@ -2872,9 +3312,19 @@ lineTo points: 6448
 curveTo points: 2633
 qCurveTo points: 0
 <
-> 558 Glyphs (6150142e0587e31f901fbb5dcc77cb5b)
+>
+source format: .otf
+output environment: defcon
 fingerprint: 6150142e0587e31f901fbb5dcc77cb5b
+font info characters: 18086
+kerning pairs: 3829
+groups: 123
+group members: 742
+feature characters: 0
+layers: 1
 glyphs: 558
+glyph name characters: 4106
+glyph note characters: 0
 glyphs with 7 contours: 2
 glyphs with 6 contours: 2
 glyphs with 5 contours: 2
@@ -2936,9 +3386,19 @@ lineTo points: 6405
 curveTo points: 2631
 qCurveTo points: 0
 <
-> 558 Glyphs (6c723bc4f47024be76118fd09259bfc5)
+>
+source format: .otf
+output environment: defcon
 fingerprint: 6c723bc4f47024be76118fd09259bfc5
+font info characters: 18061
+kerning pairs: 3443
+groups: 123
+group members: 741
+feature characters: 0
+layers: 1
 glyphs: 558
+glyph name characters: 4106
+glyph note characters: 0
 glyphs with 7 contours: 4
 glyphs with 5 contours: 2
 glyphs with 4 contours: 18
@@ -2994,9 +3454,19 @@ lineTo points: 6353
 curveTo points: 2642
 qCurveTo points: 0
 <
-> 558 Glyphs (23039f1c6e8b7f8b378d100870282f17)
+>
+source format: .otf
+output environment: defcon
 fingerprint: 23039f1c6e8b7f8b378d100870282f17
+font info characters: 18093
+kerning pairs: 3447
+groups: 123
+group members: 742
+feature characters: 0
+layers: 1
 glyphs: 558
+glyph name characters: 4106
+glyph note characters: 0
 glyphs with 7 contours: 4
 glyphs with 5 contours: 2
 glyphs with 4 contours: 18
@@ -3054,9 +3524,19 @@ lineTo points: 6312
 curveTo points: 2640
 qCurveTo points: 0
 <
-> 558 Glyphs (b836f24c21558119eeacf2807ee0d11d)
+>
+source format: .otf
+output environment: defcon
 fingerprint: b836f24c21558119eeacf2807ee0d11d
+font info characters: 18068
+kerning pairs: 3828
+groups: 123
+group members: 741
+feature characters: 0
+layers: 1
 glyphs: 558
+glyph name characters: 4106
+glyph note characters: 0
 glyphs with 7 contours: 4
 glyphs with 5 contours: 2
 glyphs with 4 contours: 18
@@ -3112,9 +3592,19 @@ lineTo points: 6329
 curveTo points: 2640
 qCurveTo points: 0
 <
-> 558 Glyphs (bc366485bc52a8e352fa5250a09a38ea)
+>
+source format: .otf
+output environment: defcon
 fingerprint: bc366485bc52a8e352fa5250a09a38ea
+font info characters: 18100
+kerning pairs: 3830
+groups: 123
+group members: 742
+feature characters: 0
+layers: 1
 glyphs: 558
+glyph name characters: 4106
+glyph note characters: 0
 glyphs with 7 contours: 4
 glyphs with 5 contours: 2
 glyphs with 4 contours: 18
@@ -3173,9 +3663,19 @@ lineTo points: 6307
 curveTo points: 2640
 qCurveTo points: 0
 <
-> 558 Glyphs (848173583d2032e9647178a2a75c552c)
+>
+source format: .otf
+output environment: defcon
 fingerprint: 848173583d2032e9647178a2a75c552c
+font info characters: 18061
+kerning pairs: 3106
+groups: 122
+group members: 739
+feature characters: 0
+layers: 1
 glyphs: 558
+glyph name characters: 4106
+glyph note characters: 0
 glyphs with 7 contours: 2
 glyphs with 5 contours: 4
 glyphs with 4 contours: 18
@@ -3235,9 +3735,19 @@ lineTo points: 6436
 curveTo points: 2627
 qCurveTo points: 0
 <
-> 558 Glyphs (5dff1fd3d4c14b8ecdc5cd2cd95add05)
+>
+source format: .otf
+output environment: defcon
 fingerprint: 5dff1fd3d4c14b8ecdc5cd2cd95add05
+font info characters: 18093
+kerning pairs: 3127
+groups: 122
+group members: 740
+feature characters: 0
+layers: 1
 glyphs: 558
+glyph name characters: 4106
+glyph note characters: 0
 glyphs with 7 contours: 2
 glyphs with 5 contours: 4
 glyphs with 4 contours: 18
@@ -3299,9 +3809,19 @@ lineTo points: 6392
 curveTo points: 2626
 qCurveTo points: 0
 <
-> 709 Glyphs (a607379fb0ae5ff2577b94a66d389c7c)
-fingerprint: a607379fb0ae5ff2577b94a66d389c7c
+>
+source format: .otf
+output environment: defcon
+fingerprint: 589eed0c78fb1034caeae923442777e2
+font info characters: 18040
+kerning pairs: 3247
+groups: 111
+group members: 956
+feature characters: 0
+layers: 1
 glyphs: 709
+glyph name characters: 6138
+glyph note characters: 0
 glyphs with 7 contours: 1
 glyphs with 5 contours: 1
 glyphs with 4 contours: 30
@@ -3359,15 +3879,25 @@ contours with 17 points: 200
 contours with 16 points: 90
 contours with 15 points: 2
 contours with 12 points: 17
-contours with 5 points: 2
+contours with 4 points: 2
 moveTo points: 1446
-lineTo points: 11558
+lineTo points: 11556
 curveTo points: 12718
 qCurveTo points: 0
 <
-> 709 Glyphs (0f96d7e596ec649904416c7486269803)
-fingerprint: 0f96d7e596ec649904416c7486269803
+>
+source format: .otf
+output environment: defcon
+fingerprint: 1f2deeeb8bdbe3e8deed1968f22ee4a9
+font info characters: 18042
+kerning pairs: 3247
+groups: 111
+group members: 956
+feature characters: 0
+layers: 1
 glyphs: 709
+glyph name characters: 6138
+glyph note characters: 0
 glyphs with 7 contours: 1
 glyphs with 5 contours: 1
 glyphs with 4 contours: 32
@@ -3428,15 +3958,25 @@ contours with 13 points: 1
 contours with 12 points: 15
 contours with 7 points: 2
 contours with 6 points: 1
-contours with 5 points: 2
+contours with 4 points: 2
 moveTo points: 1452
-lineTo points: 11536
+lineTo points: 11534
 curveTo points: 12768
 qCurveTo points: 0
 <
-> 494 Glyphs (bacb60955bc32d97915e67e9bdeb7be5)
-fingerprint: bacb60955bc32d97915e67e9bdeb7be5
+>
+source format: .otf
+output environment: defcon
+fingerprint: b3c0085f01fcb6133a69d806dad382ba
+font info characters: 18053
+kerning pairs: 982
+groups: 77
+group members: 622
+feature characters: 0
+layers: 1
 glyphs: 494
+glyph name characters: 3769
+glyph note characters: 0
 glyphs with 13 contours: 1
 glyphs with 9 contours: 3
 glyphs with 8 contours: 17
@@ -3507,15 +4047,25 @@ contours with 12 points: 26
 contours with 11 points: 4
 contours with 10 points: 408
 contours with 9 points: 32
-contours with 5 points: 2
+contours with 4 points: 2
 moveTo points: 2064
-lineTo points: 13975
+lineTo points: 13973
 curveTo points: 13119
 qCurveTo points: 0
 <
-> 709 Glyphs (9221676261bd482fcc1d8725afb154ae)
-fingerprint: 9221676261bd482fcc1d8725afb154ae
+>
+source format: .otf
+output environment: defcon
+fingerprint: 20a30bea6dce5247feb84883f2136421
+font info characters: 18047
+kerning pairs: 2677
+groups: 110
+group members: 954
+feature characters: 0
+layers: 1
 glyphs: 709
+glyph name characters: 6138
+glyph note characters: 0
 glyphs with 7 contours: 1
 glyphs with 5 contours: 1
 glyphs with 4 contours: 32
@@ -3577,15 +4127,25 @@ contours with 18 points: 2
 contours with 17 points: 258
 contours with 16 points: 32
 contours with 12 points: 19
-contours with 5 points: 2
+contours with 4 points: 2
 moveTo points: 1452
-lineTo points: 11818
+lineTo points: 11816
 curveTo points: 12782
 qCurveTo points: 0
 <
-> 709 Glyphs (5615c7734b681fd1f0a7602542f34156)
-fingerprint: 5615c7734b681fd1f0a7602542f34156
+>
+source format: .otf
+output environment: defcon
+fingerprint: 6a2da6dcea75d1e0094d6d8831c56f95
+font info characters: 18054
+kerning pairs: 3247
+groups: 111
+group members: 956
+feature characters: 0
+layers: 1
 glyphs: 709
+glyph name characters: 6138
+glyph note characters: 0
 glyphs with 7 contours: 1
 glyphs with 5 contours: 1
 glyphs with 4 contours: 30
@@ -3640,15 +4200,25 @@ contours with 17 points: 124
 contours with 16 points: 166
 contours with 13 points: 1
 contours with 12 points: 16
-contours with 5 points: 2
+contours with 4 points: 2
 moveTo points: 1450
-lineTo points: 11531
+lineTo points: 11529
 curveTo points: 12776
 qCurveTo points: 0
 <
-> 709 Glyphs (613439c118f045f42f549f818eab3fd9)
-fingerprint: 613439c118f045f42f549f818eab3fd9
+>
+source format: .otf
+output environment: defcon
+fingerprint: c8327986cad7b4d4cbde2e22798852f8
+font info characters: 18047
+kerning pairs: 2477
+groups: 111
+group members: 956
+feature characters: 0
+layers: 1
 glyphs: 709
+glyph name characters: 6138
+glyph note characters: 0
 glyphs with 7 contours: 1
 glyphs with 5 contours: 1
 glyphs with 4 contours: 30
@@ -3703,9 +4273,9 @@ contours with 16 points: 292
 contours with 15 points: 2
 contours with 13 points: 1
 contours with 12 points: 16
-contours with 5 points: 2
+contours with 4 points: 2
 moveTo points: 1446
-lineTo points: 11208
+lineTo points: 11206
 curveTo points: 12668
 qCurveTo points: 0
 <
