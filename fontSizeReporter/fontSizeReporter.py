@@ -6,6 +6,8 @@ To Do
 -----
 
 General:
+- express point and component counts as a percentage so that
+  the number of glyphs can be scaled easily
 - build a vanilla interface for use in RoboFont and Glyphs
 - write documentation
 
@@ -92,8 +94,6 @@ def profileFont(path):
 		fingerprinter={},
 		# number of glyphs per layer
 		glyphs=[],
-		# length of the glyph names
-		glyphNames=0,
 		# length of glyph notes
 		glyphNotes=0,
 		# mapping of contour counts : number of glyphs with this number of contours
@@ -207,7 +207,6 @@ def profileGlyphSet(glyphNames, glyphSet, profile):
 	"""
 	profile["glyphs"].append(len(glyphNames))
 	for glyphName in glyphNames:
-		profile["glyphNames"] += len(glyphName)
 		glyph = glyphSet[glyphName]
 		profileGlyph(glyph, profile)
 		if hasattr(glyph, "note"):
@@ -413,7 +412,6 @@ def profileToString(profile):
 		"feature characters: %d" % profile["features"],
 		"layers: %d" % len(profile["glyphs"]),
 		"glyphs: %d" % sum(profile["glyphs"]),
-		"glyph name characters: %d" % profile["glyphNames"],
 		"glyph note characters: %d" % profile["glyphNotes"],
 	]
 	for contourCount, occurance in reversed(sorted(profile["contourOccurance"].items())):
