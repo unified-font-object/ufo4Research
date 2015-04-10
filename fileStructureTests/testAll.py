@@ -79,10 +79,10 @@ tests["Full Read"] = dict(
 )
 
 # -------
-# Execute
+# Support
 # -------
 
-def _writeSourceFile(font, fileSystem):
+def setupFile(font, fileSystem):
 	writer = UFOReaderWriter(fileSystem)
 	writer.writeMetaInfo()
 	writer.writeInfo(font.info)
@@ -98,46 +98,63 @@ def _writeSourceFile(font, fileSystem):
 	writer.writeLayerContents()
 	writer.close()
 
-for testName, testData in sorted(tests.items()):
-	print
-	print "-" * len(testName)
-	print testName
-	print "-" * len(testName)
-	print
+def tearDownFile(path):
+	if os.path.exists(path):
+		if os.path.isdir(path):
+			shutil.rmtree(path)
+		else:
+			os.remove(path)
 
-	for fontName, description in sorted(testFonts):
-		print fontName
-		print "-" * len(fontName)
+# -------
+# Execute
+# -------
 
-		font = compileFont(fontName)
+def execute():
+	for testName, testData in sorted(tests.items()):
+		print
+		print "-" * len(testName)
+		print testName
+		print "-" * len(testName)
+		print
 
-		for fileSystemName, fileSystemClass in sorted(fileSystems.items()):
-			path = tempfile.mkstemp()[1]
-			if os.path.exists(path):
-				os.remove(path)
-			# setup
-			if testData["reading"]:
-				fs = fileSystemClass(path)
-				_writeSourceFile(font, fs)
-				del fs
-			# test
-			try:
-				func = testData["function"]
-				fileSystem = fileSystemClass(path)
-				start = time.time()
-				func(
-					fileSystem=fileSystem,
-					font=font
-				)
-				total = time.time() - start
-				print "%s:" % fileSystemName, total 
-			# tear down
-			finally:
-				if os.path.exists(path):
-					if os.path.isdir(path):
-						shutil.rmtree(path)
-					else:
-						os.remove(path)
+		for fontName, description in sorted(testFonts):
+			print fontName
+			print "-" * len(fontName)
 
+			font = compileFont(fontName)
 
+			for fileSystemName, fileSystemClass in sorted(fileSystems.items()):
+				path = tempfile.mkstemp()[1]
+				tearDownFile(path)
+				reading = testData["reading"]
+				writing = testData["writing"]
+				# setup
+				if reading:
+					fs = fileSystemClass(path)
+					setupFile(font, fs)
+					del fs
+				# test
+				try:
+					func = testData["function"]
+					times = []
+					for i in range(7):
+						start = time.time()
+						fileSystem = fileSystemClass(path)
+						func(
+							fileSystem=fileSystem,
+							font=font
+						)
+						total = time.time() - start
+						times.append(total)
+						if not reading and writing:
+							tearDownFile(path)
+					times.sort()
+					times = times[1:-1]
+					average = sum(times) / 5.0
+					print "%s:" % fileSystemName, average 
+				# tear down
+				finally:
+					tearDownFile(path)
 
+if __name__ == "__main__":
+	execute()
