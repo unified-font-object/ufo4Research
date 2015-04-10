@@ -137,7 +137,8 @@ class UFOReaderWriter(object):
 		"""
 		Write features.
 		"""
-		self._fileSystem.writeFeatures(data)
+		if data:
+			self._fileSystem.writeFeatures(data)
 
 	# layers and glyphs
 

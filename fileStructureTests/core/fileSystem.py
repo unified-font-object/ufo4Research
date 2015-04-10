@@ -308,7 +308,7 @@ class BaseFileSystem(object):
 		data = OrderedDict()
 		if raw is not None:
 			for layerName, storageName in raw:
-				data[layerName] = stroageName
+				data[layerName] = storageName
 		return data
 
 	def writeLayerContents(self):
@@ -451,7 +451,7 @@ class BaseFileSystem(object):
 
 		Subclasses MAY override this method.
 		"""
-		layerStorageName = self.getLayerSorageName(layerName)
+		layerStorageName = self.getLayerStorageName(layerName)
 		glyphStorageName = self.getGlyphStorageName(layerName, glyphName)
 		path = self.joinLocations(layerStorageName, glyphStorageName)
 		tree = self.readTreeFromLocation(path)

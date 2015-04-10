@@ -1,4 +1,5 @@
 >
+name: simple test font
 source format: .otf
 source size: 138120
 output environment: defcon
