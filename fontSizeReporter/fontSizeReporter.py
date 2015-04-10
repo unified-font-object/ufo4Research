@@ -6,8 +6,7 @@ To Do
 -----
 
 General:
-- express point and component counts as a percentage so that
-  the number of glyphs can be scaled easily
+- add support for KeyboardInterrupt
 - build a vanilla interface for use in RoboFont and Glyphs
 - write documentation
 
@@ -81,14 +80,27 @@ except ImportError:
 # Profile: Font
 # -------------
 
+def getFileSize(path):
+	total = 0
+	if os.path.isdir(path):
+		for p in os.listdir(path):
+			if p.startswith("."):
+				continue
+			p = os.path.join(path, p)
+			total += getFileSize(p)
+	else:
+		total += os.stat(path).st_size
+	return total
+
 def profileFont(path):
 	"""
-	Profile a font and dump the result to stdout.
+	Return a profile of a font.
 	"""
 	profile = dict(
 		# environment data
 		outputEnvironment="Unknown",
 		sourceFormat="Unknown",
+		sourceSize=getFileSize(path),
 		# mapping of (x, y) : count for entire font.
 		# will be converted to a hash later.
 		fingerprinter={},
@@ -96,17 +108,23 @@ def profileFont(path):
 		glyphs=[],
 		# length of glyph notes
 		glyphNotes=0,
+		# total number of contours
+		contours=0,
 		# mapping of contour counts : number of glyphs with this number of contours
 		contourOccurance={},
-		# mapping of point count : number of contours with this point count
-		pointOccurance={},
-		# overall point type counts
-		pointTypes=dict(
+		# total number of segments
+		segments=0,
+		# mapping of segment count : number of contours with this segment count
+		segmentOccurance={},
+		# overall segment type counts
+		segmentTypes=dict(
 			moveTo=0,
 			lineTo=0,
 			curveTo=0,
 			qCurveTo=0
 		),
+		# total number of components
+		components=0,
 		# component transformations
 		componentOccurance={},
 		# kerning pairs
@@ -221,24 +239,27 @@ def profileGlyph(glyph, profile):
 	pen = ProfilePen(profile["fingerprinter"])
 	glyph.draw(pen)
 	# contour counts
-	contourOccurance = profile["contourOccurance"]
 	contourCount = len(pen.contours)
+	profile["contours"] += contourCount
+	contourOccurance = profile["contourOccurance"]
 	if contourCount not in contourOccurance:
 		contourOccurance[contourCount] = 0
 	contourOccurance[contourCount] += 1
-	# point counts
-	pointOccurance = profile["pointOccurance"]
+	# segment counts
+	segmentOccurance = profile["segmentOccurance"]
 	for contour in pen.contours:
-		pointCount = contour["total"]
-		if pointCount not in pointOccurance:
-			pointOccurance[pointCount] = 0
-		pointOccurance[pointCount] += 1
-		# point types
-		profile["pointTypes"]["moveTo"] += contour["moveTo"]
-		profile["pointTypes"]["lineTo"] += contour["lineTo"]
-		profile["pointTypes"]["curveTo"] += contour["curveTo"]
-		profile["pointTypes"]["qCurveTo"] += contour["qCurveTo"]
+		segmentCount = contour["moveTo"] + contour["lineTo"] + contour["curveTo"] + contour["qCurveTo"]
+		profile["segments"] += segmentCount
+		if segmentCount not in segmentOccurance:
+			segmentOccurance[segmentCount] = 0
+		segmentOccurance[segmentCount] += 1
+		# segment types
+		profile["segmentTypes"]["moveTo"] += contour["moveTo"]
+		profile["segmentTypes"]["lineTo"] += contour["lineTo"]
+		profile["segmentTypes"]["curveTo"] += contour["curveTo"]
+		profile["segmentTypes"]["qCurveTo"] += contour["qCurveTo"]
 	# component counts
+	profile["components"] += len(pen.components)
 	for transformation in pen.components:
 		if transformation not in profile["componentOccurance"]:
 			profile["componentOccurance"][transformation] = 0
@@ -263,7 +284,7 @@ class ProfilePen(BasePen):
 
 	"""
 	This will record the number of contours,
-	points (including their various types),
+	segments (including their various types),
 	and contours. It will simultaneously store
 	all point locations for full font fingerprinting.
 	"""
@@ -283,27 +304,23 @@ class ProfilePen(BasePen):
 			moveTo=1,
 			lineTo=0,
 			curveTo=0,
-			qCurveTo=0,
-			total=1
+			qCurveTo=0
 		)
 		self.contours.append(d)
 		self._logPoint(pt)
 
 	def _lineTo(self, pt):
 		self.contours[-1]["lineTo"] += 1
-		self.contours[-1]["total"] += 1
 		self._logPoint(pt)
 
 	def _curveToOne(self, pt1, pt2, pt3):
 		self.contours[-1]["curveTo"] += 1
-		self.contours[-1]["total"] += 3
 		self._logPoint(pt1)
 		self._logPoint(pt2)
 		self._logPoint(pt3)
 
 	def _qCurveToOne(self, pt1, pt2):
 		self.contours[-1]["qCurveTo"] += 1
-		self.contours[-1]["total"] += 2
 		self._logPoint(pt1)
 		self._logPoint(pt2)
 
@@ -383,6 +400,7 @@ def profileToString(profile):
 	"""
 	> start of profile
 	source format: source file extension
+	source size: source file size in bytes
 	output environment: library/app used to output the profile
 	fingerprint: hash of all points in the font
 	font info characters: total number of characters used in string fields in the font info
@@ -393,16 +411,20 @@ def profileToString(profile):
 	layers: number of layers
 	glyphs: number of glyphs
 	glyph name characters: total number of characters used in glyph names
-	glyph not characters: total number of characters used in glyph notes
-	glyphs with (number) contours: number of glyphs with a particular number of contours
-	contours with (number) points: number of contours with a particular number of points
-	(point type) points: number of points of a particular type
-	components with (transformation) transformation: number of components with a particular transformation
+	glyph note characters: total number of characters used in glyph notes
+	contours: total number of contours
+	segments: total number of segments
+	components: total number of contours
+	glyphs with (number) contours: percentage of glyphs with a particular number of contours
+	contours with (number) segments: percentage of contours with a particular number of segments
+	(segment type) segments: percentage of segments of a particular type
+	components with (transformation) transformation: percentage of components with a particular transformation
 	< end of profile
 	"""
 	lines = [
 		">",
 		"source format: %s" % profile["sourceFormat"],
+		"source size: %d" % profile["sourceSize"],
 		"output environment: %s" % profile["outputEnvironment"],
 		"fingerprint: %s" % profile["fingerprint"],
 		"font info characters: %d" % profile["fontInfo"],
@@ -413,20 +435,32 @@ def profileToString(profile):
 		"layers: %d" % len(profile["glyphs"]),
 		"glyphs: %d" % sum(profile["glyphs"]),
 		"glyph note characters: %d" % profile["glyphNotes"],
+		"contours: %d" % profile["contours"],
+		"components: %d" % profile["components"],
+		"segments: %d" % profile["segments"],
 	]
+	segmentCount = float(profile["segments"])
+	for segmentType in ("moveTo", "lineTo", "curveTo", "qCurveTo"):
+		occurance = profile["segmentTypes"][segmentType]
+		occurance = occurance / segmentCount
+		lines.append(
+			"%s segments: %s" % (segmentType, occurance)
+		)
+	glyphCount = float(sum(profile["glyphs"]))
 	for contourCount, occurance in reversed(sorted(profile["contourOccurance"].items())):
+		occurance = occurance / glyphCount
 		lines.append(
-			"glyphs with %d contours: %d" % (contourCount, occurance)
+			"glyphs with %d contours: %.10f" % (contourCount, occurance)
 		)
-	for pointCount, occurance in reversed(sorted(profile["pointOccurance"].items())):
+	contourCount = float(profile["contours"])
+	for segmentCount, occurance in reversed(sorted(profile["segmentOccurance"].items())):
+		occurance = occurance / contourCount
 		lines.append(
-			"contours with %d points: %d" % (pointCount, occurance)
+			"contours with %d segments: %.10f" % (segmentCount, occurance)
 		)
-	for pointType in ("moveTo", "lineTo", "curveTo", "qCurveTo"):
-		lines.append(
-			"%s points: %s" % (pointType, profile["pointTypes"][pointType])
-		)
+	componentCount = float(profile["components"])
 	for transformation, occurance in sorted(profile["componentOccurance"].items()):
+		occurance = occurance / componentCount
 		lines.append(
 			"components with (%s) transformation: %d" % (transformation, occurance)
 		)
