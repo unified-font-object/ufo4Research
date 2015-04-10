@@ -6,7 +6,7 @@ from fontTools.agl import AGL2UV
 aglNames = list(sorted(AGL2UV.keys()))
 
 directory = os.path.dirname(__file__)
-path = os.path.join(directory, "fontData.txt")
+path = os.path.join(directory, "fonts.txt")
 f = open(path, "rb")
 profiles = f.read()
 f.close()
