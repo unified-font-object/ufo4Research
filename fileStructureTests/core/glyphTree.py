@@ -317,7 +317,7 @@ def _validateAndMassagePointStructures(tree, pointAttributes, openContourOffCurv
 def writeGlyphToTree(glyph):
 	tree = ET.Element("glyph")
 	tree.attrib["name"] = glyph.name
-	tree.attrib["formatVersion"] = "2"
+	tree.attrib["format"] = "2"
 	_writeAdvance(glyph, tree)
 	_writeUnicodes(glyph, tree)
 	_writeNote(glyph, tree)

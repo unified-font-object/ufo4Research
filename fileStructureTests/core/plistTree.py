@@ -14,7 +14,6 @@ def convertPlistToTree(obj):
 	Convert a nested set of objects representing a
 	Property List to an ElementTree tree/element.
 	"""
-	assert isinstance(obj, dict)
 	tree = ET.Element("plist")
 	tree.attrib["version"] = "1.0"
 	element = _convertObjToElement(obj)
@@ -57,15 +56,15 @@ def _convertObjToElement(obj):
 		return _convertListToElement(obj)
 	elif isinstance(obj, basestring):
 		return _convertStringToElement(obj)
-	elif isinstance(obj, int):
-		return _convertIntToElement(obj)
-	elif isinstance(obj, float):
-		return _convertFloatToElement(obj)
 	elif isinstance(obj, bool):
 		if obj == False:
 			return ET.Element("false")
 		else:
 			return ET.Element("true")
+	elif isinstance(obj, int):
+		return _convertIntToElement(obj)
+	elif isinstance(obj, float):
+		return _convertFloatToElement(obj)
 
 def _convertElementToDict(element):
 	obj = {}

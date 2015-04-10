@@ -31,7 +31,7 @@ class UFOReaderWriter(object):
 		"""
 		data = dict(
 			creator="org.unifiedfontobject.ufo4Tests.UFOReaderWriter",
-			formatVersion="4"
+			formatVersion=4
 		)
 		self._fileSystem.writeMetaInfo(data)
 

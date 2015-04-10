@@ -360,7 +360,6 @@ fontInfoStringAttributes = """
 familyName
 styleName
 styleMapFamilyName
-styleMapStyleName
 copyright
 trademark
 note

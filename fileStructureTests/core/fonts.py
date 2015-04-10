@@ -192,15 +192,15 @@ def generateSegments(count, x, y, typ):
 # Parser
 # ------
 
-fontDescriptions = {}
+fontDescriptions = []
 currentFont = None
 for line in profiles.splitlines():
 	if line.startswith("#") or not line:
 		continue
 	# start
 	elif line.startswith(">"):
-		name = "font %d" % (len(fontDescriptions) + 1)
 		currentFont = dict(
+			name="font %d" % (len(fontDescriptions) + 1),
 			fontInfo=0,
 			kerning=0,
 			groups=0,
@@ -211,8 +211,11 @@ for line in profiles.splitlines():
 			contours={},
 			components={}
 		)
-		fontDescriptions[name] = currentFont
+		fontDescriptions.append(currentFont)
 	# name
+	elif line.startswith("name"):
+		currentFont["name"] = line.split(":", 1)[-1].strip()
+	# fingerprint
 	elif line.startswith("fingerprint"):
 		currentFont["fingerprint"] = line.split(":", 1)[-1].strip()
 	# font info
@@ -280,6 +283,11 @@ for line in profiles.splitlines():
 		transformation = tuple([float(i) for i in transformation])
 		currentFont["components"][transformation] = glyphCount
 
+d = {}
+for description in fontDescriptions:
+	d[description["name"]] = description
+fontDescriptions = d
+
 # ------------
 # Pre-Compiler
 # ------------
@@ -288,7 +296,6 @@ fontInfoStringAttributes = """
 familyName
 styleName
 styleMapFamilyName
-styleMapStyleName
 copyright
 trademark
 note
@@ -432,25 +439,31 @@ for font in fontDescriptions.values():
 	# features
 	font["features"] = generateString(font["features"])
 
-
-
 # --------
 # Compiler
 # --------
 
-# def compileFont(name):
-# 	description = fontDescriptions[name]
-# 	font = Font()
-# 	layer = font.newLayer("public.default")
-# 	for attr, value in fontInfo.items():
-# 		setattr(font.info, attr, value)
-# 	contours = deepcopy(description["contours"])
-# 	for glyphIndex, contourCount in enumerate(description["glyphs"]):
-# 		glyph = layer.newGlyph("glyph%d" % glyphIndex)
-# 		glyph.unicodes = [glyphIndex]
-# 		for contourIndex in range(contourCount):
-# 			glyph.beginPath()
-# 			for point in contours.pop(0):
-# 				glyph.addPoint(point, "line")
-# 			glyph.endPath()
-# 	return font
+def compileFont(name):
+	description = fontDescriptions[name]
+	font = Font()
+	for attr, value in description["fontInfo"].items():
+		setattr(font.info, attr, value)
+	font.kerning.update(description["kerning"])
+	font.groups.update(description["groups"])
+	for layerName, glyphs in description["layers"].items():
+		layer = font.newLayer(layerName)
+		for glyph in glyphs:
+			target = layer.newGlyph(glyph["name"])
+			target.width = glyph["width"]
+			target.unicode = glyph["unicode"]
+			target.note = glyph["note"]
+			for contour in glyph["contours"]:
+				target.beginPath()
+				for segment in contour:
+					for i, point in enumerate(segment["points"]):
+						pointType = None
+						if i == len(segment["points"]) - 1:
+							pointType = segment["type"]
+						target.addPoint(point, segmentType=pointType)
+				target.endPath()
+	return font

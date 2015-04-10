@@ -3,7 +3,7 @@ source format: .otf
 source size: 138120
 output environment: defcon
 fingerprint: 5f56c55f79fca275347df60876794810
-font info characters: 18039
+font info characters: 18032
 kerning pairs: 3527
 groups: 96
 group members: 527
@@ -56,7 +56,7 @@ source format: .otf
 source size: 132128
 output environment: defcon
 fingerprint: b69219110ac3f13e3ca1e383704992a7
-font info characters: 18071
+font info characters: 18065
 kerning pairs: 3122
 groups: 97
 group members: 529
@@ -111,7 +111,7 @@ source format: .otf
 source size: 140400
 output environment: defcon
 fingerprint: 2ce00cf92024230e94b26e1c7b939c88
-font info characters: 18038
+font info characters: 18031
 kerning pairs: 4136
 groups: 97
 group members: 529
@@ -164,7 +164,7 @@ source format: .otf
 source size: 133992
 output environment: defcon
 fingerprint: 319bf103d7c7e95c7079d5b18292ea23
-font info characters: 18070
+font info characters: 18064
 kerning pairs: 3682
 groups: 97
 group members: 529
@@ -219,7 +219,7 @@ source format: .otf
 source size: 129252
 output environment: defcon
 fingerprint: a0473dcb2424a6abbb2fceaa1ae8cf41
-font info characters: 18035
+font info characters: 18028
 kerning pairs: 3265
 groups: 96
 group members: 526
@@ -272,7 +272,7 @@ source format: .otf
 source size: 123360
 output environment: defcon
 fingerprint: 0b0c48acf127794eeb01a77e0c0a2448
-font info characters: 18067
+font info characters: 18061
 kerning pairs: 2921
 groups: 97
 group members: 529
@@ -326,7 +326,7 @@ source format: .otf
 source size: 138264
 output environment: defcon
 fingerprint: c37dae14faa70f76e46bc8278ebe4971
-font info characters: 18040
+font info characters: 18033
 kerning pairs: 3777
 groups: 97
 group members: 529
@@ -379,7 +379,7 @@ source format: .otf
 source size: 132252
 output environment: defcon
 fingerprint: 20cf4985b759c76d5fc24f838dd24990
-font info characters: 18072
+font info characters: 18066
 kerning pairs: 3397
 groups: 97
 group members: 529
@@ -433,7 +433,7 @@ source format: .otf
 source size: 139408
 output environment: defcon
 fingerprint: 7c86dc0ac0f341d1a3cdee0533709d4e
-font info characters: 18047
+font info characters: 18040
 kerning pairs: 4133
 groups: 97
 group members: 529
@@ -486,7 +486,7 @@ source format: .otf
 source size: 133556
 output environment: defcon
 fingerprint: d6556682de774171784adb9536dd2ba3
-font info characters: 18079
+font info characters: 18073
 kerning pairs: 3678
 groups: 97
 group members: 529
@@ -541,7 +541,7 @@ source format: .otf
 source size: 143024
 output environment: defcon
 fingerprint: 233d942f3533b6885e761cb4ee3750d0
-font info characters: 18045
+font info characters: 18038
 kerning pairs: 4062
 groups: 97
 group members: 529
@@ -594,7 +594,7 @@ source format: .otf
 source size: 137824
 output environment: defcon
 fingerprint: 2b660544e181ad073ddfdd65bb51010b
-font info characters: 18077
+font info characters: 18071
 kerning pairs: 3568
 groups: 97
 group members: 529
@@ -649,7 +649,7 @@ source format: .otf
 source size: 130504
 output environment: defcon
 fingerprint: 5ac0da8defe7ec9c9bc7e626ee0539be
-font info characters: 18040
+font info characters: 18033
 kerning pairs: 3187
 groups: 97
 group members: 529
@@ -702,7 +702,7 @@ source format: .otf
 source size: 124880
 output environment: defcon
 fingerprint: c1b07d80f11c9d27c8f3845a59c60332
-font info characters: 18072
+font info characters: 18066
 kerning pairs: 2866
 groups: 95
 group members: 525
@@ -755,7 +755,7 @@ source format: .otf
 source size: 138628
 output environment: defcon
 fingerprint: 07e42c36456e7c8fc75e4daca1e64c8a
-font info characters: 18040
+font info characters: 18033
 kerning pairs: 3407
 groups: 97
 group members: 529
@@ -808,7 +808,7 @@ source format: .otf
 source size: 135792
 output environment: defcon
 fingerprint: f53e54553d47bf743afc65946ee51ee6
-font info characters: 18072
+font info characters: 18066
 kerning pairs: 3022
 groups: 97
 group members: 529
@@ -863,7 +863,7 @@ source format: .otf
 source size: 194380
 output environment: defcon
 fingerprint: 8d961c5719707d2782afbbb725dbe1de
-font info characters: 18054
+font info characters: 18047
 kerning pairs: 4445
 groups: 136
 group members: 812
@@ -927,7 +927,7 @@ source format: .otf
 source size: 171856
 output environment: defcon
 fingerprint: 586779a6d32881d795599160084d1eb9
-font info characters: 18086
+font info characters: 18080
 kerning pairs: 5586
 groups: 109
 group members: 733
@@ -991,7 +991,7 @@ source format: .otf
 source size: 192848
 output environment: defcon
 fingerprint: 63d69f986373c99b0e9273780d9509c2
-font info characters: 18053
+font info characters: 18046
 kerning pairs: 4518
 groups: 136
 group members: 812
@@ -1052,7 +1052,7 @@ source format: .otf
 source size: 171360
 output environment: defcon
 fingerprint: e6fbd96c081a4eab2c4b2d5dd25321d7
-font info characters: 18085
+font info characters: 18079
 kerning pairs: 5462
 groups: 109
 group members: 733
@@ -1116,7 +1116,7 @@ source format: .otf
 source size: 193128
 output environment: defcon
 fingerprint: 93cad5745625a26f1d6650763e9430d7
-font info characters: 18049
+font info characters: 18042
 kerning pairs: 4864
 groups: 136
 group members: 812
@@ -1184,7 +1184,7 @@ source format: .otf
 source size: 171224
 output environment: defcon
 fingerprint: d834c59ee719f4490bbeeea64225b349
-font info characters: 18081
+font info characters: 18075
 kerning pairs: 5338
 groups: 109
 group members: 733
@@ -1254,7 +1254,7 @@ source format: .otf
 source size: 191536
 output environment: defcon
 fingerprint: acffddd9209d06fde93604264b558a35
-font info characters: 18061
+font info characters: 18054
 kerning pairs: 4932
 groups: 136
 group members: 812
@@ -1322,7 +1322,7 @@ source format: .otf
 source size: 168676
 output environment: defcon
 fingerprint: ad324bf93f0705ece33d48ad9d74ff09
-font info characters: 18093
+font info characters: 18087
 kerning pairs: 5333
 groups: 109
 group members: 733
@@ -1391,7 +1391,7 @@ source format: .otf
 source size: 193056
 output environment: defcon
 fingerprint: 45bf6d94ce5278d90cf3e6c91a837f3f
-font info characters: 18048
+font info characters: 18041
 kerning pairs: 5017
 groups: 135
 group members: 810
@@ -1460,7 +1460,7 @@ source format: .otf
 source size: 163668
 output environment: defcon
 fingerprint: ce900f2ec4d5d81fdf3e66e2498bf1d0
-font info characters: 18080
+font info characters: 18074
 kerning pairs: 3619
 groups: 109
 group members: 733
@@ -1530,7 +1530,7 @@ source format: .otf
 source size: 116840
 output environment: defcon
 fingerprint: bfae1ea94adb892d69b0a8547c902ba3
-font info characters: 18024
+font info characters: 18017
 kerning pairs: 901
 groups: 72
 group members: 461
@@ -1612,7 +1612,7 @@ source format: .otf
 source size: 100760
 output environment: defcon
 fingerprint: 102016704f3c19a8faf5b1dcd23bd558
-font info characters: 18031
+font info characters: 18024
 kerning pairs: 864
 groups: 67
 group members: 483
@@ -1680,7 +1680,7 @@ source format: .otf
 source size: 103676
 output environment: defcon
 fingerprint: 972377116cb99ffb559051e742f2e74e
-font info characters: 18038
+font info characters: 18031
 kerning pairs: 901
 groups: 72
 group members: 461
@@ -1753,7 +1753,7 @@ source format: .otf
 source size: 111804
 output environment: defcon
 fingerprint: 3f7e16f065fe30c858c55d26bc09b39d
-font info characters: 18045
+font info characters: 18038
 kerning pairs: 2425
 groups: 86
 group members: 457
@@ -1810,7 +1810,7 @@ source format: .otf
 source size: 112772
 output environment: defcon
 fingerprint: a185b05cf40a29a0d39085bbe3fe5e3a
-font info characters: 18077
+font info characters: 18071
 kerning pairs: 2390
 groups: 89
 group members: 466
@@ -1865,7 +1865,7 @@ source format: .otf
 source size: 113492
 output environment: defcon
 fingerprint: 30172edd102ec0c227e80d4d04cf26fe
-font info characters: 18033
+font info characters: 18026
 kerning pairs: 3082
 groups: 87
 group members: 461
@@ -1922,7 +1922,7 @@ source format: .otf
 source size: 114804
 output environment: defcon
 fingerprint: 1bd28c98a5932b6aa445d812b174ab5c
-font info characters: 18065
+font info characters: 18059
 kerning pairs: 2990
 groups: 90
 group members: 468
@@ -1978,7 +1978,7 @@ source format: .otf
 source size: 111320
 output environment: defcon
 fingerprint: bc49d913fbe3473e3a229b85e371da27
-font info characters: 18035
+font info characters: 18028
 kerning pairs: 3082
 groups: 87
 group members: 461
@@ -2035,7 +2035,7 @@ source format: .otf
 source size: 112688
 output environment: defcon
 fingerprint: 20cc7ffd537e5028abc44fbe972b5f13
-font info characters: 18067
+font info characters: 18061
 kerning pairs: 2990
 groups: 90
 group members: 468
@@ -2091,7 +2091,7 @@ source format: .otf
 source size: 111984
 output environment: defcon
 fingerprint: be3be6fac38234ff61d4dc04a54cd14d
-font info characters: 18040
+font info characters: 18033
 kerning pairs: 3082
 groups: 87
 group members: 461
@@ -2147,7 +2147,7 @@ source format: .otf
 source size: 113892
 output environment: defcon
 fingerprint: 24cba6a63d1ed40e4040d7788ae409d3
-font info characters: 18072
+font info characters: 18066
 kerning pairs: 2990
 groups: 90
 group members: 468
@@ -2202,7 +2202,7 @@ source format: .otf
 source size: 112636
 output environment: defcon
 fingerprint: 20eaf91f2124447c4fe6bcd9aaffcc88
-font info characters: 18047
+font info characters: 18040
 kerning pairs: 3081
 groups: 87
 group members: 461
@@ -2259,7 +2259,7 @@ source format: .otf
 source size: 114764
 output environment: defcon
 fingerprint: 8b7cffe99529e76943a000f3420c19a9
-font info characters: 18079
+font info characters: 18073
 kerning pairs: 2990
 groups: 90
 group members: 468
@@ -2315,7 +2315,7 @@ source format: .otf
 source size: 106492
 output environment: defcon
 fingerprint: f7fcd7fa35d727d14b9436e0ad4dd81f
-font info characters: 18040
+font info characters: 18033
 kerning pairs: 2741
 groups: 87
 group members: 461
@@ -2372,7 +2372,7 @@ source format: .otf
 source size: 107592
 output environment: defcon
 fingerprint: c28eb370d362ea30c827290a5fe571f3
-font info characters: 18072
+font info characters: 18066
 kerning pairs: 2647
 groups: 89
 group members: 465
@@ -2426,7 +2426,7 @@ source format: .otf
 source size: 133228
 output environment: defcon
 fingerprint: 819d43389decb4fe0a027820872ec69b
-font info characters: 18066
+font info characters: 18059
 kerning pairs: 3828
 groups: 123
 group members: 741
@@ -2486,7 +2486,7 @@ source format: .otf
 source size: 135224
 output environment: defcon
 fingerprint: db637f7adb3be96abbef9efd586deaa8
-font info characters: 18098
+font info characters: 18092
 kerning pairs: 3831
 groups: 123
 group members: 742
@@ -2547,7 +2547,7 @@ source format: .otf
 source size: 132900
 output environment: defcon
 fingerprint: d62296f9fc48360ba9b1aacdd17677f2
-font info characters: 18054
+font info characters: 18047
 kerning pairs: 3826
 groups: 123
 group members: 741
@@ -2608,7 +2608,7 @@ source format: .otf
 source size: 135052
 output environment: defcon
 fingerprint: 6150142e0587e31f901fbb5dcc77cb5b
-font info characters: 18086
+font info characters: 18080
 kerning pairs: 3829
 groups: 123
 group members: 742
@@ -2669,7 +2669,7 @@ source format: .otf
 source size: 130792
 output environment: defcon
 fingerprint: 6c723bc4f47024be76118fd09259bfc5
-font info characters: 18061
+font info characters: 18054
 kerning pairs: 3443
 groups: 123
 group members: 741
@@ -2729,7 +2729,7 @@ source format: .otf
 source size: 132852
 output environment: defcon
 fingerprint: 23039f1c6e8b7f8b378d100870282f17
-font info characters: 18093
+font info characters: 18087
 kerning pairs: 3447
 groups: 123
 group members: 742
@@ -2790,7 +2790,7 @@ source format: .otf
 source size: 132956
 output environment: defcon
 fingerprint: b836f24c21558119eeacf2807ee0d11d
-font info characters: 18068
+font info characters: 18061
 kerning pairs: 3828
 groups: 123
 group members: 741
@@ -2850,7 +2850,7 @@ source format: .otf
 source size: 134972
 output environment: defcon
 fingerprint: bc366485bc52a8e352fa5250a09a38ea
-font info characters: 18100
+font info characters: 18094
 kerning pairs: 3830
 groups: 123
 group members: 742
@@ -2910,7 +2910,7 @@ source format: .otf
 source size: 129916
 output environment: defcon
 fingerprint: 848173583d2032e9647178a2a75c552c
-font info characters: 18061
+font info characters: 18054
 kerning pairs: 3106
 groups: 122
 group members: 739
@@ -2970,7 +2970,7 @@ source format: .otf
 source size: 131684
 output environment: defcon
 fingerprint: 5dff1fd3d4c14b8ecdc5cd2cd95add05
-font info characters: 18093
+font info characters: 18087
 kerning pairs: 3127
 groups: 122
 group members: 740
@@ -3031,7 +3031,7 @@ source format: .otf
 source size: 234596
 output environment: defcon
 fingerprint: 589eed0c78fb1034caeae923442777e2
-font info characters: 18040
+font info characters: 18033
 kerning pairs: 3247
 groups: 111
 group members: 956
@@ -3104,7 +3104,7 @@ source format: .otf
 source size: 243920
 output environment: defcon
 fingerprint: 1f2deeeb8bdbe3e8deed1968f22ee4a9
-font info characters: 18042
+font info characters: 18035
 kerning pairs: 3247
 groups: 111
 group members: 956
@@ -3176,7 +3176,7 @@ source format: .otf
 source size: 160712
 output environment: defcon
 fingerprint: b3c0085f01fcb6133a69d806dad382ba
-font info characters: 18053
+font info characters: 18046
 kerning pairs: 982
 groups: 77
 group members: 622
@@ -3252,7 +3252,7 @@ source format: .otf
 source size: 224536
 output environment: defcon
 fingerprint: 20a30bea6dce5247feb84883f2136421
-font info characters: 18047
+font info characters: 18040
 kerning pairs: 2677
 groups: 110
 group members: 954
@@ -3328,7 +3328,7 @@ source format: .otf
 source size: 234492
 output environment: defcon
 fingerprint: 6a2da6dcea75d1e0094d6d8831c56f95
-font info characters: 18054
+font info characters: 18047
 kerning pairs: 3247
 groups: 111
 group members: 956
@@ -3398,7 +3398,7 @@ source format: .otf
 source size: 229080
 output environment: defcon
 fingerprint: c8327986cad7b4d4cbde2e22798852f8
-font info characters: 18047
+font info characters: 18040
 kerning pairs: 2477
 groups: 111
 group members: 956

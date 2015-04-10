@@ -106,7 +106,7 @@ class BaseFileSystem(object):
 		"""
 		raise NotImplementedError
 
-	def writeBytesToLocation(self, bytes, location):
+	def writeBytesToLocation(self, data, location):
 		"""
 		Write the given data into the given location.
 
@@ -167,7 +167,7 @@ class BaseFileSystem(object):
 
 	# bytes <-> tree
 
-	def convertBytesToTree(self, bytes):
+	def convertBytesToTree(self, data):
 		"""
 		Read an XML tree from the given string.
 
@@ -318,6 +318,7 @@ class BaseFileSystem(object):
 		Subclasses MAY override this method.
 		"""
 		data = self.getLayerStorageMapping()
+		data = [(k, v) for k, v in data.items()]
 		self.writePlistToLocation(data, "layercontents.plist")
 
 	def getLayerStorageMapping(self):
