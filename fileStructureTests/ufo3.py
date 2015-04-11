@@ -1,6 +1,5 @@
 import os
 from core.fileSystem import BaseFileSystem
-from core.glyphTree import readGlyphFromTree
 
 class UFO3FileSystem(BaseFileSystem):
 
@@ -14,7 +13,7 @@ class UFO3FileSystem(BaseFileSystem):
 	# File Support
 	# ------------
 
-	# paths
+	# locations
 
 	def joinLocations(self, location1, location2):
 		return os.path.join(location1, location2)
