@@ -1,3 +1,11 @@
+"""
+UFO 3 File System
+-----------------
+
+This implements an on-disk, uncompressed package
+structure. thus, it is identical to UFO 3.
+"""
+
 import os
 from core.fileSystem import BaseFileSystem
 
@@ -15,8 +23,8 @@ class UFO3FileSystem(BaseFileSystem):
 
 	# locations
 
-	def joinLocations(self, location1, location2):
-		return os.path.join(location1, location2)
+	def joinLocations(self, location1, *location2):
+		return os.path.join(location1, *location2)
 
 	def splitLocation(self, location):
 		return os.path.split(location)
@@ -48,3 +56,8 @@ class UFO3FileSystem(BaseFileSystem):
 		f = open(path, "wb")
 		f.write(data)
 		f.close()
+
+
+if __name__ == "__main__":
+	from core.fileSystem import testWriteFont
+	testWriteFont(UFO3FileSystem, "ufo")
