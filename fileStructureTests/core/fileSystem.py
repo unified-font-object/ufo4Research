@@ -59,7 +59,7 @@ class BaseFileSystem(object):
 
 	# locations
 
-	def joinLocations(self, location1, location2):
+	def joinLocations(self, location1, *location2):
 		"""
 		Return location1 and location2 joined by the
 		appropriate separator. This behaves exactly
@@ -69,7 +69,7 @@ class BaseFileSystem(object):
 		"""
 		# taken from the Python Standard Library's posixpath.py
 		a = location1
-		b = location
+		p = location2
 		path = a
 		for b in p:
 			if b.startswith('/'):
@@ -146,7 +146,7 @@ class BaseFileSystem(object):
 		"""
 		Read an XML tree from the given location.
 
-		Subclasses MUST NOT override this method.
+		Subclasses MAY override this method.
 		"""
 		data = self.readBytesFromLocation(location)
 		if data is None:
@@ -160,7 +160,7 @@ class BaseFileSystem(object):
 		If header is given, it will be inserted at the
 		beginning of the XML string.
 
-		Subclasses MUST NOT override this method.
+		Subclasses MAY override this method.
 		"""
 		data = self.convertTreeToBytes(tree, header)
 		self.writeBytesToLocation(data, location)
@@ -349,6 +349,7 @@ class BaseFileSystem(object):
 			if layerName == self.getDefaultLayerName():
 				storageName = "glyphs"
 			else:
+				layerName = unicode(layerName)
 				storageName = userNameToFileName(layerName, existing=layerStorageMapping.values(), prefix="glyphs.")
 			layerStorageMapping[layerName] = storageName
 		return layerStorageMapping[layerName]
@@ -468,3 +469,41 @@ class BaseFileSystem(object):
 		glyphStorageName = self.getGlyphStorageName(layerName, glyphName)
 		path = self.joinLocations(layerStorageName, glyphStorageName)
 		self.writeTreeToLocation(tree, path)
+
+
+def testWriteFont(fileSystemClass, fileExtension):
+	import os
+	import shutil
+	from ufoReaderWriter import UFOReaderWriter
+	from fonts import compileFont
+
+	font = compileFont("file structure building test")
+
+	fileName = "ufo4-test-%s.%s" % (fileSystemClass.__name__, fileExtension)
+	path = os.path.join("~", "desktop", fileName)
+	path = os.path.expanduser(path)
+	if os.path.exists(path):
+		if os.path.isdir(path):
+			shutil.rmtree(path)
+		else:
+			os.remove(path)
+
+	fileSystem = fileSystemClass(path)
+
+	writer = UFOReaderWriter(fileSystem)
+	writer.writeMetaInfo()
+	writer.writeInfo(font.info)
+	writer.writeGroups(font.groups)
+	writer.writeKerning(font.kerning)
+	writer.writeLib(font.lib)
+	writer.writeFeatures(font.features)
+	for layerName, layer in font.layers.items():
+		for glyph in layer:
+			glyphName = glyph.name
+			writer.writeGlyph(layerName, glyphName, glyph)
+		writer.writeGlyphSetContents(layerName)
+	writer.writeLayerContents()
+	writer.close()
+
+def testReadFont(fileSystem):
+	pass
