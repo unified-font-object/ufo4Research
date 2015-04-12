@@ -1,19 +1,15 @@
 >
-name: simple test font
-source format: .otf
-source size: 138120
-output environment: defcon
-fingerprint: 5f56c55f79fca275347df60876794810
+name: file structure building test
 font info characters: 18032
 kerning pairs: 3527
 groups: 96
 group members: 527
-feature characters: 0
-layers: 1
+feature characters: 100
+layers: 2
 glyphs: 547
-glyph note characters: 0
+glyph note characters: 50
 contours: 1003
-components: 0
+components: 10
 segments: 8586
 moveTo segments: 0.116818075938
 lineTo segments: 0.555322618216
@@ -51,4 +47,6 @@ contours with 6 segments: 0.0508474576
 contours with 5 segments: 0.0767696909
 contours with 4 segments: 0.2482552343
 contours with 3 segments: 0.0269192423
+components with (0 0 1 0 0 1) transformation: 0.5
+components with (0 0 1 10 20 1) transformation: 0.5
 <
