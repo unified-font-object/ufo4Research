@@ -477,13 +477,23 @@ class BaseFileSystem(object):
 
 def _makeTestPath(fileSystemClass, fileExtension):
 	import os
-	fileName = "ufo4-test-%s.%s" % (fileSystemClass.__name__, fileExtension)
+	fileName = "ufo4-debug-%s.%s" % (fileSystemClass.__name__, fileExtension)
 	path = os.path.join("~", "desktop", fileName)
 	path = os.path.expanduser(path)
 	return path
 
 
 def debugWriteFont(fileSystemClass, fileExtension):
+	"""
+	This function will write a basic font file
+	with the given file system class. It will
+	be written to the following path:
+
+		~/desktop/ufo4-debug-[file system class name].[file extension]
+
+	This should only be used for debugging when
+	creating a subclass of BaseFileSystem.
+	"""
 	import os
 	import shutil
 	from ufoReaderWriter import UFOReaderWriter
@@ -516,6 +526,16 @@ def debugWriteFont(fileSystemClass, fileExtension):
 	writer.close()
 
 def debugReadFont(fileSystemClass, fileExtension):
+	"""
+	This function will read a font file with
+	the given file system class. It expects
+	a file to be located at the following path:
+
+		~/desktop/ufo4-debug-[file system class name].[file extension]
+
+	This should only be used for debugging when
+	creating a subclass of BaseFileSystem.
+	"""
 	from ufoReaderWriter import UFOReaderWriter
 	from objects import Font
 
