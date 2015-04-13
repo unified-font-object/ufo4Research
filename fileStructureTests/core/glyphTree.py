@@ -167,20 +167,19 @@ def _buildOutlineContourFormat2(pen, tree, identifiers):
 		_buildOutlinePointsFormat2(pen, element, identifiers)
 	pen.endPath()
 
-def _buildOutlinePointsFormat2(pen, tree, identifiers):
-	for element in tree:
-		attrib = element.attrib
-		x = attrib["x"]
-		y = attrib["y"]
-		segmentType = attrib["segmentType"]
-		smooth = attrib["smooth"]
-		name = attrib["name"]
-		identifier = attrib.get("identifier")
-		try:
-			pen.addPoint((x, y), segmentType=segmentType, smooth=smooth, name=name, identifier=identifier)
-		except TypeError:
-			pen.addPoint((x, y), segmentType=segmentType, smooth=smooth, name=name)
-			raise warn("The addPoint method needs an identifier kwarg. The point's identifier value has been discarded.", DeprecationWarning)
+def _buildOutlinePointsFormat2(pen, element, identifiers):
+	attrib = element.attrib
+	x = attrib["x"]
+	y = attrib["y"]
+	segmentType = attrib.get("segmentType")
+	smooth = attrib.get("smooth", False)
+	name = attrib.get("name")
+	identifier = attrib.get("identifier")
+	try:
+		pen.addPoint((x, y), segmentType=segmentType, smooth=smooth, name=name, identifier=identifier)
+	except TypeError:
+		pen.addPoint((x, y), segmentType=segmentType, smooth=smooth, name=name)
+		raise warn("The addPoint method needs an identifier kwarg. The point's identifier value has been discarded.", DeprecationWarning)
 
 def _buildOutlineComponentFormat2(pen, element, identifiers):
 	if len(element):
