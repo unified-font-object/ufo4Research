@@ -471,7 +471,19 @@ class BaseFileSystem(object):
 		self.writeTreeToLocation(tree, path)
 
 
-def testWriteFont(fileSystemClass, fileExtension):
+# ---------
+# Debugging
+# ---------
+
+def _makeTestPath(fileSystemClass, fileExtension):
+	import os
+	fileName = "ufo4-test-%s.%s" % (fileSystemClass.__name__, fileExtension)
+	path = os.path.join("~", "desktop", fileName)
+	path = os.path.expanduser(path)
+	return path
+
+
+def debugWriteFont(fileSystemClass, fileExtension):
 	import os
 	import shutil
 	from ufoReaderWriter import UFOReaderWriter
@@ -479,9 +491,7 @@ def testWriteFont(fileSystemClass, fileExtension):
 
 	font = compileFont("file structure building test")
 
-	fileName = "ufo4-test-%s.%s" % (fileSystemClass.__name__, fileExtension)
-	path = os.path.join("~", "desktop", fileName)
-	path = os.path.expanduser(path)
+	path = _makeTestPath(fileSystemClass, fileExtension)
 	if os.path.exists(path):
 		if os.path.isdir(path):
 			shutil.rmtree(path)
@@ -497,13 +507,32 @@ def testWriteFont(fileSystemClass, fileExtension):
 	writer.writeKerning(font.kerning)
 	writer.writeLib(font.lib)
 	writer.writeFeatures(font.features)
-	for layerName, layer in font.layers.items():
-		for glyph in layer:
-			glyphName = glyph.name
+	for layerName, layer in sorted(font.layers.items()):
+		for glyphName in sorted(layer.keys()):
+			glyph = layer[glyphName]
 			writer.writeGlyph(layerName, glyphName, glyph)
 		writer.writeGlyphSetContents(layerName)
 	writer.writeLayerContents()
 	writer.close()
 
-def testReadFont(fileSystem):
-	pass
+def debugReadFont(fileSystemClass, fileExtension):
+	from ufoReaderWriter import UFOReaderWriter
+	from objects import Font
+
+	path = _makeTestPath(fileSystemClass, fileExtension)
+
+	fileSystem = fileSystemClass(path)
+
+	font = Font()
+	reader = UFOReaderWriter(fileSystem)
+	reader.readMetaInfo()
+	reader.readInfo(font.info)
+	font.groups = reader.readGroups()
+	font.kerning = reader.readKerning()
+	font.lib = reader.readLib()
+	font.features = reader.readFeatures()
+	font.loadLayers(reader)
+	for layer in font.layers.values():
+		for glyph in layer:
+			pass
+	return font
