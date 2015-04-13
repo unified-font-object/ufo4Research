@@ -59,5 +59,6 @@ class UFO3FileSystem(BaseFileSystem):
 
 
 if __name__ == "__main__":
-	from core.fileSystem import testWriteFont
-	testWriteFont(UFO3FileSystem, "ufo")
+	from core.fileSystem import debugWriteFont, debugReadFont
+	debugWriteFont(UFO3FileSystem, "ufo")
+	font = debugReadFont(UFO3FileSystem, "ufo")
