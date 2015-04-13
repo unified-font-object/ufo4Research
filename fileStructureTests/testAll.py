@@ -13,14 +13,17 @@ from core.objects import Font
 fileSystems = {}
 
 from ufo3 import UFO3FileSystem
-fileSystems["UFO3"] = UFO3FileSystem
+fileSystems["UFO 3"] = UFO3FileSystem
+
+from singleXML import SingleXMLFileSystem
+fileSystems["Single XML"] = SingleXMLFileSystem
 
 # ----------
 # Test Fonts
 # ----------
 
 testFonts = [
-	("simple test font", "Test font description.")
+	("file structure building test", "Test font only to be used when developing file structures.")
 ]
 
 # --------------
