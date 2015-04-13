@@ -455,7 +455,7 @@ def compileFont(name):
 		for glyph in glyphs:
 			target = layer.newGlyph(glyph["name"])
 			target.width = glyph["width"]
-			target.unicode = glyph["unicode"]
+			target.unicodes = [glyph["unicode"]]
 			target.note = glyph["note"]
 			for contour in glyph["contours"]:
 				target.beginPath()
