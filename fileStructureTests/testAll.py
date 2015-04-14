@@ -18,6 +18,9 @@ fileSystems["UFO 3"] = UFO3FileSystem
 from singleXML import SingleXMLFileSystem
 fileSystems["Single XML"] = SingleXMLFileSystem
 
+from ufo3zip import UFO3ZipFileSystem
+fileSystems["UFO 3 Zipped"] = SingleXMLFileSystem
+
 # ----------
 # Test Fonts
 # ----------
