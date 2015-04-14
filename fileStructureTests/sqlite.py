@@ -42,7 +42,11 @@ class SqliteFileSystem(BaseFileSystem):
     # bytes <-> location
 
     def readBytesFromLocation(self, location):
-        self.db.execute('SELECT bytes FROM data WHERE location=?', (location,))
+        cursor = self.db.execute('SELECT bytes FROM data WHERE location=?', (location,))
+        data = cursor.fetchone()
+        if data:
+            return data[0]
+        return None
         
     def writeBytesToLocation(self, data, location):
         self.db.execute('INSERT INTO data VALUES (?, ?)', (location, data))
