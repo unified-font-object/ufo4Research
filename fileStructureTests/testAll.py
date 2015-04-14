@@ -159,16 +159,17 @@ def testPartialRead(fileSystem=None, font=None, **kwargs):
 	glyphNames = []
 	font.loadLayers(reader)
 	for layerName, layer in font.layers.items():
-		glyphNames.append((glyphName, layerName))
+		for glyphName in layer.keys():
+			glyphNames.append((glyphName, layerName))
 	glyphNames.sort()
 	glyphCount = int(len(glyphNames) * 0.25)
 	glyphNames = glyphNames[:glyphCount]
-	for layerName, glyphName in glyphNames:
+	for glyphName, layerName in glyphNames:
 		layer = font.layers[layerName]
 		glyph = layer[glyphName]
 
 tests["Partial Read"] = dict(
-	function=testFullRead,
+	function=testPartialRead,
 	reading=True,
 	writing=False,
 	time=True
@@ -186,18 +187,19 @@ def testPartialWrite(fileSystem=None, font=None, **kwargs):
 	glyphNames = []
 	font.loadLayers(reader)
 	for layerName, layer in font.layers.items():
-		glyphNames.append((glyphName, layerName))
+		for glyphName in layer.keys():
+			glyphNames.append((glyphName, layerName))
 	glyphNames.sort()
 	glyphCount = int(len(glyphNames) * 0.25)
 	glyphNames = glyphNames[:glyphCount]
-	for layerName, glyphName in glyphNames:
+	for glyphName, layerName in glyphNames:
 		layer = font.layers[layerName]
 		glyph = layer[glyphName]
 		glyph.note = "partial modify"
 	# write
 	writer = reader
 	writer.writeMetaInfo()
-	for layerName, glyphName in glyphNames:
+	for glyphName, layerName in glyphNames:
 		layer = font.layers[layerName]
 		glyph = layer[glyphName]
 		writer.writeGlyph(layerName, glyphName, glyph)
@@ -207,7 +209,7 @@ def testPartialWrite(fileSystem=None, font=None, **kwargs):
 	writer.close()
 
 tests["Partial Write"] = dict(
-	function=testFullRead,
+	function=testPartialWrite,
 	reading=True,
 	writing=False,
 	time=True
@@ -301,6 +303,10 @@ def execute():
 							tearDownFile(path)
 					print "%s:" % fileSystemName, result 
 				# tear down
+				except:
+					import traceback
+					print "%s: Oeps" % fileSystemName 
+					print traceback.format_exc(5)
 				finally:
 					tearDownFile(path)
 
