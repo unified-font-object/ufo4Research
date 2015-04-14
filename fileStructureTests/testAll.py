@@ -21,6 +21,9 @@ fileSystems["Single XML"] = SingleXMLFileSystem
 from ufo3zip import UFO3ZipFileSystem
 fileSystems["UFO 3 Zipped"] = SingleXMLFileSystem
 
+from sqlite import SqliteFileSystem
+fileSystems["Flat SQLite DB"] = SqliteFileSystem
+
 # ----------
 # Test Fonts
 # ----------
