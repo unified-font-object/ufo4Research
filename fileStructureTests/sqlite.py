@@ -49,7 +49,13 @@ class SqliteFileSystem(BaseFileSystem):
         return None
         
     def writeBytesToLocation(self, data, location):
-        self.db.execute('INSERT INTO data VALUES (?, ?)', (location, data))
+        try:
+            self.db.execute('INSERT INTO data VALUES (?, ?)', (location, data))
+        except sqlite3.IntegrityError:
+            self.db.execute('UPDATE data SET bytes=? WHERE location=?', (data, location))
+        
+            
+        
 
 
 
