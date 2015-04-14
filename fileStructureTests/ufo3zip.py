@@ -17,11 +17,10 @@ class UFO3ZipFileSystem(BaseFileSystem):
 		super(UFO3ZipFileSystem, self).__init__()
 		self.needFileWrite = False
 		self.path = path
-		if os.path.exists(self.path):
-			self.zip = zipfile.ZipFile(self.path, 'r')
-		else:
-			self.zip = zipfile.ZipFile(self.path, 'w')
-
+		# first being lazy and allow to the archive to append files
+		# this is not good and will lead to huge zip files...
+		self.zip = zipfile.ZipFile(self.path, 'a')
+		
 	def close(self):
 		self.zip.close()
 	# ------------
