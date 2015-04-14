@@ -1,0 +1,55 @@
+"""
+UFO 3 sqlLite File System
+-----------------
+
+This implements an on-disk, compressed (sqlLite) package
+structure.
+"""
+
+import os
+import sqlite3
+
+from core.fileSystem import BaseFileSystem
+
+class SqliteFileSystem(BaseFileSystem):
+
+    def __init__(self, path):
+        super(SqliteFileSystem, self).__init__()
+        self.path = path
+        # connect to a db
+        self.db = sqlite3.connect(self.path)
+        # create the base table if is doenst exists yet
+        self.db.execute('CREATE TABLE IF NOT EXISTS data(location TEXT PRIMARY KEY, bytes TEXT)')
+        
+    def close(self):
+        # commit all changes to the db
+        self.db.commit()
+        # close the db
+        self.db.close()
+
+    # ------------
+    # File Support
+    # ------------
+
+    # locations
+
+    def joinLocations(self, location1, *location2):
+        return os.path.join(location1, *location2)
+
+    def splitLocation(self, location):
+        return os.path.split(location)
+
+    # bytes <-> location
+
+    def readBytesFromLocation(self, location):
+        self.db.execute('SELECT bytes FROM data WHERE location=?', (location,))
+        
+    def writeBytesToLocation(self, data, location):
+        self.db.execute('INSERT INTO data VALUES (?, ?)', (location, data))
+
+
+
+if __name__ == "__main__":
+    from core.fileSystem import debugWriteFont, debugReadFont
+    debugWriteFont(SqliteFileSystem, "ufodb")
+    font = debugReadFont(SqliteFileSystem, "ufodb")
