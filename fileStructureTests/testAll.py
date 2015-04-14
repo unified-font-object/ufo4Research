@@ -36,9 +36,70 @@ testFonts = [
 # Test Functions
 # --------------
 
+"""
+Needed Tests
+------------
+
+- Remove glyphs.
+  This will require a BaseFileSystem modification.
+  Something like removeBytesFromLocation.
+- Test memory usage of the file system after a full read.
+  sys.getsizeof will give some info. It won't be perfect
+  but it will still be useful to see the values.
+- Retrieve a cmap for each layer.
+"""
+
 tests = {}
 
-def testFullWrite(fileSystem=None, font=None):
+# Tests are stored as dicts:
+# "test name" : {
+#     function : test function,
+#     reading : bool indicating if the function reads a file,
+#     writing : bool indicating if the function writes a file,
+#     time : bool indicating if the function should be timed (optional, default is False),
+# }
+
+
+def testFileSize(fileSystem=None, font=None, path=None, **kwargs):
+	"""
+	Test the resulting size of a written file.
+	"""
+	writer = UFOReaderWriter(fileSystem)
+	writer.writeMetaInfo()
+	writer.writeInfo(font.info)
+	writer.writeGroups(font.groups)
+	writer.writeKerning(font.kerning)
+	writer.writeLib(font.lib)
+	writer.writeFeatures(font.features)
+	for layerName, layer in font.layers.items():
+		for glyph in layer:
+			glyphName = glyph.name
+			writer.writeGlyph(layerName, glyphName, glyph)
+		writer.writeGlyphSetContents(layerName)
+	writer.writeLayerContents()
+	writer.close()
+	size = _getFileSize(path)
+	size = "{:,d} bytes".format(size)
+	return size
+
+def _getFileSize(path):
+	if path.startswith("."):
+		return 0
+	if os.path.isdir(path):
+		total = 0
+		for p in os.listdir(path):
+			total += _getFileSize(os.path.join(path, p))
+		return total
+	else:
+		return os.stat(path).st_size
+
+tests["File Size"] = dict(
+	function=testFileSize,
+	reading=False,
+	writing=True
+)
+
+def testFullWrite(fileSystem=None, font=None, **kwargs):
 	"""
 	Fully write a new font.
 	"""
@@ -60,10 +121,11 @@ def testFullWrite(fileSystem=None, font=None):
 tests["Full Write"] = dict(
 	function=testFullWrite,
 	reading=False,
-	writing=True
+	writing=True,
+	time=True
 )
 
-def testFullRead(fileSystem=None, font=None):
+def testFullRead(fileSystem=None, font=None, **kwargs):
 	"""
 	Fully load an entire font.
 	"""
@@ -79,12 +141,76 @@ def testFullRead(fileSystem=None, font=None):
 	for layer in font.layers.values():
 		for glyph in layer:
 			pass
-	return font
 
 tests["Full Read"] = dict(
 	function=testFullRead,
 	reading=True,
-	writing=False
+	writing=False,
+	time=True
+)
+
+def testPartialRead(fileSystem=None, font=None, **kwargs):
+	"""
+	Load 25% of the glyphs in the font.
+	"""
+	font = Font()
+	reader = UFOReaderWriter(fileSystem)
+	reader.readMetaInfo()
+	glyphNames = []
+	font.loadLayers(reader)
+	for layerName, layer in font.layers.items():
+		glyphNames.append((glyphName, layerName))
+	glyphNames.sort()
+	glyphCount = int(len(glyphNames) * 0.25)
+	glyphNames = glyphNames[:glyphCount]
+	for layerName, glyphName in glyphNames:
+		layer = font.layers[layerName]
+		glyph = layer[glyphName]
+
+tests["Partial Read"] = dict(
+	function=testFullRead,
+	reading=True,
+	writing=False,
+	time=True
+)
+
+def testPartialWrite(fileSystem=None, font=None, **kwargs):
+	"""
+	Write 25% of the glyphs in the font.
+	"""
+	font = Font()
+	# initialize
+	reader = UFOReaderWriter(fileSystem)
+	reader.readMetaInfo()
+	# modify
+	glyphNames = []
+	font.loadLayers(reader)
+	for layerName, layer in font.layers.items():
+		glyphNames.append((glyphName, layerName))
+	glyphNames.sort()
+	glyphCount = int(len(glyphNames) * 0.25)
+	glyphNames = glyphNames[:glyphCount]
+	for layerName, glyphName in glyphNames:
+		layer = font.layers[layerName]
+		glyph = layer[glyphName]
+		glyph.note = "partial modify"
+	# write
+	writer = reader
+	writer.writeMetaInfo()
+	for layerName, glyphName in glyphNames:
+		layer = font.layers[layerName]
+		glyph = layer[glyphName]
+		writer.writeGlyph(layerName, glyphName, glyph)
+	for layerName in font.layers.keys():
+		writer.writeGlyphSetContents(layerName)
+	writer.writeLayerContents()
+	writer.close()
+
+tests["Partial Write"] = dict(
+	function=testFullRead,
+	reading=True,
+	writing=False,
+	time=True
 )
 
 # -------
@@ -145,22 +271,35 @@ def execute():
 				# test
 				try:
 					func = testData["function"]
-					times = []
-					for i in range(7):
-						start = time.time()
+					# timed
+					if testData.get("time", False):
+						times = []
+						for i in range(7):
+							start = time.time()
+							fileSystem = fileSystemClass(path)
+							func(
+								fileSystem=fileSystem,
+								font=font,
+								path=path
+							)
+							total = time.time() - start
+							times.append(total)
+							if not reading and writing:
+								tearDownFile(path)
+						times.sort()
+						times = times[1:-1]
+						result = sum(times) / 5.0
+					# other (function returns result)
+					else:
 						fileSystem = fileSystemClass(path)
-						func(
+						result = func(
 							fileSystem=fileSystem,
-							font=font
+							font=font,
+							path=path
 						)
-						total = time.time() - start
-						times.append(total)
 						if not reading and writing:
 							tearDownFile(path)
-					times.sort()
-					times = times[1:-1]
-					average = sum(times) / 5.0
-					print "%s:" % fileSystemName, average 
+					print "%s:" % fileSystemName, result 
 				# tear down
 				finally:
 					tearDownFile(path)
