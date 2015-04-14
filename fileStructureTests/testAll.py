@@ -19,7 +19,10 @@ from singleXML import SingleXMLFileSystem
 fileSystems["Single XML"] = SingleXMLFileSystem
 
 from ufo3zip import UFO3ZipFileSystem
-fileSystems["UFO 3 Zipped"] = SingleXMLFileSystem
+fileSystems["UFO 3 Zipped"] = UFO3ZipFileSystem
+
+from sqlite import SqliteFileSystem
+fileSystems["Flat SQLite DB"] = SqliteFileSystem
 
 # ----------
 # Test Fonts

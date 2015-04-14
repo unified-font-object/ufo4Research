@@ -45,7 +45,7 @@ class UFO3ZipFileSystem(BaseFileSystem):
 			return None
 		
 	def writeBytesToLocation(self, data, location):
-		self.zip.writestr(location, data)
+		self.zip.writestr(location, data, compress_type=zipfile.ZIP_DEFLATED)
 
 
 
