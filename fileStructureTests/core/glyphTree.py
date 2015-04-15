@@ -23,18 +23,12 @@ def readGlyphFromTreeFormat2(tree, glyphObject=None, pointPen=None):
 		tag = element.tag
 		if tag == "outline":
 			attrib = element.attrib
-			if haveSeenOutline:
-				raise GlyphTreeError("The outline element occurs more than once.")
-			if attrib:
-				raise GlyphTreeError("The outline element contains unknown attributes.")
 			haveSeenOutline = True
 			if pointPen is not None:
 				buildOutlineFormat2(glyphObject, pointPen, element, identifiers)
 		elif glyphObject is None:
 			continue
 		elif tag == "advance":
-			if haveSeenAdvance:
-				raise GlyphTreeError("The advance element occurs more than once.")
 			haveSeenAdvance = True
 			_readAdvance(glyphObject, element)
 		elif tag == "unicode":
@@ -47,36 +41,24 @@ def readGlyphFromTreeFormat2(tree, glyphObject=None, pointPen=None):
 			except ValueError:
 				raise GlyphTreeError("Illegal value for hex attribute of unicode element.")
 		elif tag == "guideline":
-			if len(element):
-				raise GlyphTreeError("Unknown children in guideline element.")
 			attrib = element.attrib
 			for attr in ("x", "y", "angle"):
 				if attr in attrib:
 					attrib[attr] = _number(attrib[attr])
 			guidelines.append(attrib)
 		elif tag == "anchor":
-			if len(element):
-				raise GlyphTreeError("Unknown children in anchor element.")
 			attrib = element.attrib
 			for attr in ("x", "y"):
 				if attr in attrib:
 					attrib[attr] = _number(attrib[attr])
 			anchors.append(attrib)
 		elif tag == "image":
-			if haveSeenImage:
-				raise GlyphTreeError("The image element occurs more than once.")
-			if len(children):
-				raise GlyphTreeError("Unknown children in image element.")
 			haveSeenImage = True
 			_readImage(glyphObject, element)
 		elif tag == "note":
-			if haveSeenNote:
-				raise GlyphTreeError("The note element occurs more than once.")
 			haveSeenNote = True
 			_readNote(glyphObject, element)
 		elif tag == "lib":
-			if haveSeenLib:
-				raise GlyphTreeError("The lib element occurs more than once.")
 			haveSeenLib = True
 			_readLib(glyphObject, element)
 		else:
@@ -93,8 +75,6 @@ def readGlyphFromTreeFormat2(tree, glyphObject=None, pointPen=None):
 
 def _readName(glyphObject, element):
 	glyphName = element.attrib.get("name")
-	if glyphName is None or len(glyphName) == 0:
-		raise GlyphTreeError("Empty glyph name in GLIF.")
 	if glyphName and glyphObject is not None:
 		_relaxedSetattr(glyphObject, "name", glyphName)
 
@@ -117,7 +97,7 @@ def _readLib(glyphObject, element):
 	assert len(element) == 1
 	lib = convertTreeToPlist(element[0])
 	if lib is None:
-		return
+		lib = {}
 	_relaxedSetattr(glyphObject, "lib", lib)
 
 def _readImage(glyphObject, element):
@@ -133,12 +113,6 @@ def _readImage(glyphObject, element):
 # GLIF to PointPen
 # ----------------
 
-contourAttributesFormat2 = set(["identifier"])
-componentAttributesFormat2 = set(["base", "xScale", "xyScale", "yxScale", "yScale", "xOffset", "yOffset", "identifier"])
-pointAttributesFormat2 = set(["x", "y", "type", "smooth", "name", "identifier"])
-pointSmoothOptions = set(("no", "yes"))
-pointTypeOptions = set(["move", "line", "offcurve", "curve", "qcurve"])
-
 def buildOutlineFormat2(glyphObject, pen, tree, identifiers):
 	anchors = []
 	for element in tree:
@@ -152,44 +126,33 @@ def buildOutlineFormat2(glyphObject, pen, tree, identifiers):
 
 def _buildOutlineContourFormat2(pen, tree, identifiers):
 	attrib = tree.attrib
-	if set(attrib.keys()) - contourAttributesFormat2:
-		raise GlyphTreeError("Unknown attributes in contour element.")
 	identifier = attrib.get("identifier")
 	if identifier is not None:
 		identifiers.add(identifier)
-	try:
-		pen.beginPath(identifier=identifier)
-	except TypeError:
-		pen.beginPath()
-		raise warn("The beginPath method needs an identifier kwarg. The contour's identifier value has been discarded.", DeprecationWarning)
+	pen.beginPath(identifier=identifier)
 	for element in tree:
-		element = _validateAndMassagePointStructures(element, pointAttributesFormat2)
 		_buildOutlinePointsFormat2(pen, element, identifiers)
 	pen.endPath()
 
 def _buildOutlinePointsFormat2(pen, element, identifiers):
 	attrib = element.attrib
-	x = attrib["x"]
-	y = attrib["y"]
-	segmentType = attrib.get("segmentType")
-	smooth = attrib.get("smooth", False)
+	x = _number(attrib["x"])
+	y = _number(attrib["y"])
+	segmentType = attrib.get("type")
+	smooth = attrib.get("smooth")
+	if smooth is not None:
+		smooth = smooth == "yes"
+	else:
+		smooth = False
 	name = attrib.get("name")
 	identifier = attrib.get("identifier")
-	try:
-		pen.addPoint((x, y), segmentType=segmentType, smooth=smooth, name=name, identifier=identifier)
-	except TypeError:
-		pen.addPoint((x, y), segmentType=segmentType, smooth=smooth, name=name)
-		raise warn("The addPoint method needs an identifier kwarg. The point's identifier value has been discarded.", DeprecationWarning)
+	pen.addPoint((x, y), segmentType=segmentType, smooth=smooth, name=name, identifier=identifier)
 
 def _buildOutlineComponentFormat2(pen, element, identifiers):
 	if len(element):
 		raise GlyphTreeError("Unknown child elements of component element.")
 	attrib = element.attrib
-	if set(attrib.keys()) - componentAttributesFormat2:
-		raise GlyphTreeError("Unknown attributes in component element.")
 	baseGlyphName = attrib.get("base")
-	if baseGlyphName is None:
-		raise GlyphTreeError("The base attribute is not defined in the component.")
 	transformation = []
 	for attr, default in _transformationInfo:
 		value = attrib.get(attr)
@@ -199,115 +162,7 @@ def _buildOutlineComponentFormat2(pen, element, identifiers):
 			value = _number(value)
 		transformation.append(value)
 	identifier = attrib.get("identifier")
-	try:
-		pen.addComponent(baseGlyphName, tuple(transformation), identifier=identifier)
-	except TypeError:
-		pen.addComponent(baseGlyphName, tuple(transformation))
-		raise warn("The addComponent method needs an identifier kwarg. The component's identifier value has been discarded.", DeprecationWarning)
-
-# all formats
-
-def _validateAndMassagePointStructures(tree, pointAttributes, openContourOffCurveLeniency=False):
-	if not len(tree):
-		return tree
-	# store some data for later validation
-	pointTypes = []
-	haveOnCurvePoint = False
-	haveOffCurvePoint = False
-	# validate and massage the individual point elements
-	for element in tree:
-		# not <point>
-		if element.tag != "point":
-			raise GlyphTreeError("Unknown child element (%s) of contour element." % subElement)
-		# unknown attributes
-		attrib = element.attrib
-		unknownAttributes = [attr for attr in attrib.keys() if attr not in pointAttributes]
-		if unknownAttributes:
-			raise GlyphTreeError("Unknown attributes in point element.")
-		# search for unknown children
-		if len(element):
-			raise GlyphTreeError("Unknown child elements in point element.")
-		# x and y are required
-		x = attrib.get("x")
-		y = attrib.get("y")
-		if x is None:
-			raise GlyphTreeError("Required x attribute is missing in point element.")
-		if y is None:
-			raise GlyphTreeError("Required y attribute is missing in point element.")
-		x = attrib["x"] = _number(x)
-		y = attrib["y"] = _number(y)
-		# segment type
-		pointType = attrib.pop("type", "offcurve")
-		if pointType not in pointTypeOptions:
-			raise GlyphTreeError("Unknown point type: %s" % pointType)
-		if pointType == "offcurve":
-			pointType = None
-		attrib["segmentType"] = pointType
-		if pointType is None:
-			haveOffCurvePoint = True
-		else:
-			haveOnCurvePoint = True
-		pointTypes.append(pointType)
-		# move can only occur as the first point
-		if pointType == "move" and index != 0:
-			raise GlyphTreeError("A move point occurs after the first point in the contour.")
-		# smooth is optional
-		smooth = attrib.get("smooth", "no")
-		if smooth is not None:
-			if smooth not in pointSmoothOptions:
-				raise GlyphTreeError("Unknown point smooth value: %s" % smooth)
-		smooth = smooth == "yes"
-		attrib["smooth"] = smooth
-		# smooth can only be applied to curve and qcurve
-		if smooth and pointType is None:
-			raise GlyphTreeError("smooth attribute set in an offcurve point.")
-		# name is optional
-		if "name" not in attrib:
-			attrib["name"] = None
-	if openContourOffCurveLeniency:
-		# remove offcurves that precede a move. this is technically illegal,
-		# but we let it slide because there are fonts out there in the wild like this.
-		if tree[0].attrib["segmentType"] == "move":
-			remove = []
-			while 1:
-				for point in reversed(tree):
-					if point.attrib["segmentType"] is not None:
-						break
-					elif point.attrib["segmentType"] is None:
-						remove.append(point)
-				break
-			for point in remove:
-				tree.remove(point)
-	# validate the off-curves in the segments
-	if haveOffCurvePoint and haveOnCurvePoint:
-		while pointTypes[-1] is None:
-			pointTypes.insert(0, pointTypes.pop(-1))
-		segment = []
-		for pointType in pointTypes:
-			if pointType is None:
-				segment.append(pointType)
-				continue
-			segment.append(pointType)
-			if len(segment) > 1:
-				segmentType = segment[-1]
-				offCurves = segment[:-1]
-				# move and line can't be preceded by off-curves
-				if segmentType == "move":
-					# this will have been filtered out already
-					raise GlyphTreeError("move can not have an offcurve.")
-				elif segmentType == "line":
-					raise GlyphTreeError("line can not have an offcurve.")
-				elif segmentType == "curve":
-					if len(offCurves) > 2:
-						raise GlyphTreeError("Too many offcurves defined for curve.")
-				elif segmentType == "qcurve":
-					pass
-				else:
-					# unknown segement type. it'll be caught later.
-					pass
-			# reset
-			segment = []
-	return tree
+	pen.addComponent(baseGlyphName, tuple(transformation), identifier=identifier)
 
 # -------------
 # Glyph Writing
