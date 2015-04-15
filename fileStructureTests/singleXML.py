@@ -160,7 +160,7 @@ class SingleXMLFileSystem(BaseFileSystem):
 	def readFeatures(self):
 		tree = self.readTreeFromLocation("features.fea")
 		if tree is None:
-			return ""
+			return None
 		return tree.text
 
 	def writeFeatures(self, tree):
@@ -230,6 +230,9 @@ def _indent(elem, whitespace="\t", level=0):
 			elem.tail = i
 
 if __name__ == "__main__":
-	from core.fileSystem import debugWriteFont, debugReadFont
+	from core.fileSystem import debugWriteFont, debugReadFont, debugRoundTripFont
 	debugWriteFont(SingleXMLFileSystem)
-	font = debugReadFont(SingleXMLFileSystem)
+	debugReadFont(SingleXMLFileSystem)
+	diffs = debugRoundTripFont(SingleXMLFileSystem)
+	if diffs:
+		print diffs

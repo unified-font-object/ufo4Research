@@ -51,6 +51,9 @@ class UFO3ZipFileSystem(BaseFileSystem):
 
 
 if __name__ == "__main__":
-	from core.fileSystem import debugWriteFont, debugReadFont
+	from core.fileSystem import debugWriteFont, debugReadFont, debugRoundTripFont
 	debugWriteFont(UFO3ZipFileSystem)
-	font = debugReadFont(UFO3ZipFileSystem)
+	debugReadFont(UFO3ZipFileSystem)
+	diffs = debugRoundTripFont(UFO3ZipFileSystem)
+	if diffs:
+		print diffs

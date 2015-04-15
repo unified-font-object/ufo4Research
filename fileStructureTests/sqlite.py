@@ -62,6 +62,9 @@ class SqliteFileSystem(BaseFileSystem):
 
 
 if __name__ == "__main__":
-    from core.fileSystem import debugWriteFont, debugReadFont
+    from core.fileSystem import debugWriteFont, debugReadFont, debugRoundTripFont
     debugWriteFont(SqliteFileSystem)
-    font = debugReadFont(SqliteFileSystem)
+    debugReadFont(SqliteFileSystem)
+    diffs = debugRoundTripFont(SqliteFileSystem)
+    if diffs:
+        print diffs
