@@ -24,6 +24,12 @@ UFO 3 Zipped: 1.76858496666 (1 files)
 (result are very much depending on connection speed)
 """
 
+# the folder where to store the test files in your dropbox account
+dropBoxRoot = "/ufoResearchTest"
+# your auth token (see above to request one)
+dropBoxAuthToken = "<your auth token, please change!>"
+
+
 try:
     # test if dropbox is installed
     import dropbox
@@ -50,12 +56,6 @@ def getAllFiles(fontFile):
         fileName = os.path.basename(fontFile)
         paths = [(root, fileName)]
     return paths
-
-
-# the folder where to store the test files in your dropbox account
-dropBoxRoot = "/ufoResearchTest"
-# your auth token (see above to request one)
-dropBoxAuthToken = "<your auth token, please change!>"
 
 
 def execute():
