@@ -13,6 +13,8 @@ from core.fileSystem import BaseFileSystem
 
 class UFO3ZipFileSystem(BaseFileSystem):
 
+	fileExtension = 'ufoz'
+
 	def __init__(self, path):
 		super(UFO3ZipFileSystem, self).__init__()
 		self.needFileWrite = False
@@ -50,5 +52,5 @@ class UFO3ZipFileSystem(BaseFileSystem):
 
 if __name__ == "__main__":
 	from core.fileSystem import debugWriteFont, debugReadFont
-	debugWriteFont(UFO3ZipFileSystem, "ufoz")
-	font = debugReadFont(UFO3ZipFileSystem, "ufoz")
+	debugWriteFont(UFO3ZipFileSystem)
+	font = debugReadFont(UFO3ZipFileSystem)

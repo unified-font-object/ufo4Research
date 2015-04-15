@@ -24,6 +24,8 @@ from core.plistTree import convertPlistToTree
 
 class SingleXMLFileSystem(BaseFileSystem):
 
+	fileExtension = 'xml'
+
 	def __init__(self, path):
 		super(SingleXMLFileSystem, self).__init__()
 		self.needFileWrite = False
@@ -229,5 +231,5 @@ def _indent(elem, whitespace="\t", level=0):
 
 if __name__ == "__main__":
 	from core.fileSystem import debugWriteFont, debugReadFont
-	debugWriteFont(SingleXMLFileSystem, "xml")
-	font = debugReadFont(SingleXMLFileSystem, "xml")
+	debugWriteFont(SingleXMLFileSystem)
+	font = debugReadFont(SingleXMLFileSystem)

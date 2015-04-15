@@ -11,6 +11,8 @@ from core.fileSystem import BaseFileSystem
 
 class UFO3FileSystem(BaseFileSystem):
 
+	fileExtension = 'ufo'
+
 	def __init__(self, path):
 		super(UFO3FileSystem, self).__init__()
 		self.path = path
@@ -60,5 +62,5 @@ class UFO3FileSystem(BaseFileSystem):
 
 if __name__ == "__main__":
 	from core.fileSystem import debugWriteFont, debugReadFont
-	debugWriteFont(UFO3FileSystem, "ufo")
-	font = debugReadFont(UFO3FileSystem, "ufo")
+	debugWriteFont(UFO3FileSystem)
+	font = debugReadFont(UFO3FileSystem)

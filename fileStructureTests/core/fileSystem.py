@@ -38,6 +38,8 @@ class BaseFileSystem(object):
 	methods must not be overriden.
 	"""
 
+	fileExtension = "base"
+
 	def __init__(self):
 		self._haveReadLayerStorageMapping = False
 		self._layerStorageMapping = OrderedDict()
@@ -475,15 +477,15 @@ class BaseFileSystem(object):
 # Debugging
 # ---------
 
-def _makeTestPath(fileSystemClass, fileExtension):
+def _makeTestPath(fileSystemClass):
 	import os
-	fileName = "ufo4-debug-%s.%s" % (fileSystemClass.__name__, fileExtension)
+	fileName = "ufo4-debug-%s.%s" % (fileSystemClass.__name__, fileSystemClass.fileExtension)
 	path = os.path.join("~", "desktop", fileName)
 	path = os.path.expanduser(path)
 	return path
 
 
-def debugWriteFont(fileSystemClass, fileExtension):
+def debugWriteFont(fileSystemClass):
 	"""
 	This function will write a basic font file
 	with the given file system class. It will
@@ -501,7 +503,7 @@ def debugWriteFont(fileSystemClass, fileExtension):
 
 	font = compileFont("file structure building test")
 
-	path = _makeTestPath(fileSystemClass, fileExtension)
+	path = _makeTestPath(fileSystemClass)
 	if os.path.exists(path):
 		if os.path.isdir(path):
 			shutil.rmtree(path)
@@ -525,7 +527,7 @@ def debugWriteFont(fileSystemClass, fileExtension):
 	writer.writeLayerContents()
 	writer.close()
 
-def debugReadFont(fileSystemClass, fileExtension):
+def debugReadFont(fileSystemClass):
 	"""
 	This function will read a font file with
 	the given file system class. It expects
@@ -539,7 +541,7 @@ def debugReadFont(fileSystemClass, fileExtension):
 	from ufoReaderWriter import UFOReaderWriter
 	from objects import Font
 
-	path = _makeTestPath(fileSystemClass, fileExtension)
+	path = _makeTestPath(fileSystemClass)
 
 	fileSystem = fileSystemClass(path)
 

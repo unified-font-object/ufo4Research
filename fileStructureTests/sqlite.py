@@ -13,6 +13,8 @@ from core.fileSystem import BaseFileSystem
 
 class SqliteFileSystem(BaseFileSystem):
 
+    fileExtension = 'ufodb'
+
     def __init__(self, path):
         super(SqliteFileSystem, self).__init__()
         self.path = path
@@ -61,5 +63,5 @@ class SqliteFileSystem(BaseFileSystem):
 
 if __name__ == "__main__":
     from core.fileSystem import debugWriteFont, debugReadFont
-    debugWriteFont(SqliteFileSystem, "ufodb")
-    font = debugReadFont(SqliteFileSystem, "ufodb")
+    debugWriteFont(SqliteFileSystem)
+    font = debugReadFont(SqliteFileSystem)

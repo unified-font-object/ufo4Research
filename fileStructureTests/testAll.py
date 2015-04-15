@@ -261,7 +261,7 @@ def execute():
 			font = compileFont(fontName)
 
 			for fileSystemName, fileSystemClass in sorted(fileSystems.items()):
-				path = tempfile.mkstemp()[1]
+				path = tempfile.mkstemp(suffix=".%s" %fileSystemClass.fileExtension)[1]
 				tearDownFile(path)
 				reading = testData["reading"]
 				writing = testData["writing"]
