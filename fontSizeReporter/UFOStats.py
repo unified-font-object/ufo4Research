@@ -179,8 +179,12 @@ def _profileFont_RoboFont(path, profile):
 	"""
 	RoboFont specific profiler.
 	"""
+	from mojo.roboFont import RFont
+	font = RFont(path, showUI=False)
+	# the naked() object of a RFont in RoboFont
+	# is a subclass of a defcon Font object
+	_profileFont_defcon(font.naked(), profile)
 	profile["outputEnvironment"] = "RoboFont"
-	raise NotImplementedError
 
 def _profileFont_Glyphs(path, profile):
 	"""
