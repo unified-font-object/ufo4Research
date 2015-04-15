@@ -115,7 +115,7 @@ class UFOReaderWriter(object):
 		"""
 		data = self._fileSystem.readLib()
 		if data is None:
-			return
+			return {}
 		return data
 
 	def writeLib(self, data):

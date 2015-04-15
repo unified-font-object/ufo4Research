@@ -526,6 +526,7 @@ def debugWriteFont(fileSystemClass):
 		writer.writeGlyphSetContents(layerName)
 	writer.writeLayerContents()
 	writer.close()
+	return font
 
 def debugReadFont(fileSystemClass):
 	"""
@@ -558,3 +559,88 @@ def debugReadFont(fileSystemClass):
 		for glyph in layer:
 			pass
 	return font
+
+def debugRoundTripFont(fileSystemClass):
+	"""
+	Compare the read/write results with the given file
+	system class. Returns a string listing differences
+	or None if no differences were found. This will write
+	a file to the following path:
+
+		~/desktop/ufo4-debug-[file system class name].[file extension]
+
+	This should only be used for debugging when
+	creating a subclass of BaseFileSystem.
+	"""
+	font1 = debugWriteFont(fileSystemClass)
+	font2 = debugReadFont(fileSystemClass)
+
+	differences = []
+	# font info
+	for attr in sorted(dir(font1.info)):
+		if attr.startswith("_"):
+			continue
+		value1 = getattr(font1.info, attr)
+		value2 = None
+		if hasattr(font2.info, attr):
+			value2 = getattr(font2.info, attr)
+		if value1 != value2:
+			differences.append("info: %s" % attr)
+	# groups
+	if font1.groups != font2.groups:
+		differences.append("groups")
+	# kerning
+	if font1.kerning != font2.kerning:
+		differences.append("kerning")
+	# lib
+	if font1.lib != font2.lib:
+		print font1.lib, font2.lib
+		differences.append("lib")
+	# features
+	if font1.features != font2.features:
+		differences.append("features")
+	# layer order
+	layers1 = [layerName for layerName in font1.layers.keys()]
+	layers2 = [layerName for layerName in font2.layers.keys()]
+	if set(layers1) != set(layers2):
+		differences.append("layers")
+	if layers1 != layers2:
+		differences.append("layer order")
+	# glyphs
+	layerNames = set(font1.layers.keys()) | set(font2.layers.keys())
+	glyphNames = set()
+	for font in (font1, font2):
+		for layerName, layer in font.layers.items():
+			for glyphName in layer.keys():
+				glyphNames.add((layerName, glyphName))
+	for layerName, glyphName in sorted(glyphNames):
+		layer1 = font1.layers.get(layerName)
+		layer2 = font2.layers.get(layerName)
+		if layer1 is not None and layer2 is not None:
+			glyph1 = layer1.get(glyphName)
+			glyph2 = layer2.get(glyphName)
+			if glyph1 is None and glyph2 is None:
+				pass
+			elif glyph1 is None or glyph2 is None:
+				differences.append("missing glyph: %s" % glyphName)
+			else:
+				glyph1 = _comparableGlyph(glyph1)
+				glyph2 = _comparableGlyph(glyph2)
+				if glyph1 != glyph2:
+					differences.append("glyph: %s" % glyphName)
+	if differences:
+		return "\n".join(differences)
+
+def _comparableGlyph(glyph):
+	from copy import deepcopy
+	data = dict(
+		name=glyph.name,
+		unicodes=deepcopy(glyph.unicodes),
+		width=glyph.width,
+		height=glyph.height,
+		contours=deepcopy(glyph.contours),
+		components=deepcopy(glyph.components),
+		lib=deepcopy(glyph.lib),
+		note=glyph.note
+	)
+	return data

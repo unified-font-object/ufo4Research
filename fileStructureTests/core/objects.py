@@ -45,6 +45,9 @@ class Layer(object):
 	def keys(self):
 		return self._glyphs.keys()
 
+	def __contains__(self, name):
+		return name in self._glyphs
+
 	def __iter__(self):
 		names = self.keys()
 		while names:
@@ -56,6 +59,9 @@ class Layer(object):
 		if self._glyphs[name] is None:
 			self._glyphs[name] = self.loadGlyph(name)
 		return self._glyphs[name]
+
+	def get(self, name):
+		return self._glyphs.get(name)
 
 
 class Glyph(object):
@@ -70,7 +76,7 @@ class Glyph(object):
 		self.anchors = []
 		self.lib = {}
 		self.image = None
-		self.note = None
+		self.note = ""
 
 	def drawPoints(self, pointPen):
 		raise NotImplementedError
