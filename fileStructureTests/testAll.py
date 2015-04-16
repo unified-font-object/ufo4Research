@@ -215,6 +215,102 @@ tests["Partial Write"] = dict(
 	time=True
 )
 
+def testDropboxWrite(fileSystem=None, font=None, **kwargs):
+	"""
+	Upload the output of each fileSystem to your dropbox account
+
+	A 'dropbox.txt' with an auth token is required in the same directory.
+	This file will be ignored by git.
+
+	Required is the dropbox python API
+	see https://www.dropbox.com/developers/core/docs/python
+
+	and a auth token should be request first!
+	see https://www.dropbox.com/developers/core/start/python
+
+	result from Frederik (just in case you dont want to install everything)
+
+	----------------------
+	Upload font to dropBox
+	----------------------
+
+	file structure building test
+	----------------------------
+	Flat SQLite DB: 2.70396995544 (1 files)
+	Single XML: 1.93647909164 (1 files)
+	UFO 3: 443.017402172 (554 files)
+	UFO 3 Zipped: 1.76858496666 (1 files)
+
+	(result are very much depending on connection speed)
+	"""
+	dropBoxAuthTokePath = 'dropbox.txt'
+	if not os.path.exists(dropBoxAuthTokePath):
+		# do nothing is there is no auth token file
+		return "no '%s' file, skip this test." % dropBoxAuthTokePath
+	try:
+		# do nothing if dropbox python api is not installed
+		import dropbox
+	except:
+		return "dropbox python api is not installed"
+	f = open(dropBoxAuthTokePath, 'r')
+	dropBoxAuthToken = f.read()
+	f.close()
+
+	client = dropbox.client.DropboxClient(dropBoxAuthToken)
+	try:
+		client.account_info()
+	except:
+		# do nothing if the auth token is not valid
+		return "Auth token is not valid, not able to connect."
+	dropBoxRoot = "/ufoResearchTest"
+	path = kwargs['path']
+	root = os.path.dirname(path)
+	# set a file
+	setupFile(font, fileSystem)
+	paths = _getAllFilesForPath(path)
+	try:
+		# start the time
+		start = time.time()
+		for fileRoot, fileName in paths:
+			# set all the correct paths
+			filePath = os.path.join(fileRoot, fileName)
+			relativePath = os.path.relpath(filePath, root)
+			dropBoxPath = os.path.join(dropBoxRoot, relativePath)
+			# open the file
+			f = open(filePath)
+			# send the file to your dropbox client
+			response = client.put_file(dropBoxPath, f)
+			# close the file
+			f.close()
+		# get the duration
+		result = "%s (%s file%s)" % (time.time() - start, len(paths), "s"[len(paths)==1:])
+	except:
+		# import traceback
+		# print "%s: Oeps" % fileSystemName 
+		# print traceback.format_exc(5)
+		result = "Failed to upload to dropbox"
+	return result
+
+def _getAllFilesForPath(fontFile):
+	# get files recursively if 'fontFile' is a folder 
+	paths = []
+	if os.path.isdir(fontFile):
+		for root, dirNames, fileNames in os.walk(fontFile):
+			for fileName in fileNames:
+				paths.append((root, fileName))
+	else:
+		root = os.path.dirname(fontFile)
+		fileName = os.path.basename(fontFile)
+		paths = [(root, fileName)]
+	return paths
+
+tests["Dropbox Write"] = dict(
+	function=testDropboxWrite,
+	reading=False,
+	writing=True,
+	time=False
+)
+
 # -------
 # Support
 # -------
