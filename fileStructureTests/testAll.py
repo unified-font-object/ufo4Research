@@ -256,8 +256,8 @@ def testDropboxWrite(fileSystem=None, font=None, **kwargs):
 	dropBoxAuthToken = f.read()
 	f.close()
 
-	client = dropbox.client.DropboxClient(dropBoxAuthToken)
 	try:
+		client = dropbox.client.DropboxClient(dropBoxAuthToken)
 		client.account_info()
 	except:
 		# do nothing if the auth token is not valid
