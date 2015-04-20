@@ -7,6 +7,8 @@ structure.
 """
 
 import os
+import tempfile
+import shutil
 import zipfile
 
 from core.fileSystem import BaseFileSystem
@@ -25,6 +27,21 @@ class UFO3ZipFileSystem(BaseFileSystem):
 		
 	def close(self):
 		self.zip.close()
+		namelist = self.zip.namelist()
+		hasDuplicates = len(namelist) != len(set(namelist))
+		if hasDuplicates:
+			temp = tempfile.mkstemp(suffix=".%s" % self.fileExtension)[1]
+			inzip = zipfile.ZipFile(self.path, 'r')
+			outzip = zipfile.ZipFile(temp, 'w')
+			outzip.comment = inzip.comment
+			for item in inzip.infolist():
+				if item.filename not in outzip.namelist():
+					data = inzip.read(item.filename)
+					outzip.writestr(item, data, compress_type=item.compress_type)
+			outzip.close()
+			inzip.close()
+			shutil.move(temp, self.path)
+	
 	# ------------
 	# File Support
 	# ------------
